@@ -3,12 +3,6 @@
 ##General design
 
 * [Good UI](http://goodui.org/)
-* [Designing Settings](https://medium.com/@imran_parvez/designing-settings-b2a96878961b?mc_cid=ec02ba64fc&mc_eid=b38f2f4652)
-	> Products should work for the user and not the other way around
-	
-	> Not everything is a setting
-	
- ![What should be a setting](https://d262ilb51hltx0.cloudfront.net/max/720/1*nygSPS923t8c-ZWhPH1rDg.png)
 
 * [UX: Less isn't always more](http://java.dzone.com/articles/ux-less-isnt-always-more)
 	* reset password form
@@ -23,21 +17,10 @@
 * [Living style guide tools](https://medium.com/@operatino/living-style-guide-tools-in-depth-overview-28cfffb92d05)
 	* [KSS](http://warpspire.com/kss/): documentation for CSS (via comments)
 	* [SC5 - Style guide generator](https://www.npmjs.com/package/sc5-styleguide) works with KSS
-* [Consider the empty states](http://webdesign.tutsplus.com/articles/ux-tip-consider-the-empty-states--cms-23692)
-	* First-use
-		* clear explanation
-		* link to populate that feature
-		* provide an on boarding sequence
-	* User-cleared
-		* something is better than nothing
-		* direct and straight to the point
-	* Error
-		* appropriate for the situation
-		* offers more information
 
  ![UX vs UI](http://editorial.designtaxi.com/editorial-images/NEWS-INFUIUX100615/4.jpg)
 
-* [Mobile Design Essentials - Multi-Device Output, input and posture](https://www.youtube.com/watch?v=ZhnN1CdwvTs)
+* [Video: Mobile Design Essentials - Multi-Device Output, input and posture](https://www.youtube.com/watch?v=ZhnN1CdwvTs)
 * [UX Design tips for your app](http://sixrevisions.com/user-experience-ux/ux-tips-app/)
 	* The UX should adapt to the user
 	* Network awareness means good UX in any context
@@ -116,6 +99,36 @@
 	* Think beyond breakpoints
 	* Get real
 	* A whole new world
+* [Why plain language is vital for website usability](http://www.creativebloq.com/web-design/why-plain-language-vital-website-usability-51514999)
+	* Ditch the jargon
+	* Use active sentences
+	* Use headings
+	* Harness the power of visual layout
+* [When to paginate and when to infinite scroll](http://www.creativebloq.com/ux/paginate-or-infinite-scroll-71515816)
+	* infinite scrolling is best suited for websites that boast user-generated content, visual content
+	* pagination is a universal option, and best for platforms that intend to satisfy the goal-oriented activities of the visitors
+* [Hermeneutics for designers](http://www.uxbooth.com/articles/hermeneutics-for-designers/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28The+UX+Booth%29)
+
+###Interaction Design
+
+* [Designing Settings](https://medium.com/@imran_parvez/designing-settings-b2a96878961b?mc_cid=ec02ba64fc&mc_eid=b38f2f4652)
+	> Products should work for the user and not the other way around
+	
+	> Not everything is a setting
+	
+ ![What should be a setting](https://d262ilb51hltx0.cloudfront.net/max/720/1*nygSPS923t8c-ZWhPH1rDg.png)
+
+* [Consider the empty states](http://webdesign.tutsplus.com/articles/ux-tip-consider-the-empty-states--cms-23692)
+	* First-use
+		* clear explanation
+		* link to populate that feature
+		* provide an on boarding sequence
+	* User-cleared
+		* something is better than nothing
+		* direct and straight to the point
+	* Error
+		* appropriate for the situation
+		* offers more information
 * [The 10 principles of interaction design](http://www.creativebloq.com/netmag/10-principles-interaction-design-1143871)
 	1. Start with two
 	2. Prototype
@@ -127,17 +140,9 @@
 	8. Make novices experts
 	9. Be a humble expert
 	10. Seek your failures
-* [Why plain language is vital for website usability](http://www.creativebloq.com/web-design/why-plain-language-vital-website-usability-51514999)
-	* Ditch the jargon
-	* Use active sentences
-	* Use headings
-	* Harness the power of visual layout
-* [When to paginate and when to infinite scroll](http://www.creativebloq.com/ux/paginate-or-infinite-scroll-71515816)
-	* infinite scrolling is best suited for websites that boast user-generated content, visual content
-	* pagination is a universal option, and best for platforms that intend to satisfy the goal-oriented activities of the visitors
-* [Hermeneutics for designers](http://www.uxbooth.com/articles/hermeneutics-for-designers/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28The+UX+Booth%29)
 * [The perception of control](http://www.uxbooth.com/articles/the-perception-of-control/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28UX+Booth%29à)
 	> Every day at the street by my house, I press the "walk" button, and I wait. Each time, as soon as the traffic cycle is complete, I get the walk signal. On a whim, one day I din't press the button... but at the end of the traffic cycle, I got the walk signal. The button I press every day has absolutely no impact on when the light will change. Is it still worth having the button?
+
 
 ###Personas
 

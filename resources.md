@@ -175,6 +175,19 @@
 	10. Behaviour tracking
 	11. Surveys
 	12. Guerilla research
+* [10 ways to get more from your UX workshop](https://boagworld.com/usability/10-ways-to-get-more-from-your-ux-workshop/)
+>Do not allow your UX workshop to devolve into discussing features. Keep it focused on user needs
+
+	1. Focus on users
+	2. Define your digital goals
+	3. Make it fun
+	4. Don't start designing web pages (start with a book jacket --> most important messages will go on the front)
+	5. Vary your exercises
+	6. Use voting to keep momentum
+	7. Set time constraints
+	8. Make it interactive, not just discussion based
+	9. Spend time looking at barriers
+	10. Refine and report back
 
 ##HTML
 

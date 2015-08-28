@@ -136,6 +136,8 @@
 	* infinite scrolling is best suited for websites that boast user-generated content, visual content
 	* pagination is a universal option, and best for platforms that intend to satisfy the goal-oriented activities of the visitors
 * [Hermeneutics for designers](http://www.uxbooth.com/articles/hermeneutics-for-designers/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28The+UX+Booth%29)
+* [The perception of control](http://www.uxbooth.com/articles/the-perception-of-control/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28UX+Booth%29à)
+	> Every day at the street by my house, I press the "walk" button, and I wait. Each time, as soon as the traffic cycle is complete, I get the walk signal. On a whim, one day I din't press the button... but at the end of the traffic cycle, I got the walk signal. The button I press every day has absolutely no impact on when the light will change. Is it still worth having the button?
 
 ###Personas
 

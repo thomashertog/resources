@@ -559,6 +559,18 @@ Why we should rename element queries into container queries
 	* background-attachment:fixed causes a paint operation on scroll
 	* put background in different element (pseudo)
 	* add "will-change:transform;" --> it creates a new paint layer
+* [HTTP/2 - The future of the web is already here](http://www.creativebloq.com/web-design/http2-future-already-here-71515657)
+	* Multiplexing (allowing requests and responses for multiple objects to overlap on the same connection)
+	* Header compression (helping to solve the stateless nature of HTTP/1 where a browser needs to address support for a given file format or language on every request)
+	* Dependencies and prioritisation (communicating to the server what objects are dependent on what other objects, and listing the priorities, the server can make certain the critical data is delivered to the browser right away.)
+	* Server push (addressing round trip latency of an HTTP request and response by sending the browser an object before it is asked for)
+	* And for the everyday user?
+		* no one will have to change their website or applications to ensure they continue to work properly
+		* if you want to benefit from performance and security features, consider some things
+			* encryption (applications running over HTTP/2 are likely to experience improvements in performance over secure connections)
+			* Optimising the TCP layer (applications should be designed with a TCP layer implemented to account for the switch from mulltiple TCP connections to a single long-lived one, especially when adjusting the congestion window in response to packet loss
+			* undoing HTTP/1.1 best rpactices (domain sharing, image spriting, resource in-lining and concatenation)
+			* Deciding what and when to push
 
 ##Web Components
 

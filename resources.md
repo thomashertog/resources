@@ -108,6 +108,7 @@
 	* infinite scrolling is best suited for websites that boast user-generated content, visual content
 	* pagination is a universal option, and best for platforms that intend to satisfy the goal-oriented activities of the visitors
 * [Hermeneutics for designers](http://www.uxbooth.com/articles/hermeneutics-for-designers/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28The+UX+Booth%29)
+* [Improving the user experience can save time and money](https://boagworld.com/usability/nationaltrust/)
 
 ###Interaction Design
 
@@ -143,6 +144,17 @@
 * [The perception of control](http://www.uxbooth.com/articles/the-perception-of-control/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28UX+Booth%29à)
 	> Every day at the street by my house, I press the "walk" button, and I wait. Each time, as soon as the traffic cycle is complete, I get the walk signal. On a whim, one day I din't press the button... but at the end of the traffic cycle, I got the walk signal. The button I press every day has absolutely no impact on when the light will change. Is it still worth having the button?
 
+* [How to make your type look good on any screen](http://www.creativebloq.com/typography/make-type-look-good-any-device-81515938)
+	* Scale
+	* Size, length and height
+	* Font size (recommendation to set base font-size at 100% --> mostly 16px)
+	* Ems and rems
+	* Line height 
+		* affects readability 
+		* on average best is 1.4 (small screens slightly less, large screens slightly more)
+		* vertical margins should be in proportion
+	* Line length (on average 45-75 characters)
+	* Adjusting margins
 
 ###Personas
 
@@ -199,6 +211,32 @@
 ##HTML
 
 * [Form inputs](http://www.smashingmagazine.com/2015/05/05/form-inputs-browser-support-issue/): The browser support issue you didn't know you had
+* [25 hottest web design techniques](http://www.creativebloq.com/netmag/25-hottest-web-design-techniques-81516153)
+	1. Ask questions
+	2. Listen to your code
+	3. Protect the web's inherent accessibility
+	4. Take advantage of conditional loading
+	5. Use [Ceaser](http://matthewlein.com/ceaser/) to write cubic-bezier
+	6. Use height-based media queries (improve experiences when the available height is limited)
+	7. Keep the big picture in mind
+	8. Use namespaceing for your CSS files
+	9. Employ easy image fallbacks
+	10. Master debugging in JavaScript
+	11. Make your background images responsive (background-size: cover)
+	12. Use mixins to create complex grid systems
+	13. Think about conversations, not pages
+	14. Provide keyboard support
+	15. Design quickly in the browser
+	16. Simplify your code
+	17. Convert fixed widths to percentages
+	18. Embrace the title field
+	19. Configure Git
+	20. Use Git commit hooks
+	21. Learn from issues and errors
+	22. Feel how fast your site is
+	23. Avoid long select boxes
+	24. Scale icons with background-image:cover
+	25. Keep it short and sweet
 
 ##CSS
 
@@ -542,6 +580,19 @@ Why we should rename element queries into container queries
 	3. All interactive ARIA controls must be usable with the keyboard.
 	4. Don't use role="presentation" or aria-hidden="true" on a visible focusable element
 	5. All interactive elements must have an accessible name
+* [Video: What is the business case for accessibility](https://vimeo.com/134825451)
+	> We can reframe accessibility in terms of what we provide, not what other people lack
+* [Reframing accessibility for the web](http://alistapart.com/article/reframing-accessibility-for-the-web)
+	* Who are these "people with disabilities" anyway?
+	* Why do we fixate on justifying the existence of people with disabilities?
+	* Reframing accessibility as a technology challenge
+		* Creating a test matrix for accessibility
+			* [list of input devices](https://en.wikipedia.org/wiki/Input_device)
+			* [list of output devices](https://en.wikipedia.org/wiki/Output_device)
+		* Checking content against the matrix
+		* Testing beyond the obvious
+	* People over process, unless process enables people
+* [An alphabet of accessibility issues](https://the-pastry-box-project.net/anne-gibson/2014-july-31)
 
 ##Performance
 

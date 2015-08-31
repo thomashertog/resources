@@ -338,6 +338,7 @@
 
 * [Flexbox cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)
 * [A complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [A visual guide to CSS3 flexbox properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
 * [Ridiculously Easy Layouts with Flexbox](https://www.youtube.com/watch?v=2hak2xElAKI)
 	* Multi-axis
 		* main & cross

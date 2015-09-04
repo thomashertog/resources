@@ -492,6 +492,13 @@ Why we should rename element queries into container queries
 		* Extend Gustafson's method by using breakup as a predefined list of media queries and automating the creation of the list of font families for getActiveMQ-watcher
 	* Progressive enhancement
 	* Layout
+* [VIDEO: Jason Grigsby talking about the "why" of "responsive images](https://vimeo.com/134952797)
+	* resolution switching
+	* art direction
+	* text on images
+	* image breakpoints
+	* memory usage on resizing
+	* hero images aka a box for marketing
 
 ##Progressive Enhancement
 
@@ -504,6 +511,7 @@ Why we should rename element queries into container queries
 * [Thriving in unpredictability](http://timkadlec.com/2015/06/thriving-in-unpredictability/)
 * [Baseline](https://adactio.com/journal/9206) 
 * [Video: Jake Archibald talking about performance, service worker and progressive enhancement](https://vimeo.com/134952424)
+* [Video: Aaron Gustafsson - Where do we go from here](https://vimeo.com/134954018)
 
 ##Accessibility
 
@@ -603,6 +611,7 @@ Why we should rename element queries into container queries
 		* Testing beyond the obvious
 	* People over process, unless process enables people
 * [An alphabet of accessibility issues](https://the-pastry-box-project.net/anne-gibson/2014-july-31)
+* [Video: Aaron Gustafsson - Where do we go from here](https://vimeo.com/134954018)
 
 ##Performance
 

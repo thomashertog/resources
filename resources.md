@@ -494,6 +494,7 @@ Why we should rename element queries into container queries
 * [Advancing JavaScript without breaking the web](https://channel9.msdn.com/Events/WebPlatformSummit/2015/Advancing-JavaScript-without-breaking-the-web)
 * [Thriving in unpredictability](http://timkadlec.com/2015/06/thriving-in-unpredictability/)
 * [Baseline](https://adactio.com/journal/9206) 
+* [Video: Jake Archibald talking about performance, service worker and progressive enhancement](https://vimeo.com/134952424)
 
 ##Accessibility
 
@@ -629,6 +630,7 @@ Why we should rename element queries into container queries
 			* Optimising the TCP layer (applications should be designed with a TCP layer implemented to account for the switch from mulltiple TCP connections to a single long-lived one, especially when adjusting the congestion window in response to packet loss
 			* undoing HTTP/1.1 best rpactices (domain sharing, image spriting, resource in-lining and concatenation)
 			* Deciding what and when to push
+* [Video: Jake Archibald talking about performance, service worker and progressive enhancement](https://vimeo.com/134952424)
 
 ##Web Components
 

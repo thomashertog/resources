@@ -155,6 +155,14 @@
 		* vertical margins should be in proportion
 	* Line length (on average 45-75 characters)
 	* Adjusting margins
+* [Masking passwords: help or hindrance](http://www.sitepoint.com/masking-passwords-help-or-hindrance/)
+	* problems with password masking
+		* masking the password also hides it from the user
+		* "over the soulder" attacks aren't as common as we may think
+		* the password is still vulnerable to keylogging and malware
+		* the design of some mobile operating systems eliminates some benefits of masking
+	* Balancing security and usability
+		* "Show password" toggle: proven results
 
 ###Personas
 

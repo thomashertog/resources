@@ -1,5 +1,10 @@
 #Resources collection
 
+##Table of contents
+
+1. [General design](#
+
+
 ##General design
 
 * [Good UI](http://goodui.org/)
@@ -109,6 +114,41 @@
 	* pagination is a universal option, and best for platforms that intend to satisfy the goal-oriented activities of the visitors
 * [Hermeneutics for designers](http://www.uxbooth.com/articles/hermeneutics-for-designers/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28The+UX+Booth%29)
 * [Improving the user experience can save time and money](https://boagworld.com/usability/nationaltrust/)
+* [On the device context continuum](https://medium.com/@grigs/on-the-device-context-continuum-515d95ef8829)
+* [15 UX Commandments](http://thehipperelement.com/post/128705195169/15-ux-commandments?ref=heydesigner-weekly37)
+	1. Only ask the questions to whith you really need answers.
+	2. Demonstrate uncertainty
+	3. Reconstruct your own previous errors of thought and elucidate to your colleagues and clients what factors lead to a changed mind
+	4. Do not let the terms with which you understand the world get in the way of understanding it ("your view of the world might be wrong")
+	5. Give up any desire to be the smartest person in the room
+	6. Remember that people -including you- have bodies, and bodies require movement, sustencance, rest, and relief
+	7. Leave room for creativity
+	8. Preserve and sustain whatever delusions you've found necessarry to behave in good faith
+	9. Do not be afraid to state the obvious
+	10. A socratic bully is still a bully
+	11. Thoroughly prepare, including making preparations to abandon your preparations entirely
+	12. Listen with your body
+	13. Suspect charisma
+	14. Conduct yourself in such a way that your colleagues can eventually forget that you exist
+	15. It never hurts to start with the basics  
+* [6 Web design mistakes (and how to correct them)](http://thenextweb.com/dd/2015/08/26/6-web-design-mistakes-and-how-to-correct-them/)
+	1. Designing without a grid
+	2. Using a theme without customization
+	3. Moving forward with poor images
+	4. Not using a color or typography palette
+	5. Overcomplicated navigation
+	6. Site is slow to load
+* [10 commandments of web typography](http://www.creativebloq.com/typography/10-commandments-web-typography-91516546)
+	1. Read the text. Take notes
+	2. Get a sense of the tone and feeling
+	3. Look for reoccurring words and numbers
+	4. Note sections and subsections in the text. How many levels of headings will you need?
+	5. Note other text-based elements you have to set. Are they captions, pullquotes, numerical data, a featured paragraph? Titles in the text you'll need to italicize?
+	6. Start considering appropriate fonts - at the size you plan to use them. They'll look different as text and headline.
+	7. Discord fonts that don't support the tone of the text, have problems with reoccurring words and numbers, that can't accomplish what you need it to do.
+	8. Test the remaining fonts cross browser. Don't build your site only to learn the doesn't work cross browser
+	9. Attend to "the hole trinity" of good text: size, line-height, line-length
+	10. Use your line length to set the grid if possible. If your site is responsive, consider line length when setting breakpoints.
 
 ###Interaction Design
 
@@ -183,6 +223,17 @@
 	9. Thou shalt minimize user input
 	10. Thou shalt be clear what type of input is expected
 	11. Thou shalt only validate a field when a user is done with it
+
+###Copywriting
+
+* [How to write a great error message](https://medium.com/@thomasfuchs/how-to-write-an-error-message-883718173322)
+	* Write an alert message that describes the alert situation clearly and succinctly
+	* Write informative text that elaborates on the consequences and suggests a solution or alternative
+	* Express everything in the user's vocabulary
+	* Don't abuse alerts for upselling or showing superfluous information
+	* Don't just assume people know about the context of a message
+	* Write actionable error messages that laypeople can understand
+* 
 
 ##Research
 
@@ -341,6 +392,18 @@
 	* Single columns should still generally incorporate rem via max-width
 * [Modern CSS Layout, power and responsibility](https://www.rachelandrew.co.uk/archives/2015/07/28/modern-css-layout-power-and-responsibility/)
 * [A look at length units in CSS](http://www.sitepoint.com/look-at-length-units-in-css/)
+* [Position sticky: scroll-to-top-then-fixed in pure CSS](http://thenewcode.com/1052/position-sticky-scroll-to-top-then-fixed-in-pure-CSS)
+* [Dealing with long words in CSS](https://justmarkup.com/log/2015/07/31/dealing-with-long-words-in-css/?mc_cid=ce70bb0280&mc_eid=b38f2f4652)
+	* Hyphens (hyphens: auto + vendor prefixes)
+		* supported in every major browser (except Blink)
+		* language-sensitive --> non english languages are not supported very well
+	* Word-break (word-break: break-all or break-word)
+		* supported in every browser (except Opera)
+	* Overflow-wrap (word-wrap: break-word; overflow-wrap: break-word;)
+		* supported in every browser
+	* Ellipsis (text-overflow: ellipsis; white-space: nowrap; overflow: hidden;)
+		* supported in every major browser
+		* truncation is not a job for CSS
 
 ###Flexbox
 
@@ -365,6 +428,63 @@
 	*  title split into two sections, first portion is left aligned, second is right aligned
 	*  when there isn't room based on screen size or length issues, left-align wrapping is what we want
 	*  [Live demo](http://codepen.io/chriscoyier/pen/doVXLV)
+*  [Flexbox adventures](http://chriswrightdesign.com/experiments/flexbox-adventures/)
+	*  Flexbox basics
+		*  Flex-basis and Flex-grow
+		*  Applying grow
+		*  Calculating the space
+			*  available space = (container size - sum of flex-basis of siblings)
+			*  grow unit = (available space / sum grow siblings total)
+			*  flex item size = (flex basis + (grow unit * num))
+		*  A rounding bug
+		*  Flex shrink
+			*  total items = multiply each basis by its shrink value and add together
+			*  shrink factor / item = divide each item by the total items
+			*  mulptiply shrink factor with negative space (overflow)
+		*  Relative distributions (set basis to 0)
+		*  Source ordering
+		*  Reverse it
+		*  Vertical center & equal height columns
+			*  Vertical center div
+			*  Equal height columns
+		*  Flexbox transitions
+		*  Flexbox feature support
+		*  Enhancing to flexbox
+		*  Wrapping up
+*  [Using flexbox today](http://chriswrightdesign.com/experiments/using-flexbox-today/)
+	*  Road to flexbox
+		*  Making layouts better
+		*  Card layouts
+		*  Split screen layouts
+		*  Pinned layouts
+		*  Newspaper and ad units
+		*  Multi-column layouts
+		*  Dashboards
+		*  Embracing change
+		*  Content is flexible
+		*  We don't always have control
+		*  More design tools
+		*  Bend and break
+	*  Strategy for Flexbox
+		*  Build the way we always did
+		*  Minimize code
+		*  Make it worthwhile
+		*  Cut the mustard: flex-wrap
+		*  Enhancing with flexbox
+	*  Troubleshooting Flexbox
+		*  Axis direction (flex direction)
+		*  Flex items horizontal off the page
+		*  Inflexible imagery
+			*  Workaround
+		*  Understanding space-around and space-between
+		*  How grow and shrink work
+		*  Items become many tiny columns
+		*  IE 10/11 only: wrapping too early, items too big
+		*  IE 10/11 only: the heights are oddly collapsed
+		*  FF: column-reverse and overflow-y
+		*  Internet explorer ignores min-height
+		*  Well documented cross-browser bugs
+		*  Add flexbox to your layouts
 
 ##SASS
 
@@ -416,6 +536,16 @@
 	* font-size + line-height switching based on breakpoints
 		* function to retrieve font-size and/or line-height based on breakpoint
 		* breakpoints map (name, value) + font-sizes map (breakpoint name, list combining font-size with line-height)
+* [Sass optimization - 5 tips for faster work](http://blog.alexdevero.com/sass-optimization-5-tips-for-faster-work/)
+	1. Sass @import directive
+	2. Use variables
+	3. Use mixins
+	4. Nesting the rational way
+	5. Use Sass color functions
+* [Using Sass's @error, @warn, and @debug Directives](http://www.sitepoint.com/using-sass-error-warn-and-debug-directives/)
+	* Stop Everything - The @error directive
+	* Don't miss this - The @warn directive
+	* If you were curious - The @debug directive
  
 ##Responsive Web Design
 
@@ -434,16 +564,33 @@
 		* breakpoints map (name, value) + font-sizes map (breakpoint name, list combining font-size with line-height)
 * [Viewport sized typography](https://css-tricks.com/viewport-sized-typography/)
 * [When responsive images get ugly](http://codepen.io/Tigt/blog/when-responsive-images-get-ugly)
-	* Troublesome CSS units
-		* % only works if you know how big an element's parent are otherwise CSS is required to calculate it
-		* rem and em are resolved based on users default font-size
-	* sizes _will_ affect how your image displays
+	* Some ground floor stuff
+		* Why bother.
+		* Srcset is preferable
+	* Unintuitive behavior & gotchas
+		* Media conditions, NOT media queries
+		* Troublesome CSS units
+			* % only works if you know how big an element's parent are otherwise CSS is required to calculate it
+			* rem and em are resolved based on users default font-size
+		* sizes _will_ affect how your image displays
 	* Media-aware images
 		* Printer-friendly
 		* E-ink-friendly
+		* Night mode & bright sunlight
 	* The deepest backwards-compatibility possible
 	* Height _and_ width-constrained _srcset_
+		* object-fit:cover
+		* object-fit:contain
 	* Responsive bitmaps inside inline SVG
+		* Fixing IE
+		* Building the sizes
+		* Making things worst with not quite-entire-viewport scaling
+			* The browser viewport
+			* The <svg> element
+			* The viewbox
+			* The image
+			* Assembling
+	* That's all, folks
 * [Container Queries: once more unto the breach](http://alistapart.com/article/container-queries-once-more-unto-the-breach)
 Why we should rename element queries into container queries
 * [13 tips for making responsive web design multi-lingual](http://responsivenews.co.uk/post/123104512468/13-tips-for-making-responsive-web-design)
@@ -499,6 +646,12 @@ Why we should rename element queries into container queries
 	* image breakpoints
 	* memory usage on resizing
 	* hero images aka a box for marketing
+* [The anatomy of responsive images](https://jakearchibald.com/2015/anatomy-of-responsive-images/)
+	* Fixed size, varying density --> src + srcset with x-descriptor
+	* Varying size and density --> src + srcset with w-descriptor + sizes
+	* Varying width, density and art direction --> picture element with nested img element with src + srcset with w-descriptor and sizes
+	* Varying on type --> type attribute of picture element
+	* Further reading
 
 ##Progressive Enhancement
 
@@ -512,6 +665,13 @@ Why we should rename element queries into container queries
 * [Baseline](https://adactio.com/journal/9206) 
 * [Video: Jake Archibald talking about performance, service worker and progressive enhancement](https://vimeo.com/134952424)
 * [Video: Aaron Gustafsson - Where do we go from here](https://vimeo.com/134954018)
+	* [transcript](http://www.sitepoint.com/responsive-web-design-where-do-we-go-from-here/)
+* [Video: Jeremy Keith - enhance!](https://vimeo.com/137117401)
+* [Video: Jake Archibald - Modern progressive enhancement](http://www.fivesimplesteps.com/products/modern-progressive-enhancement)
+	> Every phase of enhancement needs a real user
+	* loading time is important but time to first byte and time to start render is much more important (perception of speed)
+	> The only time people hate wasting the most is right now.
+	
 
 ##Accessibility
 
@@ -612,6 +772,11 @@ Why we should rename element queries into container queries
 	* People over process, unless process enables people
 * [An alphabet of accessibility issues](https://the-pastry-box-project.net/anne-gibson/2014-july-31)
 * [Video: Aaron Gustafsson - Where do we go from here](https://vimeo.com/134954018)
+* [Accessibility - beyond the screen reader](http://www.creativebloq.com/web-design/accessibility-beyond-screen-reader-91516540)
+	* Thinking outside the (black) box
+	* Word wrapping
+	* Proximity
+	* Beyond the blind spot
 
 ##Performance
 
@@ -649,6 +814,21 @@ Why we should rename element queries into container queries
 			* undoing HTTP/1.1 best rpactices (domain sharing, image spriting, resource in-lining and concatenation)
 			* Deciding what and when to push
 * [Video: Jake Archibald talking about performance, service worker and progressive enhancement](https://vimeo.com/134952424)
+* [Strategies for Cache-Busting CSS](https://css-tricks.com/strategies-for-cache-busting-css/)
+	* Query strings
+	* Changing file names
+	* Basing Cache Busting "Number" on File updated date
+	* ETags
+	* Framework does it for us
+		* Rails asset pipeline
+		* Wordpress
+	* Build tools
+	* Async CSS
+* [Eliminating roundtrips with preconnect](https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/)
+	* Preconnect for dynamic request URLs
+	* Initiating preconnect via Link HTTP Header
+	* Preconnect with JavaScript
+	* Preconnect often, Preconnect wisely
 
 ##Web Components
 

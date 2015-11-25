@@ -1,13 +1,103 @@
-#Resources collection
+#Table of contents
 
-##Table of contents
+1. [General design](#general_design)
+	1. [Interaction design](#interaction_design)
+	2. [Personas](#personas)
+	3. [Form design](#form_design)
+	4. [Copywriting](#copywriting)
+2. [Research](#research)
+3. [HTML](#html)
+4. [CSS](#css)
+	1. [Flexbox](#flexbox)
+5. [SASS](#sass)
+6. [Responsive Web Design](#responsive_web_design)
+7. [Progressive enhancement](#progressive_enhancement)
+8. [Accessibility](#accessibility)
+9. [Performance](#performance)
+10. [Web components](#web_components)
+	1. [Polymer](#polymer)
+11. [Design testing](#design_testing)
+12. [Email design](#email_design)
 
-1. [General design](#
 
-
-##General design
+#<a name="general_design"></a>General design
 
 * [Good UI](http://goodui.org/)
+	* Try __a one column layout__ instead of multicolumns
+	* Try __giving a gift__ instead of closing a sale right away
+	* Try __merging similar functions__ instead of fragmenting the UI
+	* Try __social proof__ instead of talking about yourself
+	* Try __repeating your primary action__ instead of showing it just once
+	* Try __distinct clickable/selected styles__ instead of blurring them
+	* Try __recommending__ instead of showing equal choices
+	* Try __undos__ instead of prompting for confirmation
+	* Try __telling who it's for__ instead of targeting everyone
+	* Try __being direct__ instead of indecisive
+	* Try __more contrast__ instead of similarity
+	* Try __personality__ instead of being generic
+	* Try __fewer form fields__ instead of asking for too many
+	* Try __exposing options__ instead of hiding them
+	* Try __suggesting continuity__ instead of false bottoms
+	* Try __keeping focus__ instead of drowning with links
+	* Try __showing state__ instead of being state agnostic
+	* Try __benefit buttons__ instead of just task based ones
+	* Try __direct manipulation__ instead of contextless menus
+	* Try __exposing fields__ instead of creating extra pages
+	* Try __transitions__ instead of showing changes instantly
+	* Try __gradual engagement__ instead of a hasty sign up
+	* Try __fewer borders__ instead of wasting attention
+	* Try __selling benefits__instead of features
+	* Try __designing for zero data__ instead of just data heavy cases
+	* Try __opt-out__ instead of opt-in
+	* Try __consistency__ instead of making people relearn
+	* Try __smart defaults__ instead of asking to do extra work
+	* Try __conventions__ instead of reinventing the weel
+	* Try __loss aversion__ instead of emphasizing gains
+	* Try __visual hierarchy__ instead of dullness
+	* Try __grouping related items__ instead of disordering
+	* Try __inline validation__ instead of delaying errors
+	* Try __forgiving inputs__ instead of being strict with data
+	* Try __urgency__ instead of timelessness
+	* Try __scarcity__ instead of abundance
+	* Try __recognition__ instead of recall
+	* Try __bigger click areas__ instead of tiny ones
+	* Try __faster load times__ instead of making people wait
+	* Try __keyboard shortcuts__ instead of buttons only
+	* Try __anchoring__ instead of starting with the price
+	* Try __upfront progress__ instead of starting with a blank
+	* Try __progressive disclosure__ instead of overwhelming
+	* Try __smaller commitments__ instead of one big one
+	* Try __softer prompts__ instead of modal windows
+	* Try __multifunctional controls__ instead of more parts
+	* Try __icon labels__ instead of opening for interpretation
+	* Try __natural language__ instead of dry text
+	* Try __curiosity__ instead of being reserved
+	* Try __reassurances__ instead of assuming all is fine
+	* Try __price illusions__ instead of just plain prices
+	* Try __thanking__ instead of simply confirming completion
+	* Try __useful calculations__ instead of asking to do math
+	* Try __reaffirming freedom__ instead of implying it
+	* Try __variable rewards__ instead of predictability
+	* Try __attention grabs__ instead of neglect
+	* Try __friendly comparisons__ instead of confusion
+	* Try __set collections__ instead of independent items
+	* Try __expectation setting__ instead of being ignorant
+	* Try __humor__ instead of being so serious
+	* Try __providing feedback__ instead of silence
+	* Try __anticipating intent__ instead of shortsightedness
+	* Try __extra padding__ instead of overcrowding elements
+	* Try __storytelling__ instead of listing just the facts
+	* Try __authenticity__ instead of faking it
+	* Try __progressive reduction__ instead of being static
+	* Try __putting others first__ instead of self-centeredness
+	* Try __explainging__ instead of assuming the obvious
+	* Try __concise copy__ instead of using unnecessary words
+	* Try __responsive layouts__ instead of static ones
+	* Try __visual clarity__ instead of ambiguity
+	* Try __enabling corrections__ instead of rigidness
+	* Try __social commitments__ instead of solitude
+	* Try __retries and redos__ instead of single chances
+	* Try __less choice__ instead of giving too many options
 
 * [UX: Less isn't always more](http://java.dzone.com/articles/ux-less-isnt-always-more)
 	* reset password form
@@ -149,8 +239,60 @@
 	8. Test the remaining fonts cross browser. Don't build your site only to learn the doesn't work cross browser
 	9. Attend to "the hole trinity" of good text: size, line-height, line-length
 	10. Use your line length to set the grid if possible. If your site is responsive, consider line length when setting breakpoints.
+* [Usable content is king](http://usabilitygeek.com/usable-content-is-king/)
+	* What makes content usable
+		* Consider form as well as function
+		* Quality means usability
+		* Ensure maximum shareability
+		* Publish content in style
+		* Fostering usable content ought to be a OneTwo punch
+* [Video + transcript: Sara Wachter-Boettcher - Everybody hurts - Content for kindness](http://www.sarawb.com/2015/09/10/everybody-hurts-content-for-kindness/)
+* [10 common web developer mistakes](http://code.tutsplus.com/articles/10-common-web-developer-mistakes--cms-24791)
+	1. Writing old-school HTML
+	2. It works in my browser ...
+	3. Bad form
+	4. Bloated responses
+	5. Creating code that _should_ work
+	6. Writing forking code
+	7. Designing unresponsively
+	8. Making meaningless pages
+	9. Producing sites that are too refreshing
+	10. Working too much
+* [7 Ways to create attractive user interafces](http://www.creativebloq.com/web-design/create-attractive-user-interfaces-91516600)
+	1. Follow Hick's law (don't clutter interfaces)
+	2. Use the right signifiers
+		1. explicit
+		2. pattern
+		3. hidden
+		4. metaphorical
+		5. negative
+	3. Know which colours evoke which moods
+	4. Understand and apply the different types of symmetry
+	5. Use photos of real people
+	6. Maintain consistency
+	7. Take advantage of white space
+* [10 guidelines for navigation usability](http://usabilitygeek.com/10-guidelines-for-navigation-usability/)
+	1. Embrace predictability
+	2. Keep it simple
+	3. Don't overdo minimalism
+	4. Keep it consistent
+	5. Clear hierarchical structure
+	6. Make it manageable
+	7. Link the logo to the homepage
+	8. Include a sitemap
+	9. Provide more than one navigation menu
+	10. Always include a search bar
+* [The 8 worst UX mistakes coming from experts](https://medium.com/swlh/the-8-worst-ux-mistakes-coming-from-experts-692884971f80#.bx9b2rbhc)
+	1. Expecting the unexpected (Be clear - Make sure that every item in your project has a purpose, and that it communicates its purpose immediately)
+	2. You spin me round (Remove image sliders, carousels, and clickbaiting pagination. Be clear and honest, as no one wants to struggle with the dark side of web design)
+	3. Immobile pages (Don't force your users to download your mobile app so they can browse your website)
+	4. The art of bad performance (Do not forsake performance for the sake of aesthetics)
+	5. Everybody hates reading (Content serves the web right now, so it is crucial to make it easy to digest. Give people a nice read)
+	6. Your forms are out of form
+	7. Sign in? Sign OUT
+	8. Simplify
 
-###Interaction Design
+##<a name="interaction_design"></a>Interaction Design
 
 * [Designing Settings](https://medium.com/@imran_parvez/designing-settings-b2a96878961b?mc_cid=ec02ba64fc&mc_eid=b38f2f4652)
 	> Products should work for the user and not the other way around
@@ -203,13 +345,46 @@
 		* the design of some mobile operating systems eliminates some benefits of masking
 	* Balancing security and usability
 		* "Show password" toggle: proven results
+* [What you need to know about anticipatory design](http://www.smashingmagazine.com/2015/09/anticipatory-design/)
+	* It's always been around
+	* Why anticipatory design? Why now?
+	* Anticipatory design and cognitive load
+	* Anticipatory design and empathy
+	* Examples of great anticipatory design
+		* Facebook: using geolocation to facilitate real-life encounters
+		* Saleswise: how to turn collected data into meaningful time savers
+		* Pandora: recommendations based on relevance
+		* Brita: how to make repeat purchases much simpler
+		* Meetup: recommendations based on user interests
+		* Expedia: offer ideas beyond purchase
+		* Credit karma: how to anticipate cross-selling opportunities
+		* Fandango: finding relevant opportunities to add a "little extra" value
+		* Microsoft Delve: automatically tailoring the experience to your user's preferences
+		* Turbotax: transpartently combine additional forms based on user inputs
+	* A checklist to get started with anticipatory design
+	* Anticipatory design: the new standard
+* [Are users ready for the desktop hamburger icon?](http://www.sitepoint.com/are-users-ready-for-the-desktop-hamburger-icon/)
+	* The good
+		* The "clean factor"
+		* Let your CTA (Call To Action) be the hero
+		* The power of popularity
+	* The not-so-good
+		* Another click, another barrier
+		* Out of sight, out of mind
+	* Best uses
+		* Simple sites with few pages/little content
+		* When it's obviously clickable
+		* Paired with a CTA
+	* Worst uses
+		* On a site aimed at older demographics
+		* Sites with unexpected content
 
-###Personas
+##<a name="personas"></a>Personas
 
 * [Creating personas](http://www.uxbooth.com/articles/creating-personas/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28The+UX+Booth%29)
 
 
-###Form Design
+##<a name="form_design"></a>Form Design
 
 * [The 10 Commandments of Good Form Design on the Web](http://mono.company/journal/design-practice/the-10-commandments-of-good-form-design-on-the-web/)
 	1. Thou shalt provide clear, always visible labels for each field
@@ -223,8 +398,18 @@
 	9. Thou shalt minimize user input
 	10. Thou shalt be clear what type of input is expected
 	11. Thou shalt only validate a field when a user is done with it
+* [Why are drop-downs and select boxes bad for forms?](http://www.formisimo.com/blog/why-are-drop-downs-and-select-boxes-bad-for-forms/)
+	* Drop-downs cause users to interact multiple times
+	* Persistent usability problem
+	* Don't assume everyone knows what to do with a drop-down
+	* Drop-down menus are not the most appropriate solution
+	* Drop-downs are harder to interact with on mobile devices
+	* Creates poor accessibility
+		* Selecting a list item requires a steady hand --> Make the options large or keyboard accessible
+		* Multiple choice options don't make sense out of context --> Associate the label with the list
+		* On-focus shouldn't select --> Only select based on user Intent
 
-###Copywriting
+##<a name="copywriting"></a>Copywriting
 
 * [How to write a great error message](https://medium.com/@thomasfuchs/how-to-write-an-error-message-883718173322)
 	* Write an alert message that describes the alert situation clearly and succinctly
@@ -233,9 +418,8 @@
 	* Don't abuse alerts for upselling or showing superfluous information
 	* Don't just assume people know about the context of a message
 	* Write actionable error messages that laypeople can understand
-* 
 
-##Research
+#<a name="research"></a>Research
 
 ![So, you want to leverage the web to conduct your user and UX research](http://boxesandarrows.com/wp-content/uploads/2015/05/02_stuff.jpg)
 
@@ -267,7 +451,7 @@
 	9. Spend time looking at barriers
 	10. Refine and report back
 
-##HTML
+#<a name="html"></a>HTML
 
 * [Form inputs](http://www.smashingmagazine.com/2015/05/05/form-inputs-browser-support-issue/): The browser support issue you didn't know you had
 * [25 hottest web design techniques](http://www.creativebloq.com/netmag/25-hottest-web-design-techniques-81516153)
@@ -297,7 +481,7 @@
 	24. Scale icons with background-image:cover
 	25. Keep it short and sweet
 
-##CSS
+#<a name="css"></a>CSS
 
 * [Cyclomatic complexity](http://csswizardry.com/2015/04/cyclomatic-complexity-logic-in-css/): logic in CSS
 	* Think of your selectors as mini programs
@@ -404,8 +588,43 @@
 	* Ellipsis (text-overflow: ellipsis; white-space: nowrap; overflow: hidden;)
 		* supported in every major browser
 		* truncation is not a job for CSS
+* [Less CSS mess](http://thomasbyttebier.be/blog/less-css-mess)
+	* Coding guidelines
+	* [ITCSS](itcss.io)
+	* Namespaced CSS
+	* BEM
+		* .block
+		* .block\_\_element
+		* .block--modifier
+* [Back to the :roots](http://simurai.com/blog/2015/09/09/back-to-the-roots/)
+	1. For every CSS property that you write, try to move it up the tree as far as possible. In other words: Back to the :root.
+	2. Style certain properties always as a __combo__
+	3. Use "dynamic" values, such as _currentColor_ and _em_s
+	4. Override UA styles to _inherit_ from its parents
+* [The @font-face dilemma](https://viget.com/extend/the-font-face-dilemma)
+	* How we got here
+		* @font-face browser defaults
+	* Improving font loading performance
+		* font loaders
+			* typekit/google web font loader, 11kB minified
+			* font face observer, 4kB minified
+			* LocalFont
+		* Embracing FOUT (Flash Of Unstyled Text)
+	* Font loading in the future
+		* Font loading API
+		* CSS Font rendering Draft
+	* Wrap up
+* [Things to avoid when writing CSS](https://medium.com/@Heydon/things-to-avoid-when-writing-css-1a222c43c28f#.2y32thsoz)
+	* Multiple files (you shouldn't organise CSS by splitting it into separate files any more than you should organise a pane of glass by dropping it on a concrete floor)
+	* Nesting (with sass) (nesting is not the sass feature you are looking for)
+	* Pixel units (embrace relativity and reap the rewards)
+	* Device breakpoints (Apple aren't the only people who make handheld devices with browsers on them. No really.)
+	* Photography (a picture paints a thousand words. most of those words are just incoherent mumbles and repetitions of the statement "I don't give a shit about your data allowance". SVG for charts, diagrams and icons; typography and CSS for everything else
+	* Giving anything a set height ever (nobody fucking cares if those buttons line up exactly or not. Vain, pointless frippery that doesn't make anything any more useful or appealing or your product more successful)
+	* Calling it "semantic" (there's more to something having meaning than just sticking a label on it. This applies to the web, language systems and culture in general)
+	* Making it just about the code (We should invest in the maintainability of our code, unless it's not worth maintaining)
 
-###Flexbox
+##<a name="flexbox"></a>Flexbox
 
 * [Flexbox cheatsheet](http://jonibologna.com/flexbox-cheatsheet/)
 * [A complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -486,7 +705,7 @@
 		*  Well documented cross-browser bugs
 		*  Add flexbox to your layouts
 
-##SASS
+#<a name="sass"></a>SASS
 
 * [Ins and outs of Sass](https://www.youtube.com/watch?v=_4WSOy2gBls)
 	* File organization
@@ -547,7 +766,7 @@
 	* Don't miss this - The @warn directive
 	* If you were curious - The @debug directive
  
-##Responsive Web Design
+#<a name="responsive_web_design"></a>Responsive Web Design
 
 * [Responsive Logos, Part 1](http://viget.com/inspire/responsive-logos-part-1-tips-for-adapting-logos-for-small-screens): Tips for adapting logos for small screens 
 * [Responsive Logos, Part 2](http://viget.com/inspire/responsive-logos-part-2-making-logos-truly-responsive-with-svg): Making logos truly responsive with inline SVG
@@ -652,8 +871,14 @@ Why we should rename element queries into container queries
 	* Varying width, density and art direction --> picture element with nested img element with src + srcset with w-descriptor and sizes
 	* Varying on type --> type attribute of picture element
 	* Further reading
+* [5 responsive design pitfalls and how to avoid them](http://www.sitepoint.com/5-responsive-design-pitfalls-and-how-to-avoid-them/)
+	1. Unexpected font-size changes
+	2. Unwanted form styles
+	3. Emulator errors can mislead
+	4. Smooth animation on desktop could be a rough animation on mobile
+	5. The coordinates of a touch are stored differently than the coordinates of a click
 
-##Progressive Enhancement
+#<a name="progressive_enhancement"></a>Progressive Enhancement
 
 > Progressive enhancement is more about dealing with technology failing than technology not being supported. - Andy Hume
 
@@ -671,9 +896,26 @@ Why we should rename element queries into container queries
 	> Every phase of enhancement needs a real user
 	* loading time is important but time to first byte and time to start render is much more important (perception of speed)
 	> The only time people hate wasting the most is right now.
-	
+* [Video: Jeremy Keith - The Long Web](http://aneventapart.com/news/post/the-long-web-by-jeremy-keith-an-event-apart-video)
+* [Understanding progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement)
+	* There's a (subtle difference)
+		* The graceful degradation perspective
+		* The progressive enhancement perspective
+	* So how does it work?
+		* The peanut
+		* The chocolate coating
+		* The hard candy shell
+	* Putting it all together
+* [Progressive enhancement with CSS](http://alistapart.com/article/progressiveenhancementwithcss)
+	* Style sheet organization
+		* Use multiple style sheets
+		* Working with alternate media types
+	* Now for the $10M question: how do we deal with IE6?
+	* Other considerations
+	* Putting it all together
+	* 
 
-##Accessibility
+#<a name="accessibility"></a>Accessibility
 
 * [Everyone is different](https://www.youtube.com/watch?v=6ic8OO4ORI8)
 * [Practical ARIA examples](http://heydonworks.com/practical_aria_examples/)
@@ -777,8 +1019,21 @@ Why we should rename element queries into container queries
 	* Word wrapping
 	* Proximity
 	* Beyond the blind spot
+* [Avoiding redundancy with WAI-ARIA in HTML pages](http://www.sitepoint.com/avoiding-redundancy-wai-aria-html-pages/)
+	* ARIA basaics and general perceptions
+	* Effect of ARIA roles on most elements
+	* Does HTML4 need ARIA roles
+	* New features in HTML5
+	* Redundancy in ARIA
+	* Examples of redundancy
+		* Default implicit roles to interactive elements
+		* ARIA role allong with native HTML counterparts
+		* ARIA added to long implemented structural elements
+		* ARIA with HTML5 structural elements
+			* Browser support
+	* Wrapping it up
 
-##Performance
+#<a name="performance"></a>Performance
 
 * [Supercharging page load](https://www.youtube.com/watch?v=d5_6yHixpsQ)
 * [When it comes to delivering the best possible user experience, how fast is fast enough?](http://www.soasta.com/blog/website-monitoring-fast-enough-user-experience/)
@@ -829,10 +1084,36 @@ Why we should rename element queries into container queries
 	* Initiating preconnect via Link HTTP Header
 	* Preconnect with JavaScript
 	* Preconnect often, Preconnect wisely
+* [The illusion of time](https://medium.com/swlh/the-illusion-of-time-8f321fa2f191#.c9qb9mrqj)
+	* Time in the digital age
+	* Keep users engaged
+	* Perform actions optimistically
+	* Create transitional interfaces
+	* Avoid modal spinners
+	* Communicating longer waits
+		* Progress bars
+		* Countdowns/ETA
+	* Load Content Progressively
+	* Tick. Tock.
+* [Saving bandwidth by using images the smart way](http://www.sitepoint.com/saving-bandwidth-by-using-images-the-smart-way/)
+	* Choosing the appropriate image format
+		* GIF
+		* PNG (PNG8 vs PNG24)
+		* JPG
+	* Let's compare
+	* Does 'Save for web' make any _real_ difference?
+	* Serving resized images
+	* Avoiding images altogether
+* [Why performance matters, part 1: The perception of time](http://www.smashingmagazine.com/2015/09/why-performance-matters-the-perception-of-time/)
+	* Basic concepts
+	* Part 1: objective time
+	* Choosking a performance budget
+	* The need for performance optimization: the 20% rule
+	* Neutralization, or chasing the leader
 
-##Web Components
+#<a name="web_components"></a>Web Components
 
-###Polymer
+##<a name="polymer"></a>Polymer
 
 * [Polymer for the performance obsessed](https://aerotwist.com/blog/polymer-for-the-performance-obsessed/)
 	1. Inline styles and region your app
@@ -840,7 +1121,7 @@ Why we should rename element queries into container queries
 	3. Only bundle related elements
 	4. Don't inline polymer into your bundles
 
-##Design testing
+#<a name="design_testing"></a>Design testing
 
 * [7 best pieces of user testing software](http://www.creativebloq.com/ux/best-user-testing-software-61515337)
 	1. [Peek by User testing](http://peek.usertesting.com/)
@@ -855,8 +1136,32 @@ Why we should rename element queries into container queries
 	* Boomerang (generic nonthreatening question - e.g. what do you think, what would you normally do)
 	* Columbo (be smart but don't act that way)  
 * [How to use the System Usability Scale to evaluate the usability of your website](http://usabilitygeek.com/how-to-use-the-system-usability-scale-sus-to-evaluate-the-usability-of-your-website/)
+* * [Ultimate guide to user feedback part 1: Why user feedback matters](http://blog.teamtreehouse.com/ultimate-guide-user-feedback-part-1-user-feedback-matters)
+	* Feedback: the best way to improve a project once you know how to build it
+	* Why get feedback?
+		* It'll help you regain perspective on your project
+		* You can't know everything, even when you know more about your project than anyone else
+		* It helps prevent small problems from growing into big problems
+		* It helps increase your awareness of possible issues (even if you don't make changes right away)
+		* You'll learn about problems you had no idea existed
+	* But you don't have to get feedback if you don't want to (as long as you know the downsides)
+		* Your focus is more on learning about _how_ not on _what_ is built
+		* You're just building for yourself, and just for the fun of it
+		* The key is to know when you're building for yourself and when you're building for others
+	* When to get feedback
+* [Ultimate guide to user feedback part 2: 10 ways to get user feedback](http://blog.teamtreehouse.com/ultimate-guide-user-feedback-part-2-10-ways-get-user-feedback)
+	1. Existing users via email or an in-app option
+	2. Call or talk to your existing users
+	3. Talk to people who you think would use your project
+	4.  Talk to users of a similar project as yours (or even a competing project)
+	5.  On-page (or in-app) chat
+	6.  On-page (or in-app) survey tools
+	7.  Talk to people you know
+	8.  Show your project to strangers (in-person)
+	9.  Use a service or remote tool (like UsersThink)
+	10.  Use a mix of the approaches above
 
-##Email design
+#<a name="email_design"></a>Email design
 
 * [What you should know about HTML email](http://webdesign.tutsplus.com/tutorials/what-you-should-know-about-html-email--webdesign-12908)
 	* Coding HTML Email can be a challenge

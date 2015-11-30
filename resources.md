@@ -291,6 +291,10 @@
 	6. Your forms are out of form
 	7. Sign in? Sign OUT
 	8. Simplify
+* [How to fill empty space in your designs](http://www.creativebloq.com/web-design/closer-look-empty-states-91517042)
+	* First-time use (onboarding)
+	* User cleared data
+	* No results
 
 ##<a name="interaction_design"></a>Interaction Design
 
@@ -418,6 +422,16 @@
 	* Don't abuse alerts for upselling or showing superfluous information
 	* Don't just assume people know about the context of a message
 	* Write actionable error messages that laypeople can understand
+
+##<a name="process"></a>Process
+
+* [Why designers should never skip prototyping](http://www.creativebloq.com/web-design/why-web-designers-should-never-skip-prototyping-91516933)
+	* Got a design pattern? Plan it out
+	* Think through the process
+	* Design patterns remove guesswork
+	* User testing: insights you can't ignore
+	* Prepare yourself to test prototypes
+	* Next steps
 
 #<a name="research"></a>Research
 
@@ -765,7 +779,28 @@
 	* Stop Everything - The @error directive
 	* Don't miss this - The @warn directive
 	* If you were curious - The @debug directive
- 
+* [How to nest selectors and properties in sass](http://vanseodesign.com/css/how-to-nest-selectors-and-properties-in-sass/)
+	* Nesting selectors
+	* Referencing parent selectors (&)
+	* Trailing parent reference
+	* Nesting properties
+	* Closing thoughts
+* [The pros and cons of nesting your sass code](http://vanseodesign.com/css/the-pros-and-cons-of-nesting-your-sass-code/)
+	* The cons of nested sass
+		* specificity
+		* inception-like
+	* The pros of nesting
+		* more readable code
+		* more maintainable code
+	* Closing thoughts
+* [How to use sass variables](http://vanseodesign.com/css/how-to-use-sass-variables/)
+	* A simple example using variables
+	* Allowed characters in variable names
+	* Variable scope (!global)
+	* Default values in variables (!default)
+	* Variable interpolation (#{variable})
+	* Closing thoughts
+
 #<a name="responsive_web_design"></a>Responsive Web Design
 
 * [Responsive Logos, Part 1](http://viget.com/inspire/responsive-logos-part-1-tips-for-adapting-logos-for-small-screens): Tips for adapting logos for small screens 
@@ -1032,6 +1067,15 @@ Why we should rename element queries into container queries
 		* ARIA with HTML5 structural elements
 			* Browser support
 	* Wrapping it up
+* [An introduction to WAI-ARIA](http://www.sitepoint.com/introduction-wai-aria/)
+	* WAI-WHAT?
+		* Functionality via roles
+		* States and properties (aria-controls and aria-labelledby)
+		* Live regions for dynamic content (aria-live)
+		* Enhanced keyboard navigation (e.g. tabindex)
+	* ARIA and HTML5
+	* Can I use ARIA without risk?
+	* Conclusion
 
 #<a name="performance"></a>Performance
 

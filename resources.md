@@ -5,6 +5,8 @@
 	2. [Personas](#personas)
 	3. [Form design](#form_design)
 	4. [Copywriting](#copywriting)
+	5. [Style guides](#style_guides)
+	6. [Visual design](#visual_design)
 2. [Research](#research)
 3. [HTML](#html)
 4. [CSS](#css)
@@ -98,57 +100,12 @@
 	* Try __social commitments__ instead of solitude
 	* Try __retries and redos__ instead of single chances
 	* Try __less choice__ instead of giving too many options
-
 * [UX: Less isn't always more](http://java.dzone.com/articles/ux-less-isnt-always-more)
 	* reset password form
 	* microcopy
-* [6 simple tips for designing copy on the web](http://thenextweb.com/dd/2015/05/06/6-simple-tips-for-designing-copy-on-the-web/)
-	* omit needless words
-	* place key words at the beginnng or end
-	* avoid passive voice
-	* phrase positively (if possible)
-	* use similar forms for similar items
-	* be sepcific
-* [Living style guide tools](https://medium.com/@operatino/living-style-guide-tools-in-depth-overview-28cfffb92d05)
-	* [KSS](http://warpspire.com/kss/): documentation for CSS (via comments)
-	* [SC5 - Style guide generator](https://www.npmjs.com/package/sc5-styleguide) works with KSS
 
  ![UX vs UI](http://editorial.designtaxi.com/editorial-images/NEWS-INFUIUX100615/4.jpg)
 
-* [Video: Mobile Design Essentials - Multi-Device Output, input and posture](https://www.youtube.com/watch?v=ZhnN1CdwvTs)
-* [UX Design tips for your app](http://sixrevisions.com/user-experience-ux/ux-tips-app/)
-	* The UX should adapt to the user
-	* Network awareness means good UX in any context
-	* Don't assault your users with notifications
-	* You need a search interface
-	* Create a good user onboarding experience
-* [UX Design tips for your app - part 2](http://sixrevisions.com/user-experience-ux/ux-tips-app-part2/)
-	* Keep your toch gestures obvious
-	* Branding is a part of the UX
-	* Customer support is also part of the UX
-	* Don't forget landscape mode
-	* Multi-Device support improves the UX on all gadgets
-* [Interface writing](http://nicolefenton.com/interface-writing/)
-	* Start with questions
-		* what is the user trying to do?
-		* what might they be feeling
-		* how did they get here
-		* what happens next
-		* what do they need to understand
-		* why does this matter to them
-	* Be a good tour guide
-	tell people what to expect and help them accomplish their goal
-	* Turn your chair
-	Shift your focus to your readers. Talk *to* them, not *at* them.
-	* Show you care
-		* Don't assume you're the core audience
-		* Avoid jargon and catchphrases
-		* Don't assume dichotomies or binaries will do the trick
-		* Don't interrupt
-		* Don't be a robot
-		* Don't waste time
-	> The only unit of time that matters is heartbeats. The time you spend is not your own - Paul Ford
-	* Write iteratively
 * [The 10 laws of simplicity](http://lawsofsimplicity.com/)
 	1. __Reduce__ The simplest way to achieve simplicity is through thoughtful reduction
 	2. __Organize__ Organization makes a system of many appear fewer
@@ -164,14 +121,6 @@
 	1. __Away__ More appears like less by simply moving it far, far away
 	2. __Open__ Openness simplifies complexity
 	3. __Power__ Use less, gain more 
-* [Can you fix a bad design?](http://designshack.net/articles/typography/can-you-fix-a-bad-design-heres-where-to-start/)
-	1. Clean up the typography
-	2. Add white space
-	3. Ditch poor images
-	4. Put it on a grid 
-	5. Streamline the color palette
-	6. Eliminate the tricks
-	7. Be honest
 * 7 future web design trends (May 6, 2015)
 	1. Gestures are the new clicks
 	2. The fold really is dead this time
@@ -180,29 +129,21 @@
 	5. Animation is back
 	6. Components are the new frameworks
 	7. Social saturation and the rise of direct email
-* [So. Many. States](https://css-tricks.com/so-many-states/)
-* [Musical Interfaces](https://medium.com/@pablostanley/designing-musical-user-interfaces-4f30b41d7a83?ref=webdesignernews.com)
 * [5 elements of omni-channel user experiences](http://uxmag.com/articles/5-elements-of-omni-channel-user-experiences)
 	* Consistency
 	* Availability
 	* Channel-Neutrality
 	* Context-Optimisation
 	* Seamlessness
-* [Reimagine the web design process](http://sixrevisions.com/web_design/reimagine-web-design-process/)
-	* Mobile first
-	* One brick at a time
-	* Think beyond breakpoints
-	* Get real
-	* A whole new world
-* [Why plain language is vital for website usability](http://www.creativebloq.com/web-design/why-plain-language-vital-website-usability-51514999)
-	* Ditch the jargon
-	* Use active sentences
-	* Use headings
-	* Harness the power of visual layout
-* [When to paginate and when to infinite scroll](http://www.creativebloq.com/ux/paginate-or-infinite-scroll-71515816)
-	* infinite scrolling is best suited for websites that boast user-generated content, visual content
-	* pagination is a universal option, and best for platforms that intend to satisfy the goal-oriented activities of the visitors
-* [Hermeneutics for designers](http://www.uxbooth.com/articles/hermeneutics-for-designers/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28The+UX+Booth%29)
+* [Hermeneutics for designers](http://www.uxbooth.com/articles/hermeneutics-for-designers/)
+	* The history of hermeneutics
+		* Horizon of understanding
+		* Prejudices
+		* Conversation as a model for understanding
+	* Applying hermeneutics
+		* What does he mean by mature thought
+		* How can we reduce time spent in mechanical thought
+	* Next steps
 * [Improving the user experience can save time and money](https://boagworld.com/usability/nationaltrust/)
 * [On the device context continuum](https://medium.com/@grigs/on-the-device-context-continuum-515d95ef8829)
 * [15 UX Commandments](http://thehipperelement.com/post/128705195169/15-ux-commandments?ref=heydesigner-weekly37)
@@ -258,19 +199,6 @@
 	8. Making meaningless pages
 	9. Producing sites that are too refreshing
 	10. Working too much
-* [7 Ways to create attractive user interafces](http://www.creativebloq.com/web-design/create-attractive-user-interfaces-91516600)
-	1. Follow Hick's law (don't clutter interfaces)
-	2. Use the right signifiers
-		1. explicit
-		2. pattern
-		3. hidden
-		4. metaphorical
-		5. negative
-	3. Know which colours evoke which moods
-	4. Understand and apply the different types of symmetry
-	5. Use photos of real people
-	6. Maintain consistency
-	7. Take advantage of white space
 * [10 guidelines for navigation usability](http://usabilitygeek.com/10-guidelines-for-navigation-usability/)
 	1. Embrace predictability
 	2. Keep it simple
@@ -291,11 +219,7 @@
 	6. Your forms are out of form
 	7. Sign in? Sign OUT
 	8. Simplify
-* [How to fill empty space in your designs](http://www.creativebloq.com/web-design/closer-look-empty-states-91517042)
-	* First-time use (onboarding)
-	* User cleared data
-	* No results
-
+	
 ##<a name="interaction_design"></a>Interaction Design
 
 * [Designing Settings](https://medium.com/@imran_parvez/designing-settings-b2a96878961b?mc_cid=ec02ba64fc&mc_eid=b38f2f4652)
@@ -382,6 +306,24 @@
 	* Worst uses
 		* On a site aimed at older demographics
 		* Sites with unexpected content
+* [Video: Mobile Design Essentials - Multi-Device Output, input and posture](https://www.youtube.com/watch?v=ZhnN1CdwvTs)
+* [UX Design tips for your app](http://sixrevisions.com/user-experience-ux/ux-tips-app/)
+	* The UX should adapt to the user
+	* Network awareness means good UX in any context
+	* Don't assault your users with notifications
+	* You need a search interface
+	* Create a good user onboarding experience
+* [UX Design tips for your app - part 2](http://sixrevisions.com/user-experience-ux/ux-tips-app-part2/)
+	* Keep your toch gestures obvious
+	* Branding is a part of the UX
+	* Customer support is also part of the UX
+	* Don't forget landscape mode
+	* Multi-Device support improves the UX on all gadgets
+* [So. Many. States](https://css-tricks.com/so-many-states/)
+* [Musical Interfaces](https://medium.com/@pablostanley/designing-musical-user-interfaces-4f30b41d7a83?ref=webdesignernews.com)
+* [When to paginate and when to infinite scroll](http://www.creativebloq.com/ux/paginate-or-infinite-scroll-71515816)
+	* infinite scrolling is best suited for websites that boast user-generated content, visual content
+	* pagination is a universal option, and best for platforms that intend to satisfy the goal-oriented activities of the visitors
 
 ##<a name="personas"></a>Personas
 
@@ -422,6 +364,40 @@
 	* Don't abuse alerts for upselling or showing superfluous information
 	* Don't just assume people know about the context of a message
 	* Write actionable error messages that laypeople can understand
+* [6 simple tips for designing copy on the web](http://thenextweb.com/dd/2015/05/06/6-simple-tips-for-designing-copy-on-the-web/)
+	1. omit needless words
+	2. place key words at the beginnng or end
+	3. avoid passive voice
+	4. phrase positively (if possible)
+	5. use similar forms for similar items
+	6. be specific
+* [Interface writing](http://nicolefenton.com/interface-writing/)
+	* Start with questions
+		* what is the user trying to do?
+		* what might they be feeling
+		* how did they get here
+		* what happens next
+		* what do they need to understand
+		* why does this matter to them
+	* Be a good tour guide
+	tell people what to expect and help them accomplish their goal
+	* Turn your chair
+	Shift your focus to your readers. Talk *to* them, not *at* them.
+	* Show you care
+		* Don't assume you're the core audience
+		* Avoid jargon and catchphrases
+		* Don't assume dichotomies or binaries will do the trick
+		* Don't interrupt
+		* Don't be a robot
+		* Don't waste time
+	> The only unit of time that matters is heartbeats. The time you spend is not your own - Paul Ford
+	* Write iteratively
+* [Why plain language is vital for website usability](http://www.creativebloq.com/web-design/why-plain-language-vital-website-usability-51514999)
+	* Ditch the jargon
+	* Use active sentences
+	* Use headings
+	* Harness the power of visual layout
+
 
 ##<a name="process"></a>Process
 
@@ -432,6 +408,53 @@
 	* User testing: insights you can't ignore
 	* Prepare yourself to test prototypes
 	* Next steps
+* [Reimagine the web design process](http://sixrevisions.com/web_design/reimagine-web-design-process/)
+	* Mobile first
+	* One brick at a time
+	* Think beyond breakpoints
+	* Get real
+	* A whole new world
+
+##<a name="style_guides"></a>Style guides
+
+* [Living style guide tools](https://medium.com/@operatino/living-style-guide-tools-in-depth-overview-28cfffb92d05)
+	* [KSS](http://warpspire.com/kss/): documentation for CSS (via comments)
+	* [SC5 - Style guide generator](https://www.npmjs.com/package/sc5-styleguide) works with KSS
+
+##<a name="visual_design"></a>Visual design
+
+* [Can you fix a bad design?](http://designshack.net/articles/typography/can-you-fix-a-bad-design-heres-where-to-start/)
+	1. Clean up the typography
+	2. Add white space
+	3. Ditch poor images
+	4. Put it on a grid 
+	5. Streamline the color palette
+	6. Eliminate the tricks
+	7. Be honest
+* [7 Ways to create attractive user interfaces](http://www.creativebloq.com/web-design/create-attractive-user-interfaces-91516600)
+	1. Follow Hick's law (don't clutter interfaces)
+	2. Use the right signifiers
+		1. explicit
+		2. pattern
+		3. hidden
+		4. metaphorical
+		5. negative
+	3. Know which colours evoke which moods
+	4. Understand and apply the different types of symmetry
+	5. Use photos of real people
+	6. Maintain consistency
+	7. Take advantage of white space
+* [How to fill empty space in your designs](http://www.creativebloq.com/web-design/closer-look-empty-states-91517042)
+	* First-time use (onboarding)
+	* User cleared data
+	* No results
+* [Signal vs noise: Color as a wayfinding tool](https://viget.com/inspire/wayfinding#When:17:05)
+	* Wayfinding guideposts
+		* identification
+		* action
+		* signification
+		* notification
+	* In summary
 
 #<a name="research"></a>Research
 
@@ -637,6 +660,13 @@
 	* Giving anything a set height ever (nobody fucking cares if those buttons line up exactly or not. Vain, pointless frippery that doesn't make anything any more useful or appealing or your product more successful)
 	* Calling it "semantic" (there's more to something having meaning than just sticking a label on it. This applies to the web, language systems and culture in general)
 	* Making it just about the code (We should invest in the maintainability of our code, unless it's not worth maintaining)
+* [Understanding and using rem units](http://www.sitepoint.com/understanding-and-using-rem-units-in-css/)
+	* What are rem units?
+	* rem units vs em units
+	* font sizing with rem units
+	* using rems with media query breakpoints
+	* using rem units for scaling documents
+	* conclusion
 
 ##<a name="flexbox"></a>Flexbox
 

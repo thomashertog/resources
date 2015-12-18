@@ -5,12 +5,14 @@
 	2. [Personas](#personas)
 	3. [Form design](#form_design)
 	4. [Copywriting](#copywriting)
-	5. [Style guides](#style_guides)
-	6. [Visual design](#visual_design)
+	5. [Process](#process)
+	6. [Style guides](#style_guides)
+	7. [Visual design](#visual_design)
 2. [Research](#research)
 3. [HTML](#html)
 4. [CSS](#css)
 	1. [Flexbox](#flexbox)
+	2. [Grid](#grid)
 5. [SASS](#sass)
 6. [Responsive Web Design](#responsive_web_design)
 7. [Progressive enhancement](#progressive_enhancement)
@@ -48,7 +50,7 @@
 	* Try __transitions__ instead of showing changes instantly
 	* Try __gradual engagement__ instead of a hasty sign up
 	* Try __fewer borders__ instead of wasting attention
-	* Try __selling benefits__instead of features
+	* Try __selling benefits__ instead of features
 	* Try __designing for zero data__ instead of just data heavy cases
 	* Try __opt-out__ instead of opt-in
 	* Try __consistency__ instead of making people relearn
@@ -140,7 +142,7 @@
 		* Horizon of understanding
 		* Prejudices
 		* Conversation as a model for understanding
-	* Applying hermeneutics
+	* Applying hermeneuticsn
 		* What does he mean by mature thought
 		* How can we reduce time spent in mechanical thought
 	* Next steps
@@ -324,6 +326,73 @@
 * [When to paginate and when to infinite scroll](http://www.creativebloq.com/ux/paginate-or-infinite-scroll-71515816)
 	* infinite scrolling is best suited for websites that boast user-generated content, visual content
 	* pagination is a universal option, and best for platforms that intend to satisfy the goal-oriented activities of the visitors
+* [Why UX design patterns work and how to use them](http://www.creativebloq.com/web-design/ux-design-patterns-work-91516961)
+	* How users interact with design patterns
+	* Learned behavior
+	* Universal design conventions
+		1. Gestalt
+		2. Proximity
+		3. Colour
+		4. Applying empathy to UI design patterns
+	* Conclusion
+* [Complete beginner's guide to interaction design](http://www.uxbooth.com/articles/complete-beginners-guide-to-interaction-design/)
+	* What is interaction design
+	* Common methodologies
+		* Goal-driven design
+			* Design first; program second
+			* Separate responsibility for design from responsibility for programming
+			* Hold desingers responsible for product quality and user satisfaction
+			* Define one specific user for your product
+			* Work in teams of two
+		* Usability
+			* Learnability
+			* Flexibility
+			* Robustness
+			* Efficiency
+			* Memorability
+			* Errors
+			* Satisfaction
+			* Understandability
+			* Operability
+			* Attractiveness
+			* Usability compliance
+		* The five dimensions
+			1. words
+			2. visual representations
+			3. physical objects of space
+			4. time
+			5. behavior
+		* cognitive psychology
+			* mental models
+			* interface metaphors
+			* affordances
+		* human interface guidelines
+	* Daily tasks and deliverables
+		* Design strategy
+		* Wireframes of key interactions
+		* Prototypes
+		* Stay current
+	* Tools of the trade
+		* Balsamiq mockups
+		* Invision
+		* Omnigraffle
+		* Patternry
+		* Sketch
+		* Axure
+		* UXPin
+* [5 characteristics of interaction design](http://usabilitygeek.com/5-characteristics-of-interaction-design/)
+	* What is interaction design
+	* Interaction design vs User experience design
+	* What makes a good interaction design
+		1. Design must be goal driven
+			* user personas
+			* user scenarios
+			* user experience maps (journey maps)
+		2. It must be easy to use
+		3. The interface must be easily learned
+		4. Keep an eye on signifiers & affordances
+		5. What's the feedback and response time
+	* Conclusion
 
 ##<a name="personas"></a>Personas
 
@@ -414,12 +483,33 @@
 	* Think beyond breakpoints
 	* Get real
 	* A whole new world
+* [From pages to patterns: an exercise for everyone](http://alistapart.com/article/from-pages-to-patterns-an-exercise-for-everyone)
+	* Thinking in pages (still)
+	* From pages to patterns
+		1. paper and scissors
+		2. naming components
+		3. code
+	* Repeat, repeat, repeat
+	* What happens next
+	* Developing components
+	* 
 
 ##<a name="style_guides"></a>Style guides
 
 * [Living style guide tools](https://medium.com/@operatino/living-style-guide-tools-in-depth-overview-28cfffb92d05)
 	* [KSS](http://warpspire.com/kss/): documentation for CSS (via comments)
 	* [SC5 - Style guide generator](https://www.npmjs.com/package/sc5-styleguide) works with KSS
+* [How to create a web style guide you'll be proud of](http://www.sitepoint.com/creating-web-style-guide/)
+	* So, what do you do?
+	* What is a style guide
+	* Researching your brand
+	* Configuring the color palette
+	* Defining buttons and icons
+	* Font selection
+	* Imagery and video specifics
+	* Give a voice to the copy
+	* Extras
+	* The final word
 
 ##<a name="visual_design"></a>Visual design
 
@@ -454,7 +544,17 @@
 		* action
 		* signification
 		* notification
-	* In summary
+	* In summary	
+* [Designing with contrast](https://24ways.org/2015/designing-with-contrast/)
+	* A thin veneer
+	* Minimalist expectations
+	* Imitation without representation
+	* For want of good design, the message was lost
+	* Standards of excellence
+		* Put guidelines in place
+		* Test your work
+		* Push your limits
+	* More than just a facade
 
 #<a name="research"></a>Research
 
@@ -667,6 +767,58 @@
 	* using rems with media query breakpoints
 	* using rem units for scaling documents
 	* conclusion
+* [Stylish and sane: a guide to better CSS](http://www.infoq.com/articles/guide-to-better-css)
+	* Why is this so hard
+		* Whoa that's a lot of CSS
+		* Writing CSS when you shouldn't have to
+		* No re-use
+		* Everything is special
+		* Side effects
+	* It doesn't have to be this way
+		* Treat your CSS like code
+		* Think about your styles like a consumer
+		* Component-based styling
+	* Introducig the style guide
+	* Creating your own style guide
+	* Keeping your CSS DRY
+		* The first rule of CSS is don't write any CSS
+		* Style each component once
+		* Consistent markup (writing more consistent HTML means less CSS)
+		* Scope specific styles (only applies to that scenario and nowhere else)
+		* Be critical of every line (the less code you leave behind, the less code there is to confuse you the next time around)
+		* Talk about keeping things simple
+		* Mobile first
+	* Less CSS, less hassle
+* [Manage large CSS projects with ITCSS](http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528)
+	* Introducing ITCSS - Inverted Triangle CSS
+	* Prerequisites
+		* No ID selectors
+		* Componentised UI architecture
+		* Class-based architecture (less markup != clean markup)
+	* Key metrics
+		* Generic to explicit
+		* Low specificity to high specificity
+		* Far-reaching to localised
+	* Layers
+		* Settings (global)
+		* Tools (mixins and functions)
+		* Generic
+		* Elements
+		* Objects
+		* Components
+		* Trumps
+	* Partials
+	* The result
+* [Do we actually need specificity in CSS](http://philipwalton.com/articles/do-we-actually-need-specificity-in-css/)
+	* A little background
+	* But specificity is good, right?
+	* What if specificity didn't exist?
+	* Removing specifity from the cascade
+		* Handling ID specificity
+		* Handling selectors that may already refer to the root element
+		* The full rewriting algorithm
+		* Potential downsides
+	* Final thoughts
 
 ##<a name="flexbox"></a>Flexbox
 
@@ -748,6 +900,22 @@
 		*  Internet explorer ignores min-height
 		*  Well documented cross-browser bugs
 		*  Add flexbox to your layouts
+* [Flexbox Froggy: A game to understand flexbox](http://flexboxfroggy.com/)
+* [Flexbox for interfaces: tracks case study](http://www.smashingmagazine.com/2015/11/flexbox-interfaces-tracks-case-study/)
+	* Flexy atomic components
+	* Inline patterns
+	* Inline form inputs
+	* Dropdown menu
+	* Media objects
+	* Flexy calendar
+	* Layout
+	* Sticky footers
+	* Be careful
+	* Conclusion
+
+##<a name="grid"></a>Grid
+
+* [VIDEO: Start using CSS Grid Layout - Rachel Andrew](https://www.youtube.com/watch?v=Felq4z_rdPQ)
 
 #<a name="sass"></a>SASS
 
@@ -830,6 +998,12 @@
 	* Default values in variables (!default)
 	* Variable interpolation (#{variable})
 	* Closing thoughts
+* [Classy CSS: a programmatic approach to sass stylesheets](http://una.im/classy-css/)
+	* Classy CSS, please
+	* A classy button
+	* Well, what about mixins?
+	* In defense of @extend
+	* Benefits
 
 #<a name="responsive_web_design"></a>Responsive Web Design
 
@@ -942,6 +1116,41 @@ Why we should rename element queries into container queries
 	3. Emulator errors can mislead
 	4. Smooth animation on desktop could be a rough animation on mobile
 	5. The coordinates of a touch are stored differently than the coordinates of a click
+* [Create responsive forms and tables](http://www.creativebloq.com/rwd/create-responsive-forms-and-tables-101517303#disqus_thread)
+	* Tables
+		* Things that are not tables
+		* Things that appear to tables
+		* Things that must be tables
+	* Forms
+		* Layout
+		* Validation
+			* Inside the input
+			* Outside the input
+		* Dates
+		* Selects
+		* Long selects
+		* Complex selects
+	* Let's face it, these things are messy
+* [9 responsive design mistakes you don't want to make](http://thenextweb.com/dd/2015/10/28/9-responsive-design-mistakes-you-dont-want-to-make/)
+	1. Focusing on devices instead of screens
+	2. Using only device sizes as breakpoints
+	3. Only thinking small
+	4. Hiding content
+	5. Insisting on consistent navigation
+	6. Failing to design for touch
+	7. Linking to non-mobile friendly content
+	8. Ignoring performance
+	9. Forgetting to test your design
+* [9 responsive typography tips from the experts](http://www.creativebloq.com/rwd/expert-responsive-typography-tips-101517572)
+	1. Size your body text appropriately
+	2. Consider the reader
+	3. Watch your measure
+	4. Adjust line spacing
+	5. Use visual variation other than size
+	6. Choose fonts wisely
+	7. Use a type test rig
+	8. Set type in context
+	9. Learn from others
 
 #<a name="progressive_enhancement"></a>Progressive Enhancement
 
@@ -1106,6 +1315,11 @@ Why we should rename element queries into container queries
 	* ARIA and HTML5
 	* Can I use ARIA without risk?
 	* Conclusion
+* [Labeled with love](https://medium.com/@AaronGustafson/labeled-with-love-bda2592250b#.dar3bbzg8)
+	* Connecting the dots (using the `<label>` element - with for attribute)
+	* An alternate approach (using the `<input>` element - inside a `<label>` - combined with explicit association via for attribue)
+	* Added benefit: interactivity
+	* Placeholders aren't labels
 
 #<a name="performance"></a>Performance
 
@@ -1181,9 +1395,45 @@ Why we should rename element queries into container queries
 * [Why performance matters, part 1: The perception of time](http://www.smashingmagazine.com/2015/09/why-performance-matters-the-perception-of-time/)
 	* Basic concepts
 	* Part 1: objective time
-	* Choosking a performance budget
+	* Choosing a performance budget
 	* The need for performance optimization: the 20% rule
 	* Neutralization, or chasing the leader
+* [Why performance matters, part 2: Perception management](http://www.smashingmagazine.com/2015/11/why-performance-matters-part-2-perception-management/)
+	* Psychological time: perception management
+		* Preemptive start
+		* Early completion
+	* Conclusion... for now
+* [HTTP/2: the pros, the cons, and what you need to know](http://www.sitepoint.com/http2-the-pros-the-cons-and-what-you-need-to-know/)
+	* How HTTP/1 works
+	* How HTTP/2 will work
+		* multiplexed streams
+		* server push
+		* header compression
+		* binary instead of textual format
+	* What developers will be able to do differently now
+		* Things to be aware of
+			* most browsers supporting HTTP/2 will require HTTPS encryption
+			* the web will transition painlessly for the public
+	* Some controversy
+	* See the difference
+	* Bottom line
+* [9 things you can do today to make your site load faster](http://www.creativebloq.com/web-design/make-your-site-load-faster-101517559)
+	1. Find the best host possible and consider more power than that
+	2. Crack down on your images and optimize them properly
+	3. Evacuate your themes, plugins and comments
+	4. Go crazy with caching
+	5. Maybe minify your code? Yes!
+	6. Check on the more necessary plugins that slow the site down
+	7. Optimize your database
+	8. Crack a CSS sprite
+	9. Consider lazyloading your images
+* [6 quick things developers can do to improve performance](http://www.creativebloq.com/web-design/6-quick-things-developers-can-do-improve-performance-111517884)
+	1. Compress your images and serve them at the correct size
+	2. Minify and compress all your HTML, CSS, and JavaScript
+	3.  Limit the use of heavy JavaScript. Render as much as you can on the server and use JavaScript to sprinkle on enhancements
+	4.  Optimise for the critical path so that your content appears as quickly as possible
+	5.  Start familiarising yourself with HTTP/2 because that changes so many things
+	6.  If you're going to use something like Bootstrap, be sure you remove all the unused CSS in a build process. There's a ton of unnecessary bloat.
 
 #<a name="web_components"></a>Web Components
 

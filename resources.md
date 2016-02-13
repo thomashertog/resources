@@ -2,6 +2,7 @@
 
 1. [General design](#general_design)
 	1. [Interaction design](#interaction_design)
+		1. [Information architecture](#information_architecture)
 	2. [Personas](#personas)
 	3. [Form design](#form_design)
 	4. [Copywriting](#copywriting)
@@ -22,6 +23,7 @@
 	1. [Polymer](#polymer)
 11. [Design testing](#design_testing)
 12. [Email design](#email_design)
+13. [Web Fonts](#web_fonts)
 
 
 #<a name="general_design"></a>General design
@@ -393,6 +395,52 @@
 		4. Keep an eye on signifiers & affordances
 		5. What's the feedback and response time
 	* Conclusion
+* [Content display patterns](http://danielmall.com/articles/content-display-patterns/)
+	* Identifying and abstracting patterns
+	* A real-world example
+	* Don't just build the comp
+	* Decoupling
+* [Putting my patterns through their paces](https://24ways.org/2015/putting-my-patterns-through-their-paces/)
+	* Meet the teaser
+	* Moving beyond layout
+	* Diving into device-agnostic design
+* [Design a contact page: 7 pro tips](http://www.creativebloq.com/web-design/design-contact-page-7-pro-tips-121518342)
+	1. Ask the right questions
+	2. Allow access at all times
+	3. Skip the nonessentials
+	4. Show your company has a personality
+	5. Incorporate team images to instil a sense of trust
+	6. Link to additional contact options from the same page
+	7. Consider mobile
+* [5 common challenges faced by UI designers](http://usabilitygeek.com/5-common-challenges-faced-by-ui-designers/)
+	1. The new, 'rad looking' GUI elements
+	2. Looking like a link (and not being one)
+	3. Mythbusters: navigation 'must-haves'
+	4. May the forms be with you
+	5. Clash with the clients
+
+###<a name="information_architecture"></a>Information architecture
+
+* [The complete beginners guide to information architecture](http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/)
+	* What is information architecture
+	* Common methodologies
+		* Library science
+		* Cognitive psychology
+			* Cognitive load
+			* Mental models
+			* Decision making
+		* Architecture
+	* Daily tasks
+		* User research and analysis
+		* Navigation and hierarchy creation
+		* Wireframing
+		* Labeling
+		* Taxonomies and metadata
+		* Data modeling
+	* People to follow
+	* Tools of the trade
+	* Conferences and associations
+	* IA Books
 
 ##<a name="personas"></a>Personas
 
@@ -510,6 +558,19 @@
 	* Give a voice to the copy
 	* Extras
 	* The final word
+* [Beyond the style guide](https://24ways.org/2015/beyond-the-style-guide/)
+	* The auteur's style guide
+	* Painting by numbers
+	* Anatomy of a button
+		* Content
+		* Structure
+		* Presentation
+		* Behaviour
+		* Transcending layers
+	* Visual design language: documenting the missing piece
+	* A visual language in code form
+	* Unlocking possibility
+* [VIDEO: Brad Frost - Style guide best practices](http://bradfrost.com/blog/post/style-guide-best-practices-at-beyond-tellerrand/)
 
 ##<a name="visual_design"></a>Visual design
 
@@ -555,6 +616,17 @@
 		* Test your work
 		* Push your limits
 	* More than just a facade
+* [8 optical illusions to improve your mockups](http://www.creativebloq.com/web-design/8-optical-illlusions-improve-your-mockups-111517939)
+	* The science of shape
+	* Emergence
+	* Reificcation
+	* Multistability
+	* Similarity
+	* The figure-ground relationship
+	* Grouping
+	* Closure
+	* Continuation
+	* Takeaway
 
 #<a name="research"></a>Research
 
@@ -587,6 +659,16 @@
 	8. Make it interactive, not just discussion based
 	9. Spend time looking at barriers
 	10. Refine and report back
+* [Never ask what they want - 3 better questions to ask in user interviews](https://medium.com/user-research/never-ask-what-they-want-3-better-questions-to-ask-in-user-interviews-aeddd2a2101e#.3u7xlt3d3)
+	* What are you trying to get done? Why?
+	* Can you show me how you currently do this?
+	* Can you show me what's frustrating about your current process?
+* [Correlation and organization: user research methods and derived value](http://usabilitygeek.com/correlation-organization-user-research-methods-derived-value/)
+	* The focus group
+	* The focus of the focus group
+	* Correlation and organization: user research methods and derived value
+	* What are the other guys doing
+	* 
 
 #<a name="html"></a>HTML
 
@@ -819,6 +901,52 @@
 		* The full rewriting algorithm
 		* Potential downsides
 	* Final thoughts
+* [Building and shipping functional CSS](https://blog.colepeters.com/building-and-shipping-functional-css/)
+	* Atomic? Functional? WTF?
+		* Performance is critical
+		* Clarity trumps cleverness
+		* Classes should be as reusable as possible
+		* Classes should be composable and free of side-effects
+	* Bringing Functional CSS to TrialReach
+	* The approach
+		* Settings
+		* Elements
+		* Objects
+		* Components
+		* Utilities
+		* Visuals
+	* A few examples in practice
+	* The outcome
+	* Gripes and gains -- getting comfortable with functional CSS
+		* Component-driven design vs. component-driven CSS
+		* Make documentation and code reviews a priority
+		* Wrap frequently-used markup in partials or custom components
+		* Repetitions: some are good, others less so
+		* Functional classes in responsive design
+	* I never promised you a rose-coloured panacea
+* [Blending modes in CSS: Color theory and practical application](http://webdesign.tutsplus.com/tutorials/blending-modes-in-css-color-theory-and-practical-application--cms-25201)
+	* The basics of blending
+		* What does "blending mode" actually mean?
+		* You do the math
+	* Types of blending modes available in CSS
+	* [interactive example](http://codepen.io/tutsplus/live/wMvoyj)
+	* Separable blend modes
+		* Screen (the concept of projecting multiple photo exposures at the same time on one screen
+		* Darken (selects the darker of the two colors)
+		* Lighten (selects the lighter of the two colors)
+		* Color dodge (lightens the background color to reflect the source color)
+		* Color burn (darkens the background color, increasing the contrast between the source and the background)
+		* Hard light (applies "multiply" on lighter colors and "screen" on darker colors)
+		* Overlay (applies "screen" on lighter colors and "multiply" on darker colors)
+		* Soft light (applies a variant of multiply on dark values and a variant of screen on lighter values)
+		* Difference (takes the absolute difference value between the two colors)
+		* Exclusion (same basic effect as the "difference" mode, except that similar colors result in a lower contrast middle value)
+	* Non-separable blending modes
+		* Hue (applies the hue of the source layer to the luminance and saturation of the background color)
+		* Saturation (applies the saturation of the foreground to the hue and the luminance of the background)
+		* Color (applies the hue and saturation of the foreground to the luminance of the background)
+		* Luminosity (applies luminosity of the source layer with the hue and saturation of the background layer)
+	* Conclusion
 
 ##<a name="flexbox"></a>Flexbox
 
@@ -912,6 +1040,7 @@
 	* Sticky footers
 	* Be careful
 	* Conclusion
+* [VIDEO: the axis of flexbox](http://www.sitepoint.com/watch-the-axis-of-flexbox/)
 
 ##<a name="grid"></a>Grid
 
@@ -987,7 +1116,7 @@
 	* The cons of nested sass
 		* specificity
 		* inception-like
-	* The pros of nesting
+	* The pros of nestingM
 		* more readable code
 		* more maintainable code
 	* Closing thoughts
@@ -1004,6 +1133,27 @@
 	* Well, what about mixins?
 	* In defense of @extend
 	* Benefits
+* [Mixing color for the web with Sass](http://alistapart.com/article/mixing-color-for-the-web-with-sass)
+	* A hex on hex codes
+	* Packing up the color picker for Sass
+	* Proportional palettes with color scaling
+	* Mastering color with mixing
+	* Additional considerations for developing your palette
+* [The Sass ampersand](https://css-tricks.com/the-sass-ampersand/)
+	* Basic nesting
+	* Adding another class
+	* The "aha" moment!
+	* Using the & with pseudo classes
+	* Using the & with >, .+, and ~
+	* Qualifying based on context
+	* Tweaking the definition of the &
+		* Wacky but working example #1
+		* Wacky but working example #2
+	* What the & isn't
+	* @at-root to the rescue
+	* Doubling up specificity
+	* Modifying the ampersand
+	* Conclusion
 
 #<a name="responsive_web_design"></a>Responsive Web Design
 
@@ -1151,6 +1301,25 @@ Why we should rename element queries into container queries
 	7. Use a type test rig
 	8. Set type in context
 	9. Learn from others
+* [Being responsive to the small things](https://24ways.org/2015/being-responsive-to-the-small-things/)
+	* Enter container queries
+	* Our saviour this christmas: JavaScript
+	* Christmas is over
+* [7 common mistakes made with responsive mockups](http://www.creativebloq.com/web-design/common-mistakes-responsive-mockups-111517922)
+	1. Designing for devices, not screens
+	2. Relying only on device sizes for breakpoints
+	3. Ignoring touch controls
+	4. Linking to content that isn't mobile-friendly
+	5. Poor planning for bigger screens
+	6. Using consistent navigation across screen-sizes
+	7. Hiding content
+* [http://blog.cloudfour.com/responsive-guide-to-type-sizing/](A responsive guide to type sizing)
+	* Using a modular scale for typographic proportions
+	* Applying your scale from the ground up
+		* Configuring the variables
+		* Establishing default sizes
+		* Expanding your scale when proportional contrast is needed
+		* Broadening the usage of your scale
 
 #<a name="progressive_enhancement"></a>Progressive Enhancement
 
@@ -1187,7 +1356,19 @@ Why we should rename element queries into container queries
 	* Now for the $10M question: how do we deal with IE6?
 	* Other considerations
 	* Putting it all together
-	* 
+* [Interaction is an enhancement](http://alistapart.com/article/interaction-is-an-enhancementl)
+	* Get familiar with potential issues so you can avoid them
+	* Understand your medium
+	* Why no JavaScript
+* [Reimagining Single-Page Applications with progressive enhancement](https://www.smashingmagazine.com/2015/12/reimagining-single-page-applications-progressive-enhancement/)
+	* Writing views
+	* Navigation
+	* One view at a time
+	* The default view
+	* The hashchange event
+	* Abstraction
+	* Completely static views
+	* Conclusion
 
 #<a name="accessibility"></a>Accessibility
 
@@ -1320,6 +1501,84 @@ Why we should rename element queries into container queries
 	* An alternate approach (using the `<input>` element - inside a `<label>` - combined with explicit association via for attribue)
 	* Added benefit: interactivity
 	* Placeholders aren't labels
+* [How our CSS framework helps enforce accessibility](http://www.ebaytechblog.com/2015/11/04/how-our-css-framework-helps-enforce-accessibility/)
+	* Semantics
+	* Swiss cheese
+	* Enforcing rules
+	* Implicit roles
+	* Enforcing states
+	* ARIA
+	* Tabs
+	* Faux tabs
+	* Real tabs
+	* Good behavior
+	* Summary
+* [The web accessibility basics](https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/)
+	* Alternative text for images
+		* All img tags require an alt attribute
+		* Every alt attribute has to have a value (meaningful text)
+		* It is called alt attribute but never alt tag
+	* Labeling form fields
+		* Every input element (except for the button ones) require a label element to be present
+		* The association between such an input and label happens by giving the input a unique ID, given by the id attribute on the input, and the label's for attribute which points to said ID
+		* Do not, under any circumstances, use the placeholder attribute as the label for an input element
+		* Give button elements inner text
+		* A series of radio buttons go inside a fieldset element to group them together
+		* Fieldset and legend should also be used if grouping togechter different sections of a bigger form for better readability
+		* Label required fields by providing the HTML5 required attribute on the input as well as stating in the label that a form field is required
+		* Use appropriate input types for e-mail, URL, phone number etc
+		* Make sure keyboard visibility is always guaranteed
+	* Document structure
+		* Heading structure
+		* Landmarks (article, aside, footer, header, nav, main)
+		* Lists (ul, ol, dl)
+		* Others (p, blockquote, q, hr)
+		* Tables
+			* Add a caption element to give the table a proper heading or summary
+			* Use th elements to denote column and row headings
+			* Use other structural table elements to further structure your table
+			* If a table gets too complex or has multiple sections that don't necessarily have to be in one table, split them up into several data tables
+	* Some more quickies
+		* Separation of concepts
+		* Color contrast
+		* Keep pinch alive
+	* OK, but what about advanced widgets?
+	* It is all in the semantics
+	* In conclusion
+* [The accessibility mindset](https://24ways.org/2015/the-accessibility-mindset/)
+	* Beyond the bare minimum
+		* Button example
+	* More information
+	* Conclusion
+* [Seriously, don't use icon fonts](http://blog.cloudfour.com/seriously-dont-use-icon-fonts/)
+	* Screen readers actually read that stuff
+	* They're a nightmare if you're dyslexic
+	* They encroach on emoji turf
+	* They fail poorly and often
+	* They never looked right
+	* You're probably doing it wrong
+	* There's already a better way
+		* SVG's can't be combined into sprites (they can)
+		* SVGs are larger in file size (not when you optimize, sprite and compress them)
+		* The icon markup is too verbose by comparison (just barely)
+		* Browser support for SVG is worse (not anymore)
+		* The framework we chose already has an icon font
+	* Don't be table guy
+* [10 reasons we switched from an icon font to svg](http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/)
+	1. Separation of concerns
+	2. Some devices don't honour the private unicode area
+	3. Black squares and crosses on opera mini
+	4. Chrome support for font-icons has been terrible recently (false positive)
+	5. Crisper icons in Firefox
+	6. You don't always have to use generated content
+	7. Less fiddly to position
+	8. Multi-colour icons
+	9. SVGs allow us to use animation within our icons
+	10. It's always felt like a hack
+	* What about the benefits of font-face?
+		* Colour variations
+		* Browser support
+* [A quick reminder on how and why to use labels in forms to make them more accessible](https://www.christianheilmann.com/2015/12/04/a-quick-reminder-on-how-and-why-to-use-labels-in-forms-to-make-them-more-accessible/)
 
 #<a name="performance"></a>Performance
 
@@ -1434,6 +1693,39 @@ Why we should rename element queries into container queries
 	4.  Optimise for the critical path so that your content appears as quickly as possible
 	5.  Start familiarising yourself with HTTP/2 because that changes so many things
 	6.  If you're going to use something like Bootstrap, be sure you remove all the unused CSS in a build process. There's a ton of unnecessary bloat.
+* [Building for HTTP/2](http://rmurphey.com/blog/2015/11/25/building-for-http2)
+	* Deploying JavaScript applications (2013)
+	* Splitting it up
+	* Versioning
+	* Push: Because you downloaded scout.js, you might also like...
+	* The elephants in the room
+	* For consideration: HTTP/2-friendly deployments with HTTP/1.1 support
+	* Reality check
+* [Intrinsic placeholders with the picture element](http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/)
+* [VIDEO: Mat Marquis - Smaller, faster websites](https://bocoup.com/weblog/smaller-faster-websites)
+	* Images in responsive web design
+	* Critical CSS
+	* Web fonts loading
+* [VIDEO: Maciej Ceglowski - The website obesity crisis](https://vimeo.com/147806338)
+* [Optimising SVGs for web use - part 1](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-1-67e8f2d4035)
+	* Raison d'être
+	* The Path
+		* Use fewer nodes
+		* Use fewer handles
+		* Use integers
+		* Don't use a grid that is any bigger than necessary
+	* The result
+		* Graphics
+		* Code
+* [The future of loading in CSS](https://jakearchibald.com/2016/link-in-body/)
+	* The current state of loading CSS
+	* The current state-of-the-art of loading CSS
+		* It requires a (small) JavaScript library
+		* You're restricted to two phases of loading
+	* A simpler, better way
+	* Changes to chrome
+		* Firefixing
+	* See it in action
 
 #<a name="web_components"></a>Web Components
 
@@ -1455,7 +1747,7 @@ Why we should rename element queries into container queries
 	5. [Usabilla](https://usabilla.com/)
 	6. [User Zoom](http://www.userzoom.co.uk/?langchoice=uk)
 	7. [Morae](http://www.userzoom.co.uk/?langchoice=uk)
-* [Talking to users in a usabillity test](http://www.nngroup.com/articles/talking-to-users/?utm_source=Alertbox&utm_campaign=2f3be47038-Alertbox_email_01_27_2014&utm_medium=email&utm_term=0_7f29a2b335-2f3be47038-40103541)
+* [Talking to users in a usabillity test](http://www.nngroup.com/articles/talking-to-users/)
 	* Echo (repeat the last phrase or word the user said, while using a slight interrogatory tone)
 	* Boomerang (generic nonthreatening question - e.g. what do you think, what would you normally do)
 	* Columbo (be smart but don't act that way)  
@@ -1484,6 +1776,27 @@ Why we should rename element queries into container queries
 	8.  Show your project to strangers (in-person)
 	9.  Use a service or remote tool (like UsersThink)
 	10.  Use a mix of the approaches above
+* [Optimize your design for rapid prototype testing](https://www.smashingmagazine.com/2015/12/optimizing-your-design-for-rapid-prototype-testing/)
+	* Design to test specific stimuli, with few variables at a time
+	* Make copy consistent when it is not being tested
+	* Don't sweat details that don't matter
+	* Focus on what you want to learn from users, not stakeholders
+	* Create a clear path
+	* Capture user behavior, in addition to feedback
+	* Keep in mind
+		* Do not prototype the entire product
+		* Plan for multiple rounds of testing
+		* Educate your stakeholders
+		* Define up front what a succesful user experience looks like
+		* Pay attention to the size of copy
+		* Learn as much as possible about how the test will be conducted
+		* Create reusable templates
+		* Save a set of "unbranded" templates
+		* Leverage standard user interface elements
+		* Choose images and content that will not potentially bias the outcome of the test
+		* Consider recreating the live website in prototype form
+	* Cheat sheet
+	* Summary
 
 #<a name="email_design"></a>Email design
 
@@ -1506,3 +1819,17 @@ Why we should rename element queries into container queries
 		* Image names and SPAM scores
 		* Image size
 		* Other gotchas (specify ALL widths, main container in pixels, rest can be done with percentages)
+
+#<a name="web_fonts"></a>Web Fonts
+
+* [Web Font Anti-Patterns](http://bramstein.com/writing/web-font-anti-patterns.html)
+	* Overusing web fonts
+		* Using web fonts for lettering
+	* Inlining fonts
+		* Base64 encoding and decoding
+		* Font format negotiation
+		* Caching
+	* Aggressive subsetting
+	* Using local fonts
+	* Reimplementing caching
+	* Not styling fallback fonts

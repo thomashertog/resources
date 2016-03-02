@@ -9,6 +9,7 @@
 	5. [Process](#process)
 	6. [Style guides](#style_guides)
 	7. [Visual design](#visual_design)
+		1. [Typography](#typography)
 2. [Research](#research)
 3. [HTML](#html)
 4. [CSS](#css)
@@ -173,17 +174,6 @@
 	4. Not using a color or typography palette
 	5. Overcomplicated navigation
 	6. Site is slow to load
-* [10 commandments of web typography](http://www.creativebloq.com/typography/10-commandments-web-typography-91516546)
-	1. Read the text. Take notes
-	2. Get a sense of the tone and feeling
-	3. Look for reoccurring words and numbers
-	4. Note sections and subsections in the text. How many levels of headings will you need?
-	5. Note other text-based elements you have to set. Are they captions, pullquotes, numerical data, a featured paragraph? Titles in the text you'll need to italicize?
-	6. Start considering appropriate fonts - at the size you plan to use them. They'll look different as text and headline.
-	7. Discord fonts that don't support the tone of the text, have problems with reoccurring words and numbers, that can't accomplish what you need it to do.
-	8. Test the remaining fonts cross browser. Don't build your site only to learn the doesn't work cross browser
-	9. Attend to "the hole trinity" of good text: size, line-height, line-length
-	10. Use your line length to set the grid if possible. If your site is responsive, consider line length when setting breakpoints.
 * [Usable content is king](http://usabilitygeek.com/usable-content-is-king/)
 	* What makes content usable
 		* Consider form as well as function
@@ -258,17 +248,6 @@
 * [The perception of control](http://www.uxbooth.com/articles/the-perception-of-control/?utm_medium=feed&utm_source=FeedPress&utm_campaign=Feed%3A+uxbooth+%28UX+Booth%29à)
 	> Every day at the street by my house, I press the "walk" button, and I wait. Each time, as soon as the traffic cycle is complete, I get the walk signal. On a whim, one day I din't press the button... but at the end of the traffic cycle, I got the walk signal. The button I press every day has absolutely no impact on when the light will change. Is it still worth having the button?
 
-* [How to make your type look good on any screen](http://www.creativebloq.com/typography/make-type-look-good-any-device-81515938)
-	* Scale
-	* Size, length and height
-	* Font size (recommendation to set base font-size at 100% --> mostly 16px)
-	* Ems and rems
-	* Line height 
-		* affects readability 
-		* on average best is 1.4 (small screens slightly less, large screens slightly more)
-		* vertical margins should be in proportion
-	* Line length (on average 45-75 characters)
-	* Adjusting margins
 * [Masking passwords: help or hindrance](http://www.sitepoint.com/masking-passwords-help-or-hindrance/)
 	* problems with password masking
 		* masking the password also hides it from the user
@@ -418,6 +397,14 @@
 	3. Mythbusters: navigation 'must-haves'
 	4. May the forms be with you
 	5. Clash with the clients
+* [Why I moved from a square to a circle](https://www.smashingmagazine.com/2016/01/why-i-moved-from-a-square-to-a-circle-calculator-interface-design/)
+	* If it ain't broke, why fix it
+	* Redesigning the calculator
+		* Reinventing the numeric keypad
+		* Resectoring the screen real estate logically
+		* Substituting gestures for buttons
+		* Enabling easy correction of errors at any time
+	* The response and the future
 
 ###<a name="information_architecture"></a>Information architecture
 
@@ -441,6 +428,7 @@
 	* Tools of the trade
 	* Conferences and associations
 	* IA Books
+* 
 
 ##<a name="personas"></a>Personas
 
@@ -514,7 +502,10 @@
 	* Use active sentences
 	* Use headings
 	* Harness the power of visual layout
-
+* [Choosing between min and max-width](http://www.the-haystack.com/2015/12/23/choosing-between-min-and-max-width/)
+	* Desktop first and max-width
+	* Using max-width against your better judgment
+	* So, what's the best to use?
 
 ##<a name="process"></a>Process
 
@@ -628,6 +619,31 @@
 	* Continuation
 	* Takeaway
 
+###<a name="typography"></a>Typography
+
+* [10 commandments of web typography](http://www.creativebloq.com/typography/10-commandments-web-typography-91516546)
+	1. Read the text. Take notes
+	2. Get a sense of the tone and feeling
+	3. Look for reoccurring words and numbers
+	4. Note sections and subsections in the text. How many levels of headings will you need?
+	5. Note other text-based elements you have to set. Are they captions, pullquotes, numerical data, a featured paragraph? Titles in the text you'll need to italicize?
+	6. Start considering appropriate fonts - at the size you plan to use them. They'll look different as text and headline.
+	7. Discord fonts that don't support the tone of the text, have problems with reoccurring words and numbers, that can't accomplish what you need it to do.
+	8. Test the remaining fonts cross browser. Don't build your site only to learn the doesn't work cross browser
+	9. Attend to "the hole trinity" of good text: size, line-height, line-length
+	10. Use your line length to set the grid if possible. If your site is responsive, consider line length when setting breakpoints.
+* [How to make your type look good on any screen](http://www.creativebloq.com/typography/make-type-look-good-any-device-81515938)
+	* Scale
+	* Size, length and height
+	* Font size (recommendation to set base font-size at 100% --> mostly 16px)
+	* Ems and rems
+	* Line height 
+		* affects readability 
+		* on average best is 1.4 (small screens slightly less, large screens slightly more)
+		* vertical margins should be in proportion
+	* Line length (on average 45-75 characters)
+	* Adjusting margins
+
 #<a name="research"></a>Research
 
 ![So, you want to leverage the web to conduct your user and UX research](http://boxesandarrows.com/wp-content/uploads/2015/05/02_stuff.jpg)
@@ -668,7 +684,28 @@
 	* The focus of the focus group
 	* Correlation and organization: user research methods and derived value
 	* What are the other guys doing
-	* 
+* [Remote user research & usability methods](http://uxmag.com/articles/remote-user-research-usability-methods)
+	* When remote study works
+		* Flexibility
+		* Environment
+	* When remote study doesn't work
+		* Information security
+		* Inability to use screen sharing
+		* Face and body movements
+	* Moderated vs automated research
+	* Recruiting for web or mobile study
+		* Live recruiting
+		* Other channels for recruiting
+		* Incentive
+	* Tools for remote UX studies
+		* Moderated - Screen sharing & recording
+		* Automated - Usability study and task elicitation
+		* Moderated or automated mobile studies
+		* Observers
+		* Making notes
+		* Combine everyone's insights
+		* Remote collaboration
+	* Summary
 
 #<a name="html"></a>HTML
 
@@ -947,6 +984,86 @@
 		* Color (applies the hue and saturation of the foreground to the luminance of the background)
 		* Luminosity (applies luminosity of the source layer with the hue and saturation of the background layer)
 	* Conclusion
+* [Blending modes demystified](http://alistapart.com/article/blending-modes-demystified)
+	* Blending modes explained
+	* Transparency effect with multiply
+		* x = a * b
+		* multiplies luminance for each of the RGB channels
+		* filters out white background of logo on top of other image
+	* Dust and scratches with screen
+		* x = 1 - (1 - a) * (1 - b)
+		* functional opposite of multiply
+		* multiplying the inverse of a times the inverse of b and then inverting it once more
+		* white pixels are completely opaque, black pixels are transparent
+	* Colorizing with _hue_ and _color_
+		* Hue
+			* takes the hue component of the overlapping layer and applies it to the colors below, leaving saturation and luminostiy unmodified
+		* Color
+			* affects both hue and saturation of the source, ignoring luminosity
+			* achieve the same effect by reversing order of your layers, blending with _luminosity_
+		* Cross-browser blending
+			* Not just browsers are inconsistent
+			* People are inconsistent (color blindness)
+			* Test on real devices (performance issues - scrolling might lag - 60 fps might be affected)
+		* Applying blending modes
+			* Blending background images
+			* Blending HTML elements
+				* _mix_blend_mode_ blends between stacked HTML elements
+				* applied to an entire element along with all of its children
+		* Browser support
+* [An introduction to CSS's @supports rule (feature queries)](http://www.sitepoint.com/an-introduction-to-css-supports-rule-feature-queries/)
+	* Detecting browser features with the @supports rule
+	* Testing for multiple conditions at once
+	* The operators in action
+	* JavaScript with CSS Feature queries
+	* Browser support
+	* Conclusion
+* [A specificity battle! (and other trickery) - 19 ways to override a background](https://css-tricks.com/a-specificity-battle/)
+	1. starting with _div{background:black;}_
+	2. Step 1: element selector _(0,0,0,1)_
+	3. Step 2: two element selectors _(0,0,0,2)_
+	4. Step 3: three element selectors _(0,0,0,3)_
+	5. Step 4: class selector _(0,0,1,0)_
+	6. Step 5: class + element selector _(0,0,1,1)_
+	7. Step 6: element + class + pseudo-class selector _(0,0,2,1)_
+	8. Step 7: stacked classes _(0,0,&infin;,0)_
+	9. Step 8: id selector _(0,1,0,0)_
+	10. Step 9: id + attribute selector _(0,1,1,0)_
+	11. Step 10: combining many above... _(0,1,3,3)_
+	12. Step 11: inline style _(1,0,0,0)_
+	13. Step 12: !important _(kind of like 1,0,0,0 on a per-property basis)_
+	14. Step 13: !important on inline style _(kind of like &infin; on a per property basis)_
+	15. Step 14: box-shadow trickery _(box-shadow paints on top of background)_
+	16. Step 15: invert filter
+	17. Step 16: pseudo element overlay
+	18. Step 17: !important again
+	19. Step 18: @keyframes trickery _(!important isn't animateable, so animation can override it)_
+	20. Step 19: coloring the content _(putting a huge block character over everything flips the color again)_
+* [CSS specificity is base infinite](https://css-tricks.com/css-specificity-is-base-infinite/)
+* [20 essential CSS recipes](http://ipestov.com/22-essential-css-recipes/)
+	1. Blend modes
+	2. Gradient borders
+	3. Transition for z-index
+	4. currentColor
+	5. Object fit
+	6. Checkbox and radio buttons styles
+	7. Counters in CSS
+	8. Advanced CSS counters
+	9. Menu Icon without Images
+		1. Shadows
+		2. Gradient
+		3. UTF-8
+	10. @supports
+	11. visibility: visible
+	12. position:sticky --> [caniuse](http://caniuse.com/#search=sticky)
+	13. New dimensions
+	14. Text decorations
+	15. Block scroll on touch devices
+	16. Using hardware acceleration
+	17. Unicode classes
+	18. Vertical margins in percents
+	19. Margins in firefox buttons
+	20. Color + border = border-color;
 
 ##<a name="flexbox"></a>Flexbox
 
@@ -1041,10 +1158,45 @@
 	* Be careful
 	* Conclusion
 * [VIDEO: the axis of flexbox](http://www.sitepoint.com/watch-the-axis-of-flexbox/)
+* [Designing a product page layout with flexbox](https://css-tricks.com/designing-a-product-page-layout-with-flexbox/)
+	* This is based on the "Venture" theme
+	* The header layout
+	* The products layout
+	* Bottom-aligning the product footers
+	* Responsive flexboxing
+	* Compatibility
+	* Conclusion
+* ['Flex-grow' is weird. Or is it?](https://css-tricks.com/flex-grow-is-weird/)
+	* How flex-grow _doesn't_ work
+	* How flex-grow really works
+		* First we have to calculate the remaining space
+		* Next we have to determine how much one-flex-grow is
+		* The sliced up remaining space gets distributed between all elements
+	* Allright, but why does the first demo work?
+	* Flex-grow and flex-basis
+	* Working with the box model
+	* Some useful examples
+		* No more width: [x]%
+		* The "Holy Grail" 3 column liquid layout with pixel-widths
+		* Filling remaining space with any element
+	* Listening to the specs
 
 ##<a name="grid"></a>Grid
 
 * [VIDEO: Start using CSS Grid Layout - Rachel Andrew](https://www.youtube.com/watch?v=Felq4z_rdPQ)
+* [Deep dive into grid layout placement](http://blogs.igalia.com/mrego/2016/02/01/deep-dive-into-grid-layout-placement/)
+	* Grid lines (numbered startign at 1)
+	* Grid placement properties
+	* Cell spanning
+	* Negative line numbers
+	* Named grid lines
+	* Grid areas
+	* Grid areas & named grid lines
+	* Implicit grid
+	* Implicit grid & named grid lines
+	* Special cases
+	* Recap
+	* Status
 
 #<a name="sass"></a>SASS
 
@@ -1154,6 +1306,44 @@
 	* Doubling up specificity
 	* Modifying the ampersand
 	* Conclusion
+* [Variables: The backbone of CSS architecture](https://www.smashingmagazine.com/2016/01/variables-in-css-architecture/)
+	* What is the preprocess poster child?
+	* Why should variables be the core reference for a sass project
+	* Storing CSS variables
+	* When should I create a variable
+	* Reduce mixins and extends to the bare essentials
+		* Write vanilla css when abstraction causes confusion
+		* Use mixins or extends for well-established conventions
+		* For global styles, can you swap a mixin with a variable if it doesn't need arguments
+		* Don't lock yourself in by using mixins for vendor prefixes
+		* Use local variables only when necessary
+		* Break your own rules; it's often helpful to have a few handy mixins or placeholders
+	* Variables: Pixie-dusting our partials with care
+		* Think before making a new variable
+		* Think before reusing a variable; would native CSS values suffice?
+		* Don't reuse variables inappropriately
+	* Variables: Nomenclature
+		* Most descriptive, but most restricted
+		* Descriptive, but less restrictive
+		* Less descriptive, with more weightage
+		* Less descriptive, but offers some weightage
+	* Common variables for a web application
+		* Variables for dimensions
+		* Variables for spacing: paddag and margins
+		* Variables for colors
+		* Variables for z-index
+		* Variables for border-radius
+		* Variables for typography
+		* Variables for font icons
+		* Variables for media queries
+		* Native variables with pure CSS --> [CanIUse](http://caniuse.com/#search=css%20variables)
+	* Resources
+* [Sass: @-rules and directives](http://vanseodesign.com/css/sass-at-rules-and-directives/)
+	* CSS @-rules
+	* The @at-root directive
+	* (without: directive-name) and (with: directive-name)
+	* The @debug, @warn, and @error directives
+	* Closing thoughts
 
 #<a name="responsive_web_design"></a>Responsive Web Design
 
@@ -1365,10 +1555,35 @@ Why we should rename element queries into container queries
 	* Navigation
 	* One view at a time
 	* The default view
+		* It's time
 	* The hashchange event
 	* Abstraction
+		* Notes
 	* Completely static views
+		* Static views with enhanced functionality
 	* Conclusion
+* [Getting started with progressive web apps](https://addyosmani.com/blog/getting-started-with-progressive-web-apps/)
+	* What is a progressive web app?
+	* Principles
+		* Web app manifest
+		* Add to home screen banner
+		* Service worker for offline caching
+		* Push notifications for re-engagement
+		* Layering in advanced features
+		* Framework-friendly
+	* Architecture
+	* Getting started boilerplates
+		* Application shell
+		* Polymer starter kit
+		* Web starter kit
+	* Progressive web apps with and without frameworks
+		* Vanilla JS
+		* Polymer
+		* React
+		* Virtual-Dom
+		* Angular.js
+	* Closing notes
+	* Further reading
 
 #<a name="accessibility"></a>Accessibility
 
@@ -1717,6 +1932,27 @@ Why we should rename element queries into container queries
 	* The result
 		* Graphics
 		* Code
+* [Optimising SVGs for Web Use - part 2](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-2-6711cc15df46#.du5kkdo5f)
+	* Step 1 - get/draw an icon
+	* Step 2 - determine the optimal size for the viewbox
+	* Step 3 - load the svg into your editor
+	* Step 4 - reduce the number of nodes + handles
+	* Step 5 - round to int
+	* Step 6 - re-add the circle
+	* Step 7 - cleanup
+	* The result
+	* Another example
+	* PS
+* [Optimising SVGs for web use - part 2 &frac12;](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-2-1-598815d74f9c#.punh4l9f8)
+	* Get the logo
+	* Save the svg
+	* (SVGO)
+	* We need more
+	* Circle
+	* Remove the last node
+	* Cubic vs quadratic
+	* Bytes saved
+	* Mpre
 * [The future of loading in CSS](https://jakearchibald.com/2016/link-in-body/)
 	* The current state of loading CSS
 	* The current state-of-the-art of loading CSS
@@ -1726,6 +1962,9 @@ Why we should rename element queries into container queries
 	* Changes to chrome
 		* Firefixing
 	* See it in action
+* [Instant loading with Service Workers](https://www.youtube.com/watch?v=jCKZDTtUA2A&index=5&list=PLNYkxOF6rcICcHeQY02XLvoGL34rZFWZn)
+* [HTTP/2 101](https://www.youtube.com/watch?v=r5oT_2ndjms&index=19&list=PLNYkxOF6rcICcHeQY02XLvoGL34rZFWZn)
+	* [Setting up HTTP/2](https://surma.link/things/h2setup/)
 
 #<a name="web_components"></a>Web Components
 
@@ -1797,6 +2036,14 @@ Why we should rename element queries into container queries
 		* Consider recreating the live website in prototype form
 	* Cheat sheet
 	* Summary
+* [7 new ways to test your minimum viable product](http://www.sitepoint.com/7-new-ways-to-test-your-minimum-viable-product/)
+	1. Wizard of Oz
+	2. Fake door
+	3. Audience building
+	4. Micro-surveys
+	5. Competition analysis
+	6. Crowdfunding
+	7. Software tests
 
 #<a name="email_design"></a>Email design
 

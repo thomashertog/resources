@@ -1,0 +1,3965 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>resources</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Table of contents</h1>
+<ol>
+<li>
+<a href="#general_design">General design</a>
+<ol>
+<li>
+<a href="#interaction_design">Interaction design</a>
+<ol>
+<li><a href="#information_architecture">Information architecture</a></li>
+</ol>
+</li>
+<li><a href="#personas">Personas</a></li>
+<li><a href="#form_design">Form design</a></li>
+<li><a href="#copywriting">Copywriting</a></li>
+<li><a href="#process">Process</a></li>
+<li><a href="#style_guides">Style guides</a></li>
+<li>
+<a href="#visual_design">Visual design</a>
+<ol>
+<li><a href="#typography">Typography</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#research">Research</a></li>
+<li><a href="#html">HTML</a></li>
+<li>
+<a href="#css">CSS</a>
+<ol>
+<li><a href="#flexbox">Flexbox</a></li>
+<li><a href="#grid">Grid</a></li>
+</ol>
+</li>
+<li><a href="#sass">SASS</a></li>
+<li><a href="#responsive_web_design">Responsive Web Design</a></li>
+<li><a href="#progressive_enhancement">Progressive enhancement</a></li>
+<li><a href="#accessibility">Accessibility</a></li>
+<li><a href="#performance">Performance</a></li>
+<li>
+<a href="#web_components">Web components</a>
+<ol>
+<li><a href="#polymer">Polymer</a></li>
+</ol>
+</li>
+<li><a href="#design_testing">Design testing</a></li>
+<li><a href="#email_design">Email design</a></li>
+<li><a href="#web_fonts">Web Fonts</a></li>
+</ol>
+<h1><a name="general_design"></a>General design</h1>
+<ul>
+<li>
+<a href="http://goodui.org/">Good UI</a>
+<ul>
+<li>Try <strong>a one column layout</strong> instead of multicolumns</li>
+<li>Try <strong>giving a gift</strong> instead of closing a sale right away</li>
+<li>Try <strong>merging similar functions</strong> instead of fragmenting the UI</li>
+<li>Try <strong>social proof</strong> instead of talking about yourself</li>
+<li>Try <strong>repeating your primary action</strong> instead of showing it just once</li>
+<li>Try <strong>distinct clickable/selected styles</strong> instead of blurring them</li>
+<li>Try <strong>recommending</strong> instead of showing equal choices</li>
+<li>Try <strong>undos</strong> instead of prompting for confirmation</li>
+<li>Try <strong>telling who it's for</strong> instead of targeting everyone</li>
+<li>Try <strong>being direct</strong> instead of indecisive</li>
+<li>Try <strong>more contrast</strong> instead of similarity</li>
+<li>Try <strong>personality</strong> instead of being generic</li>
+<li>Try <strong>fewer form fields</strong> instead of asking for too many</li>
+<li>Try <strong>exposing options</strong> instead of hiding them</li>
+<li>Try <strong>suggesting continuity</strong> instead of false bottoms</li>
+<li>Try <strong>keeping focus</strong> instead of drowning with links</li>
+<li>Try <strong>showing state</strong> instead of being state agnostic</li>
+<li>Try <strong>benefit buttons</strong> instead of just task based ones</li>
+<li>Try <strong>direct manipulation</strong> instead of contextless menus</li>
+<li>Try <strong>exposing fields</strong> instead of creating extra pages</li>
+<li>Try <strong>transitions</strong> instead of showing changes instantly</li>
+<li>Try <strong>gradual engagement</strong> instead of a hasty sign up</li>
+<li>Try <strong>fewer borders</strong> instead of wasting attention</li>
+<li>Try <strong>selling benefits</strong> instead of features</li>
+<li>Try <strong>designing for zero data</strong> instead of just data heavy cases</li>
+<li>Try <strong>opt-out</strong> instead of opt-in</li>
+<li>Try <strong>consistency</strong> instead of making people relearn</li>
+<li>Try <strong>smart defaults</strong> instead of asking to do extra work</li>
+<li>Try <strong>conventions</strong> instead of reinventing the weel</li>
+<li>Try <strong>loss aversion</strong> instead of emphasizing gains</li>
+<li>Try <strong>visual hierarchy</strong> instead of dullness</li>
+<li>Try <strong>grouping related items</strong> instead of disordering</li>
+<li>Try <strong>inline validation</strong> instead of delaying errors</li>
+<li>Try <strong>forgiving inputs</strong> instead of being strict with data</li>
+<li>Try <strong>urgency</strong> instead of timelessness</li>
+<li>Try <strong>scarcity</strong> instead of abundance</li>
+<li>Try <strong>recognition</strong> instead of recall</li>
+<li>Try <strong>bigger click areas</strong> instead of tiny ones</li>
+<li>Try <strong>faster load times</strong> instead of making people wait</li>
+<li>Try <strong>keyboard shortcuts</strong> instead of buttons only</li>
+<li>Try <strong>anchoring</strong> instead of starting with the price</li>
+<li>Try <strong>upfront progress</strong> instead of starting with a blank</li>
+<li>Try <strong>progressive disclosure</strong> instead of overwhelming</li>
+<li>Try <strong>smaller commitments</strong> instead of one big one</li>
+<li>Try <strong>softer prompts</strong> instead of modal windows</li>
+<li>Try <strong>multifunctional controls</strong> instead of more parts</li>
+<li>Try <strong>icon labels</strong> instead of opening for interpretation</li>
+<li>Try <strong>natural language</strong> instead of dry text</li>
+<li>Try <strong>curiosity</strong> instead of being reserved</li>
+<li>Try <strong>reassurances</strong> instead of assuming all is fine</li>
+<li>Try <strong>price illusions</strong> instead of just plain prices</li>
+<li>Try <strong>thanking</strong> instead of simply confirming completion</li>
+<li>Try <strong>useful calculations</strong> instead of asking to do math</li>
+<li>Try <strong>reaffirming freedom</strong> instead of implying it</li>
+<li>Try <strong>variable rewards</strong> instead of predictability</li>
+<li>Try <strong>attention grabs</strong> instead of neglect</li>
+<li>Try <strong>friendly comparisons</strong> instead of confusion</li>
+<li>Try <strong>set collections</strong> instead of independent items</li>
+<li>Try <strong>expectation setting</strong> instead of being ignorant</li>
+<li>Try <strong>humor</strong> instead of being so serious</li>
+<li>Try <strong>providing feedback</strong> instead of silence</li>
+<li>Try <strong>anticipating intent</strong> instead of shortsightedness</li>
+<li>Try <strong>extra padding</strong> instead of overcrowding elements</li>
+<li>Try <strong>storytelling</strong> instead of listing just the facts</li>
+<li>Try <strong>authenticity</strong> instead of faking it</li>
+<li>Try <strong>progressive reduction</strong> instead of being static</li>
+<li>Try <strong>putting others first</strong> instead of self-centeredness</li>
+<li>Try <strong>explainging</strong> instead of assuming the obvious</li>
+<li>Try <strong>concise copy</strong> instead of using unnecessary words</li>
+<li>Try <strong>responsive layouts</strong> instead of static ones</li>
+<li>Try <strong>visual clarity</strong> instead of ambiguity</li>
+<li>Try <strong>enabling corrections</strong> instead of rigidness</li>
+<li>Try <strong>social commitments</strong> instead of solitude</li>
+<li>Try <strong>retries and redos</strong> instead of single chances</li>
+<li>Try <strong>less choice</strong> instead of giving too many options</li>
+</ul>
+</li>
+<li>
+<a href="http://java.dzone.com/articles/ux-less-isnt-always-more">UX: Less isn't always more</a>
+<ul>
+<li>reset password form</li>
+<li>microcopy</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://editorial.designtaxi.com/editorial-images/NEWS-INFUIUX100615/4.jpg" alt="UX vs UI" /></p>
+<ul>
+<li>
+<a href="http://lawsofsimplicity.com/">The 10 laws of simplicity</a>
+<ol>
+<li><strong>Reduce</strong> The simplest way to achieve simplicity is through thoughtful reduction</li>
+<li><strong>Organize</strong> Organization makes a system of many appear fewer</li>
+<li><strong>Time</strong> Savings in time feel like simplicity</li>
+<li><strong>Learn</strong> Knowledge makes everything simpler</li>
+<li><strong>Differences</strong> Simplicity and complexity need each other</li>
+<li><strong>Context</strong> What lies in the periphery of simplicity is definitely not peripheral</li>
+<li><strong>Emotion</strong> More emotions are better than less</li>
+<li><strong>Trust</strong> In simplicity we trust</li>
+<li><strong>Failure</strong> Some things can never be made simple</li>
+<li><strong>The one</strong> Simplicity is about subtracting the obvious, and adding the meaningful</li>
+</ol>
+</li>
+<li>
+The 3 keys of simplicity
+<ol>
+<li><strong>Away</strong> More appears like less by simply moving it far, far away</li>
+<li><strong>Open</strong> Openness simplifies complexity</li>
+<li><strong>Power</strong> Use less, gain more </li>
+</ol>
+</li>
+<li>
+7 future web design trends (May 6, 2015)
+<ol>
+<li>Gestures are the new clicks</li>
+<li>The fold really is dead this time</li>
+<li>Users are quicker, websites are simplifying</li>
+<li>The pixel is dead</li>
+<li>Animation is back</li>
+<li>Components are the new frameworks</li>
+<li>Social saturation and the rise of direct email</li>
+</ol>
+</li>
+<li>
+<a href="http://uxmag.com/articles/5-elements-of-omni-channel-user-experiences">5 elements of omni-channel user experiences</a>
+<ul>
+<li>Consistency</li>
+<li>Availability</li>
+<li>Channel-Neutrality</li>
+<li>Context-Optimisation</li>
+<li>Seamlessness</li>
+</ul>
+</li>
+<li>
+<a href="http://www.uxbooth.com/articles/hermeneutics-for-designers/">Hermeneutics for designers</a>
+<ul>
+<li>
+The history of hermeneutics
+<ul>
+<li>Horizon of understanding</li>
+<li>Prejudices</li>
+<li>Conversation as a model for understanding</li>
+</ul>
+</li>
+<li>
+Applying hermeneuticsn
+<ul>
+<li>What does he mean by mature thought</li>
+<li>How can we reduce time spent in mechanical thought</li>
+</ul>
+</li>
+<li>Next steps</li>
+</ul>
+</li>
+<li><a href="https://boagworld.com/usability/nationaltrust/">Improving the user experience can save time and money</a></li>
+<li><a href="https://medium.com/@grigs/on-the-device-context-continuum-515d95ef8829">On the device context continuum</a></li>
+<li>
+<a href="http://thehipperelement.com/post/128705195169/15-ux-commandments?ref=heydesigner-weekly37">15 UX Commandments</a>
+<ol>
+<li>Only ask the questions to whith you really need answers.</li>
+<li>Demonstrate uncertainty</li>
+<li>Reconstruct your own previous errors of thought and elucidate to your colleagues and clients what factors lead to a changed mind</li>
+<li>Do not let the terms with which you understand the world get in the way of understanding it (&quot;your view of the world might be wrong&quot;)</li>
+<li>Give up any desire to be the smartest person in the room</li>
+<li>Remember that people -including you- have bodies, and bodies require movement, sustencance, rest, and relief</li>
+<li>Leave room for creativity</li>
+<li>Preserve and sustain whatever delusions you've found necessarry to behave in good faith</li>
+<li>Do not be afraid to state the obvious</li>
+<li>A socratic bully is still a bully</li>
+<li>Thoroughly prepare, including making preparations to abandon your preparations entirely</li>
+<li>Listen with your body</li>
+<li>Suspect charisma</li>
+<li>Conduct yourself in such a way that your colleagues can eventually forget that you exist</li>
+<li>It never hurts to start with the basics  
+</li>
+</ol>
+</li>
+<li>
+<a href="http://thenextweb.com/dd/2015/08/26/6-web-design-mistakes-and-how-to-correct-them/">6 Web design mistakes (and how to correct them)</a>
+<ol>
+<li>Designing without a grid</li>
+<li>Using a theme without customization</li>
+<li>Moving forward with poor images</li>
+<li>Not using a color or typography palette</li>
+<li>Overcomplicated navigation</li>
+<li>Site is slow to load</li>
+</ol>
+</li>
+<li>
+<a href="http://usabilitygeek.com/usable-content-is-king/">Usable content is king</a>
+<ul>
+<li>
+What makes content usable
+<ul>
+<li>Consider form as well as function</li>
+<li>Quality means usability</li>
+<li>Ensure maximum shareability</li>
+<li>Publish content in style</li>
+<li>Fostering usable content ought to be a OneTwo punch</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.sarawb.com/2015/09/10/everybody-hurts-content-for-kindness/">Video + transcript: Sara Wachter-Boettcher - Everybody hurts - Content for kindness</a></li>
+<li>
+<a href="http://code.tutsplus.com/articles/10-common-web-developer-mistakes--cms-24791">10 common web developer mistakes</a>
+<ol>
+<li>Writing old-school HTML</li>
+<li>It works in my browser ...</li>
+<li>Bad form</li>
+<li>Bloated responses</li>
+<li>Creating code that <em>should</em> work</li>
+<li>Writing forking code</li>
+<li>Designing unresponsively</li>
+<li>Making meaningless pages</li>
+<li>Producing sites that are too refreshing</li>
+<li>Working too much</li>
+</ol>
+</li>
+<li>
+<a href="http://usabilitygeek.com/10-guidelines-for-navigation-usability/">10 guidelines for navigation usability</a>
+<ol>
+<li>Embrace predictability</li>
+<li>Keep it simple</li>
+<li>Don't overdo minimalism</li>
+<li>Keep it consistent</li>
+<li>Clear hierarchical structure</li>
+<li>Make it manageable</li>
+<li>Link the logo to the homepage</li>
+<li>Include a sitemap</li>
+<li>Provide more than one navigation menu</li>
+<li>Always include a search bar</li>
+</ol>
+</li>
+<li>
+<a href="https://medium.com/swlh/the-8-worst-ux-mistakes-coming-from-experts-692884971f80#.bx9b2rbhc">The 8 worst UX mistakes coming from experts</a>
+<ol>
+<li>Expecting the unexpected (Be clear - Make sure that every item in your project has a purpose, and that it communicates its purpose immediately)</li>
+<li>You spin me round (Remove image sliders, carousels, and clickbaiting pagination. Be clear and honest, as no one wants to struggle with the dark side of web design)</li>
+<li>Immobile pages (Don't force your users to download your mobile app so they can browse your website)</li>
+<li>The art of bad performance (Do not forsake performance for the sake of aesthetics)</li>
+<li>Everybody hates reading (Content serves the web right now, so it is crucial to make it easy to digest. Give people a nice read)</li>
+<li>Your forms are out of form</li>
+<li>Sign in? Sign OUT</li>
+<li>Simplify</li>
+</ol>
+</li>
+</ul>
+<h2><a name="interaction_design"></a>Interaction Design</h2>
+<ul>
+<li>
+<p><a href="https://medium.com/@imran_parvez/designing-settings-b2a96878961b?mc_cid=ec02ba64fc&amp;mc_eid=b38f2f4652">Designing Settings</a></p>
+<blockquote>
+<p>Products should work for the user and not the other way around</p>
+<p>Not everything is a setting</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/720/1*nygSPS923t8c-ZWhPH1rDg.png" alt="What should be a setting" /></p>
+<ul>
+<li>
+<a href="http://webdesign.tutsplus.com/articles/ux-tip-consider-the-empty-states--cms-23692">Consider the empty states</a>
+<ul>
+<li>
+First-use
+<ul>
+<li>clear explanation</li>
+<li>link to populate that feature</li>
+<li>provide an on boarding sequence</li>
+</ul>
+</li>
+<li>
+User-cleared
+<ul>
+<li>something is better than nothing</li>
+<li>direct and straight to the point</li>
+</ul>
+</li>
+<li>
+Error
+<ul>
+<li>appropriate for the situation</li>
+<li>offers more information</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://www.creativebloq.com/netmag/10-principles-interaction-design-1143871">The 10 principles of interaction design</a>
+<ol>
+<li>Start with two</li>
+<li>Prototype</li>
+<li>Use patterns and prediction</li>
+<li>Trick people</li>
+<li>Tell stories</li>
+<li>Use but don't abuse metaphors</li>
+<li>Don't be a dick</li>
+<li>Make novices experts</li>
+<li>Be a humble expert</li>
+<li>Seek your failures</li>
+</ol>
+</li>
+<li>
+<p><a href="http://www.uxbooth.com/articles/the-perception-of-control/?utm_medium=feed&amp;utm_source=FeedPress&amp;utm_campaign=Feed%3A+uxbooth+%28UX+Booth%29à">The perception of control</a></p>
+<blockquote>
+<p>Every day at the street by my house, I press the &quot;walk&quot; button, and I wait. Each time, as soon as the traffic cycle is complete, I get the walk signal. On a whim, one day I din't press the button... but at the end of the traffic cycle, I got the walk signal. The button I press every day has absolutely no impact on when the light will change. Is it still worth having the button?</p>
+</blockquote>
+</li>
+<li>
+<p><a href="http://www.sitepoint.com/masking-passwords-help-or-hindrance/">Masking passwords: help or hindrance</a></p>
+<ul>
+<li>
+problems with password masking
+<ul>
+<li>masking the password also hides it from the user</li>
+<li>&quot;over the soulder&quot; attacks aren't as common as we may think</li>
+<li>the password is still vulnerable to keylogging and malware</li>
+<li>the design of some mobile operating systems eliminates some benefits of masking</li>
+</ul>
+</li>
+<li>
+Balancing security and usability
+<ul>
+<li>&quot;Show password&quot; toggle: proven results</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://www.smashingmagazine.com/2015/09/anticipatory-design/">What you need to know about anticipatory design</a>
+<ul>
+<li>It's always been around</li>
+<li>Why anticipatory design? Why now?</li>
+<li>Anticipatory design and cognitive load</li>
+<li>Anticipatory design and empathy</li>
+<li>
+Examples of great anticipatory design
+<ul>
+<li>Facebook: using geolocation to facilitate real-life encounters</li>
+<li>Saleswise: how to turn collected data into meaningful time savers</li>
+<li>Pandora: recommendations based on relevance</li>
+<li>Brita: how to make repeat purchases much simpler</li>
+<li>Meetup: recommendations based on user interests</li>
+<li>Expedia: offer ideas beyond purchase</li>
+<li>Credit karma: how to anticipate cross-selling opportunities</li>
+<li>Fandango: finding relevant opportunities to add a &quot;little extra&quot; value</li>
+<li>Microsoft Delve: automatically tailoring the experience to your user's preferences</li>
+<li>Turbotax: transpartently combine additional forms based on user inputs</li>
+</ul>
+</li>
+<li>A checklist to get started with anticipatory design</li>
+<li>Anticipatory design: the new standard</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/are-users-ready-for-the-desktop-hamburger-icon/">Are users ready for the desktop hamburger icon?</a>
+<ul>
+<li>
+The good
+<ul>
+<li>The &quot;clean factor&quot;</li>
+<li>Let your CTA (Call To Action) be the hero</li>
+<li>The power of popularity</li>
+</ul>
+</li>
+<li>
+The not-so-good
+<ul>
+<li>Another click, another barrier</li>
+<li>Out of sight, out of mind</li>
+</ul>
+</li>
+<li>
+Best uses
+<ul>
+<li>Simple sites with few pages/little content</li>
+<li>When it's obviously clickable</li>
+<li>Paired with a CTA</li>
+</ul>
+</li>
+<li>
+Worst uses
+<ul>
+<li>On a site aimed at older demographics</li>
+<li>Sites with unexpected content</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=ZhnN1CdwvTs">Video: Mobile Design Essentials - Multi-Device Output, input and posture</a></li>
+<li>
+<a href="http://sixrevisions.com/user-experience-ux/ux-tips-app/">UX Design tips for your app</a>
+<ul>
+<li>The UX should adapt to the user</li>
+<li>Network awareness means good UX in any context</li>
+<li>Don't assault your users with notifications</li>
+<li>You need a search interface</li>
+<li>Create a good user onboarding experience</li>
+</ul>
+</li>
+<li>
+<a href="http://sixrevisions.com/user-experience-ux/ux-tips-app-part2/">UX Design tips for your app - part 2</a>
+<ul>
+<li>Keep your toch gestures obvious</li>
+<li>Branding is a part of the UX</li>
+<li>Customer support is also part of the UX</li>
+<li>Don't forget landscape mode</li>
+<li>Multi-Device support improves the UX on all gadgets</li>
+</ul>
+</li>
+<li><a href="https://css-tricks.com/so-many-states/">So. Many. States</a></li>
+<li><a href="https://medium.com/@pablostanley/designing-musical-user-interfaces-4f30b41d7a83?ref=webdesignernews.com">Musical Interfaces</a></li>
+<li>
+<a href="http://www.creativebloq.com/ux/paginate-or-infinite-scroll-71515816">When to paginate and when to infinite scroll</a>
+<ul>
+<li>infinite scrolling is best suited for websites that boast user-generated content, visual content</li>
+<li>pagination is a universal option, and best for platforms that intend to satisfy the goal-oriented activities of the visitors</li>
+</ul>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/ux-design-patterns-work-91516961">Why UX design patterns work and how to use them</a>
+<ul>
+<li>How users interact with design patterns</li>
+<li>Learned behavior</li>
+<li>
+Universal design conventions
+<ol>
+<li>Gestalt</li>
+<li>Proximity</li>
+<li>Colour</li>
+<li>Applying empathy to UI design patterns</li>
+</ol>
+</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="http://www.uxbooth.com/articles/complete-beginners-guide-to-interaction-design/">Complete beginner's guide to interaction design</a>
+<ul>
+<li>What is interaction design</li>
+<li>
+Common methodologies
+<ul>
+<li>
+Goal-driven design
+<ul>
+<li>Design first; program second</li>
+<li>Separate responsibility for design from responsibility for programming</li>
+<li>Hold desingers responsible for product quality and user satisfaction</li>
+<li>Define one specific user for your product</li>
+<li>Work in teams of two</li>
+</ul>
+</li>
+<li>
+Usability
+<ul>
+<li>Learnability</li>
+<li>Flexibility</li>
+<li>Robustness</li>
+<li>Efficiency</li>
+<li>Memorability</li>
+<li>Errors</li>
+<li>Satisfaction</li>
+<li>Understandability</li>
+<li>Operability</li>
+<li>Attractiveness</li>
+<li>Usability compliance</li>
+</ul>
+</li>
+<li>
+The five dimensions
+<ol>
+<li>words</li>
+<li>visual representations</li>
+<li>physical objects of space</li>
+<li>time</li>
+<li>behavior</li>
+</ol>
+</li>
+<li>
+cognitive psychology
+<ul>
+<li>mental models</li>
+<li>interface metaphors</li>
+<li>affordances</li>
+</ul>
+</li>
+<li>human interface guidelines</li>
+</ul>
+</li>
+<li>
+Daily tasks and deliverables
+<ul>
+<li>Design strategy</li>
+<li>Wireframes of key interactions</li>
+<li>Prototypes</li>
+<li>Stay current</li>
+</ul>
+</li>
+<li>
+Tools of the trade
+<ul>
+<li>Balsamiq mockups</li>
+<li>Invision</li>
+<li>Omnigraffle</li>
+<li>Patternry</li>
+<li>Sketch</li>
+<li>Axure</li>
+<li>UXPin</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://usabilitygeek.com/5-characteristics-of-interaction-design/">5 characteristics of interaction design</a>
+<ul>
+<li>What is interaction design</li>
+<li>Interaction design vs User experience design</li>
+<li>
+What makes a good interaction design
+<ol>
+<li>
+Design must be goal driven
+<ul>
+<li>user personas</li>
+<li>user scenarios</li>
+<li>user experience maps (journey maps)</li>
+</ul>
+</li>
+<li>It must be easy to use</li>
+<li>The interface must be easily learned</li>
+<li>Keep an eye on signifiers &amp; affordances</li>
+<li>What's the feedback and response time</li>
+</ol>
+</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="http://danielmall.com/articles/content-display-patterns/">Content display patterns</a>
+<ul>
+<li>Identifying and abstracting patterns</li>
+<li>A real-world example</li>
+<li>Don't just build the comp</li>
+<li>Decoupling</li>
+</ul>
+</li>
+<li>
+<a href="https://24ways.org/2015/putting-my-patterns-through-their-paces/">Putting my patterns through their paces</a>
+<ul>
+<li>Meet the teaser</li>
+<li>Moving beyond layout</li>
+<li>Diving into device-agnostic design</li>
+</ul>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/design-contact-page-7-pro-tips-121518342">Design a contact page: 7 pro tips</a>
+<ol>
+<li>Ask the right questions</li>
+<li>Allow access at all times</li>
+<li>Skip the nonessentials</li>
+<li>Show your company has a personality</li>
+<li>Incorporate team images to instil a sense of trust</li>
+<li>Link to additional contact options from the same page</li>
+<li>Consider mobile</li>
+</ol>
+</li>
+<li>
+<a href="http://usabilitygeek.com/5-common-challenges-faced-by-ui-designers/">5 common challenges faced by UI designers</a>
+<ol>
+<li>The new, 'rad looking' GUI elements</li>
+<li>Looking like a link (and not being one)</li>
+<li>Mythbusters: navigation 'must-haves'</li>
+<li>May the forms be with you</li>
+<li>Clash with the clients</li>
+</ol>
+</li>
+<li>
+<a href="https://www.smashingmagazine.com/2016/01/why-i-moved-from-a-square-to-a-circle-calculator-interface-design/">Why I moved from a square to a circle</a>
+<ul>
+<li>If it ain't broke, why fix it</li>
+<li>
+Redesigning the calculator
+<ul>
+<li>Reinventing the numeric keypad</li>
+<li>Resectoring the screen real estate logically</li>
+<li>Substituting gestures for buttons</li>
+<li>Enabling easy correction of errors at any time</li>
+</ul>
+</li>
+<li>The response and the future</li>
+</ul>
+</li>
+</ul>
+<h3><a name="information_architecture"></a>Information architecture</h3>
+<ul>
+<li>
+<a href="http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/">The complete beginners guide to information architecture</a>
+<ul>
+<li>What is information architecture</li>
+<li>
+Common methodologies
+<ul>
+<li>Library science</li>
+<li>
+Cognitive psychology
+<ul>
+<li>Cognitive load</li>
+<li>Mental models</li>
+<li>Decision making</li>
+</ul>
+</li>
+<li>Architecture</li>
+</ul>
+</li>
+<li>
+Daily tasks
+<ul>
+<li>User research and analysis</li>
+<li>Navigation and hierarchy creation</li>
+<li>Wireframing</li>
+<li>Labeling</li>
+<li>Taxonomies and metadata</li>
+<li>Data modeling</li>
+</ul>
+</li>
+<li>People to follow</li>
+<li>Tools of the trade</li>
+<li>Conferences and associations</li>
+<li>IA Books</li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h2><a name="personas"></a>Personas</h2>
+<ul>
+<li><a href="http://www.uxbooth.com/articles/creating-personas/?utm_medium=feed&amp;utm_source=FeedPress&amp;utm_campaign=Feed%3A+uxbooth+%28The+UX+Booth%29">Creating personas</a></li>
+</ul>
+<h2><a name="form_design"></a>Form Design</h2>
+<ul>
+<li>
+<a href="http://mono.company/journal/design-practice/the-10-commandments-of-good-form-design-on-the-web/">The 10 Commandments of Good Form Design on the Web</a>
+<ol>
+<li>Thou shalt provide clear, always visible labels for each field</li>
+<li>Thou shalt use a big enough font size (+14px)</li>
+<li>Thou shalt provide easily tappable areas.</li>
+<li>Thou shalt size the in put fields according to their expected input</li>
+<li>Thou shalt not customize checkboxes and radio buttons</li>
+<li>Thou shalt provide both a general error message and a field specific one</li>
+<li>Thou shalt make it clear what is optional and what is not</li>
+<li>Thou shalt hide what is not needed until it is needed</li>
+<li>Thou shalt minimize user input</li>
+<li>Thou shalt be clear what type of input is expected</li>
+<li>Thou shalt only validate a field when a user is done with it</li>
+</ol>
+</li>
+<li>
+<a href="http://www.formisimo.com/blog/why-are-drop-downs-and-select-boxes-bad-for-forms/">Why are drop-downs and select boxes bad for forms?</a>
+<ul>
+<li>Drop-downs cause users to interact multiple times</li>
+<li>Persistent usability problem</li>
+<li>Don't assume everyone knows what to do with a drop-down</li>
+<li>Drop-down menus are not the most appropriate solution</li>
+<li>Drop-downs are harder to interact with on mobile devices</li>
+<li>
+Creates poor accessibility
+<ul>
+<li>Selecting a list item requires a steady hand --&gt; Make the options large or keyboard accessible</li>
+<li>Multiple choice options don't make sense out of context --&gt; Associate the label with the list</li>
+<li>On-focus shouldn't select --&gt; Only select based on user Intent</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2><a name="copywriting"></a>Copywriting</h2>
+<ul>
+<li>
+<a href="https://medium.com/@thomasfuchs/how-to-write-an-error-message-883718173322">How to write a great error message</a>
+<ul>
+<li>Write an alert message that describes the alert situation clearly and succinctly</li>
+<li>Write informative text that elaborates on the consequences and suggests a solution or alternative</li>
+<li>Express everything in the user's vocabulary</li>
+<li>Don't abuse alerts for upselling or showing superfluous information</li>
+<li>Don't just assume people know about the context of a message</li>
+<li>Write actionable error messages that laypeople can understand</li>
+</ul>
+</li>
+<li>
+<a href="http://thenextweb.com/dd/2015/05/06/6-simple-tips-for-designing-copy-on-the-web/">6 simple tips for designing copy on the web</a>
+<ol>
+<li>omit needless words</li>
+<li>place key words at the beginnng or end</li>
+<li>avoid passive voice</li>
+<li>phrase positively (if possible)</li>
+<li>use similar forms for similar items</li>
+<li>be specific</li>
+</ol>
+</li>
+<li>
+<a href="http://nicolefenton.com/interface-writing/">Interface writing</a>
+<ul>
+<li>
+Start with questions
+<ul>
+<li>what is the user trying to do?</li>
+<li>what might they be feeling</li>
+<li>how did they get here</li>
+<li>what happens next</li>
+<li>what do they need to understand</li>
+<li>why does this matter to them</li>
+</ul>
+</li>
+<li>Be a good tour guide
+tell people what to expect and help them accomplish their goal</li>
+<li>Turn your chair
+Shift your focus to your readers. Talk <em>to</em> them, not <em>at</em> them.</li>
+<li>
+Show you care
+<ul>
+<li>Don't assume you're the core audience</li>
+<li>Avoid jargon and catchphrases</li>
+<li>Don't assume dichotomies or binaries will do the trick</li>
+<li>Don't interrupt</li>
+<li>Don't be a robot</li>
+<li>Don't waste time</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>The only unit of time that matters is heartbeats. The time you spend is not your own - Paul Ford</p>
+</blockquote>
+<ul>
+<li>Write iteratively</li>
+</ul>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/why-plain-language-vital-website-usability-51514999">Why plain language is vital for website usability</a>
+<ul>
+<li>Ditch the jargon</li>
+<li>Use active sentences</li>
+<li>Use headings</li>
+<li>Harness the power of visual layout</li>
+</ul>
+</li>
+<li>
+<a href="http://www.the-haystack.com/2015/12/23/choosing-between-min-and-max-width/">Choosing between min and max-width</a>
+<ul>
+<li>Desktop first and max-width</li>
+<li>Using max-width against your better judgment</li>
+<li>So, what's the best to use?</li>
+</ul>
+</li>
+</ul>
+<h2><a name="process"></a>Process</h2>
+<ul>
+<li>
+<a href="http://www.creativebloq.com/web-design/why-web-designers-should-never-skip-prototyping-91516933">Why designers should never skip prototyping</a>
+<ul>
+<li>Got a design pattern? Plan it out</li>
+<li>Think through the process</li>
+<li>Design patterns remove guesswork</li>
+<li>User testing: insights you can't ignore</li>
+<li>Prepare yourself to test prototypes</li>
+<li>Next steps</li>
+</ul>
+</li>
+<li>
+<a href="http://sixrevisions.com/web_design/reimagine-web-design-process/">Reimagine the web design process</a>
+<ul>
+<li>Mobile first</li>
+<li>One brick at a time</li>
+<li>Think beyond breakpoints</li>
+<li>Get real</li>
+<li>A whole new world</li>
+</ul>
+</li>
+<li>
+<a href="http://alistapart.com/article/from-pages-to-patterns-an-exercise-for-everyone">From pages to patterns: an exercise for everyone</a>
+<ul>
+<li>Thinking in pages (still)</li>
+<li>
+From pages to patterns
+<ol>
+<li>paper and scissors</li>
+<li>naming components</li>
+<li>code</li>
+</ol>
+</li>
+<li>Repeat, repeat, repeat</li>
+<li>What happens next</li>
+<li>Developing components</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h2><a name="style_guides"></a>Style guides</h2>
+<ul>
+<li>
+<a href="https://medium.com/@operatino/living-style-guide-tools-in-depth-overview-28cfffb92d05">Living style guide tools</a>
+<ul>
+<li><a href="http://warpspire.com/kss/">KSS</a>: documentation for CSS (via comments)</li>
+<li><a href="https://www.npmjs.com/package/sc5-styleguide">SC5 - Style guide generator</a> works with KSS</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/creating-web-style-guide/">How to create a web style guide you'll be proud of</a>
+<ul>
+<li>So, what do you do?</li>
+<li>What is a style guide</li>
+<li>Researching your brand</li>
+<li>Configuring the color palette</li>
+<li>Defining buttons and icons</li>
+<li>Font selection</li>
+<li>Imagery and video specifics</li>
+<li>Give a voice to the copy</li>
+<li>Extras</li>
+<li>The final word</li>
+</ul>
+</li>
+<li>
+<a href="https://24ways.org/2015/beyond-the-style-guide/">Beyond the style guide</a>
+<ul>
+<li>The auteur's style guide</li>
+<li>Painting by numbers</li>
+<li>
+Anatomy of a button
+<ul>
+<li>Content</li>
+<li>Structure</li>
+<li>Presentation</li>
+<li>Behaviour</li>
+<li>Transcending layers</li>
+</ul>
+</li>
+<li>Visual design language: documenting the missing piece</li>
+<li>A visual language in code form</li>
+<li>Unlocking possibility</li>
+</ul>
+</li>
+<li><a href="http://bradfrost.com/blog/post/style-guide-best-practices-at-beyond-tellerrand/">VIDEO: Brad Frost - Style guide best practices</a></li>
+</ul>
+<h2><a name="visual_design"></a>Visual design</h2>
+<ul>
+<li>
+<a href="http://designshack.net/articles/typography/can-you-fix-a-bad-design-heres-where-to-start/">Can you fix a bad design?</a>
+<ol>
+<li>Clean up the typography</li>
+<li>Add white space</li>
+<li>Ditch poor images</li>
+<li>Put it on a grid </li>
+<li>Streamline the color palette</li>
+<li>Eliminate the tricks</li>
+<li>Be honest</li>
+</ol>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/create-attractive-user-interfaces-91516600">7 Ways to create attractive user interfaces</a>
+<ol>
+<li>Follow Hick's law (don't clutter interfaces)</li>
+<li>
+Use the right signifiers
+<ol>
+<li>explicit</li>
+<li>pattern</li>
+<li>hidden</li>
+<li>metaphorical</li>
+<li>negative</li>
+</ol>
+</li>
+<li>Know which colours evoke which moods</li>
+<li>Understand and apply the different types of symmetry</li>
+<li>Use photos of real people</li>
+<li>Maintain consistency</li>
+<li>Take advantage of white space</li>
+</ol>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/closer-look-empty-states-91517042">How to fill empty space in your designs</a>
+<ul>
+<li>First-time use (onboarding)</li>
+<li>User cleared data</li>
+<li>No results</li>
+</ul>
+</li>
+<li>
+<a href="https://viget.com/inspire/wayfinding#When:17:05">Signal vs noise: Color as a wayfinding tool</a>
+<ul>
+<li>
+Wayfinding guideposts
+<ul>
+<li>identification</li>
+<li>action</li>
+<li>signification</li>
+<li>notification</li>
+</ul>
+</li>
+<li>In summary	</li>
+</ul>
+</li>
+<li>
+<a href="https://24ways.org/2015/designing-with-contrast/">Designing with contrast</a>
+<ul>
+<li>A thin veneer</li>
+<li>Minimalist expectations</li>
+<li>Imitation without representation</li>
+<li>For want of good design, the message was lost</li>
+<li>
+Standards of excellence
+<ul>
+<li>Put guidelines in place</li>
+<li>Test your work</li>
+<li>Push your limits</li>
+</ul>
+</li>
+<li>More than just a facade</li>
+</ul>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/8-optical-illlusions-improve-your-mockups-111517939">8 optical illusions to improve your mockups</a>
+<ul>
+<li>The science of shape</li>
+<li>Emergence</li>
+<li>Reificcation</li>
+<li>Multistability</li>
+<li>Similarity</li>
+<li>The figure-ground relationship</li>
+<li>Grouping</li>
+<li>Closure</li>
+<li>Continuation</li>
+<li>Takeaway</li>
+</ul>
+</li>
+</ul>
+<h3><a name="typography"></a>Typography</h3>
+<ul>
+<li>
+<a href="http://www.creativebloq.com/typography/10-commandments-web-typography-91516546">10 commandments of web typography</a>
+<ol>
+<li>Read the text. Take notes</li>
+<li>Get a sense of the tone and feeling</li>
+<li>Look for reoccurring words and numbers</li>
+<li>Note sections and subsections in the text. How many levels of headings will you need?</li>
+<li>Note other text-based elements you have to set. Are they captions, pullquotes, numerical data, a featured paragraph? Titles in the text you'll need to italicize?</li>
+<li>Start considering appropriate fonts - at the size you plan to use them. They'll look different as text and headline.</li>
+<li>Discord fonts that don't support the tone of the text, have problems with reoccurring words and numbers, that can't accomplish what you need it to do.</li>
+<li>Test the remaining fonts cross browser. Don't build your site only to learn the doesn't work cross browser</li>
+<li>Attend to &quot;the hole trinity&quot; of good text: size, line-height, line-length</li>
+<li>Use your line length to set the grid if possible. If your site is responsive, consider line length when setting breakpoints.</li>
+</ol>
+</li>
+<li>
+<a href="http://www.creativebloq.com/typography/make-type-look-good-any-device-81515938">How to make your type look good on any screen</a>
+<ul>
+<li>Scale</li>
+<li>Size, length and height</li>
+<li>Font size (recommendation to set base font-size at 100% --&gt; mostly 16px)</li>
+<li>Ems and rems</li>
+<li>
+Line height 
+<ul>
+<li>affects readability </li>
+<li>on average best is 1.4 (small screens slightly less, large screens slightly more)</li>
+<li>vertical margins should be in proportion</li>
+</ul>
+</li>
+<li>Line length (on average 45-75 characters)</li>
+<li>Adjusting margins</li>
+</ul>
+</li>
+</ul>
+<h1><a name="research"></a>Research</h1>
+<p><img src="http://boxesandarrows.com/wp-content/uploads/2015/05/02_stuff.jpg" alt="So, you want to leverage the web to conduct your user and UX research" /></p>
+<ul>
+<li><a href="http://www.smashingmagazine.com/2015/07/moderating-effectively-in-usability-research/">How to moderate effectively in usability research</a></li>
+<li>
+<a href="https://medium.com/design-research-methods/12-design-research-methods-to-get-inspired-by-users-cae4789a094b">12 Design research methods to get inspired by users</a>
+<ol>
+<li>User interview (1-2 hour interview with a current or future user, ideally at home or in the context of the thing you're designing)</li>
+<li>Expert interview (interviewee should have deep experience or knowledge in the relevant area)</li>
+<li>Extreme interview ((interviewee should exhibit sharpened traits of your core users)</li>
+<li>Group session</li>
+<li>Expert panel (expert group session)</li>
+<li>Analogous experience</li>
+<li>Empathy experience</li>
+<li>Desk research</li>
+<li>Data mining</li>
+<li>Behaviour tracking</li>
+<li>Surveys</li>
+<li>Guerilla research</li>
+</ol>
+</li>
+<li><a href="https://boagworld.com/usability/10-ways-to-get-more-from-your-ux-workshop/">10 ways to get more from your UX workshop</a></li>
+</ul>
+<blockquote>
+<p>Do not allow your UX workshop to devolve into discussing features. Keep it focused on user needs</p>
+</blockquote>
+<pre><code>1. Focus on users
+2. Define your digital goals
+3. Make it fun
+4. Don't start designing web pages (start with a book jacket --&gt; most important messages will go on the front)
+5. Vary your exercises
+6. Use voting to keep momentum
+7. Set time constraints
+8. Make it interactive, not just discussion based
+9. Spend time looking at barriers
+10. Refine and report back
+</code></pre>
+
+<ul>
+<li>
+<a href="https://medium.com/user-research/never-ask-what-they-want-3-better-questions-to-ask-in-user-interviews-aeddd2a2101e#.3u7xlt3d3">Never ask what they want - 3 better questions to ask in user interviews</a>
+<ul>
+<li>What are you trying to get done? Why?</li>
+<li>Can you show me how you currently do this?</li>
+<li>Can you show me what's frustrating about your current process?</li>
+</ul>
+</li>
+<li>
+<a href="http://usabilitygeek.com/correlation-organization-user-research-methods-derived-value/">Correlation and organization: user research methods and derived value</a>
+<ul>
+<li>The focus group</li>
+<li>The focus of the focus group</li>
+<li>Correlation and organization: user research methods and derived value</li>
+<li>What are the other guys doing</li>
+</ul>
+</li>
+<li>
+<a href="http://uxmag.com/articles/remote-user-research-usability-methods">Remote user research &amp; usability methods</a>
+<ul>
+<li>
+When remote study works
+<ul>
+<li>Flexibility</li>
+<li>Environment</li>
+</ul>
+</li>
+<li>
+When remote study doesn't work
+<ul>
+<li>Information security</li>
+<li>Inability to use screen sharing</li>
+<li>Face and body movements</li>
+</ul>
+</li>
+<li>Moderated vs automated research</li>
+<li>
+Recruiting for web or mobile study
+<ul>
+<li>Live recruiting</li>
+<li>Other channels for recruiting</li>
+<li>Incentive</li>
+</ul>
+</li>
+<li>
+Tools for remote UX studies
+<ul>
+<li>Moderated - Screen sharing &amp; recording</li>
+<li>Automated - Usability study and task elicitation</li>
+<li>Moderated or automated mobile studies</li>
+<li>Observers</li>
+<li>Making notes</li>
+<li>Combine everyone's insights</li>
+<li>Remote collaboration</li>
+</ul>
+</li>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<h1><a name="html"></a>HTML</h1>
+<ul>
+<li><a href="http://www.smashingmagazine.com/2015/05/05/form-inputs-browser-support-issue/">Form inputs</a>: The browser support issue you didn't know you had</li>
+<li>
+<a href="http://www.creativebloq.com/netmag/25-hottest-web-design-techniques-81516153">25 hottest web design techniques</a>
+<ol>
+<li>Ask questions</li>
+<li>Listen to your code</li>
+<li>Protect the web's inherent accessibility</li>
+<li>Take advantage of conditional loading</li>
+<li>Use <a href="http://matthewlein.com/ceaser/">Ceaser</a> to write cubic-bezier</li>
+<li>Use height-based media queries (improve experiences when the available height is limited)</li>
+<li>Keep the big picture in mind</li>
+<li>Use namespaceing for your CSS files</li>
+<li>Employ easy image fallbacks</li>
+<li>Master debugging in JavaScript</li>
+<li>Make your background images responsive (background-size: cover)</li>
+<li>Use mixins to create complex grid systems</li>
+<li>Think about conversations, not pages</li>
+<li>Provide keyboard support</li>
+<li>Design quickly in the browser</li>
+<li>Simplify your code</li>
+<li>Convert fixed widths to percentages</li>
+<li>Embrace the title field</li>
+<li>Configure Git</li>
+<li>Use Git commit hooks</li>
+<li>Learn from issues and errors</li>
+<li>Feel how fast your site is</li>
+<li>Avoid long select boxes</li>
+<li>Scale icons with background-image:cover</li>
+<li>Keep it short and sweet</li>
+</ol>
+</li>
+</ul>
+<h1><a name="css"></a>CSS</h1>
+<ul>
+<li>
+<a href="http://csswizardry.com/2015/04/cyclomatic-complexity-logic-in-css/">Cyclomatic complexity</a>: logic in CSS
+<ul>
+<li>Think of your selectors as mini programs</li>
+<li>Keep your cyclomatic complexity to a minimum</li>
+<li>If you don't need the checks, don't put them in there</li>
+<li>Start thinking about your selectors from the right first</li>
+<li>Brush up on selector intent</li>
+</ul>
+</li>
+<li>
+<a href="http://alistapart.com/article/quantity-queries-for-css">Quantity queries for CSS</a>
+<ul>
+<li>Dynamic content</li>
+<li>
+Counting
+<ul>
+<li>Counting to one (:only-child | :only-of-type)</li>
+<li>
+Quantity N
+<ul>
+<li>:nth-last-child(n)</li>
+<li>:nth-last-child(6):first-child --&gt; the first of 6 elements in the set (where the set can only contain 6 elements)</li>
+<li>li:nth-last-child(6):first-child ~ li --&gt; all 6 elements in the set (where the set can only contain 6 elements)</li>
+<li>li:nth-last-child(n+6) --&gt; starting with the 6th element</li>
+<li>li:nth-last-child(n+6) ~ li --&gt; all elements in a set of 6 or more elements</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>IE9+</li>
+<li>Content-independent design</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/future-generation-css-selectors-level-4/">Selectors Level 4</a>
+<ul>
+<li>:read-only &amp;&amp; :read-write</li>
+<li>:default</li>
+<li>:valid &amp;&amp; :invalid</li>
+<li>:in-range &amp;&amp; :out-of-range</li>
+<li>:required &amp;&amp; :optional</li>
+<li>[href$=&quot;pdf&quot; i] --&gt; case-insensitive attribute selector</li>
+<li>:blank &amp;&amp; :empty</li>
+<li>:matches()</li>
+<li>:has()</li>
+<li>:any-link</li>
+<li>:focus-within</li>
+<li>:drop &amp;&amp; :drop() --&gt; active, valid, invalid</li>
+</ul>
+</li>
+<li><a href="https://web-design-weekly.com/snippets/force-up-and-down-arrow-for-number-input/">Force up and down arrow for number input</a></li>
+</ul>
+<blockquote>
+<p>input[type=number]::-webkit-inner-spin-button,</p>
+<p>input[type=number]::-webkit-outer-spin-button {</p>
+<p>opacity: 1;</p>
+<p>}</p>
+</blockquote>
+<ul>
+<li><a href="https://web-design-weekly.com/snippets/remove-disable-textarea-resize-image/">Remove or disable textarea resize image</a></li>
+</ul>
+<blockquote>
+<p>textarea{</p>
+<p>resize: none;</p>
+<p>}  
+</p>
+</blockquote>
+<ul>
+<li>
+<a href="http://www.sitepoint.com/12-little-known-css-facts/">12 little known CSS facts</a>
+<ol>
+<li>The <em>color</em> property isn't just for text</li>
+<li>The <em>visibility</em> property can be set to &quot;collapse&quot;</li>
+<li>The <em>background</em> shorthand property has new values</li>
+<li>The <em>clip</em> property works only on absolutely positioned elements</li>
+<li>Vertical percentages are relative to container width, not height</li>
+<li>The <em>border</em> property is kind of like inception</li>
+<li>The <em>text-decoration</em> property is now a shorthand</li>
+<li>The <em>border-width</em> propery accepts keyword values</li>
+<li>Nobody uses <em>border-image</em></li>
+<li>There's an <em>empty-cells</em> property</li>
+<li>The <em>font-style</em> property accepts a value of &quot;oblique&quot;</li>
+<li><em>word-wrap</em> is the same as <em>overflow-wrap</em></li>
+</ol>
+</li>
+<li>
+<a href="http://www.sitepoint.com/12-little-known-css-facts-the-sequel/">12 little known CSS facts - the sequel</a>
+<ol>
+<li>The <em>border-radius</em> property can use &quot;slash&quot; syntax</li>
+<li>The <em>font-weight</em> property accepts relative keywords</li>
+<li>There is an <em>outline-offset</em> property</li>
+<li>There is a <em>table-layout</em> property</li>
+<li>The <em>vertical-align</em> property works differently on table cells vs other elements</li>
+<li>The <em>::first-letter</em> pseudo element is smarter than you think</li>
+<li>You can use invalid characters as delimiters in your HTML class lists</li>
+<li>Animation iterations can be fractional values</li>
+<li>Animation shorthand can break because of the animation's name</li>
+<li>You can select ranges of elements</li>
+<li>Pseudo-elements can be applied to some void elements</li>
+<li>Some attribute values are case insensitive in selectors</li>
+</ol>
+</li>
+<li><a href="https://css-tricks.com/working-with-shapes-in-web-design/">Working with shapes in web design</a></li>
+<li>
+<a href="http://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984">Comprehensive guide: when to use em vs rem</a>
+<ul>
+<li>
+Use em for: (sizing that should scale depending on the font-size of an element other than the root)
+<ul>
+<li>margin, padding, width, height, line-height</li>
+</ul>
+</li>
+<li>Don't use em for font-size - rem is more suited for this</li>
+<li>
+Use rem units for: (sizing that should scale depending on browser font-size settings)
+<ul>
+<li>most heights</li>
+<li>most widths</li>
+<li>most padding</li>
+<li>most margin</li>
+<li>border width</li>
+<li>font-size</li>
+<li>shadow</li>
+<li>media queries (ALWAYS)</li>
+</ul>
+</li>
+<li>Don't use rem for multi-column layout widths (use %)</li>
+<li>Single columns should still generally incorporate rem via max-width</li>
+</ul>
+</li>
+<li><a href="https://www.rachelandrew.co.uk/archives/2015/07/28/modern-css-layout-power-and-responsibility/">Modern CSS Layout, power and responsibility</a></li>
+<li><a href="http://www.sitepoint.com/look-at-length-units-in-css/">A look at length units in CSS</a></li>
+<li><a href="http://thenewcode.com/1052/position-sticky-scroll-to-top-then-fixed-in-pure-CSS">Position sticky: scroll-to-top-then-fixed in pure CSS</a></li>
+<li>
+<a href="https://justmarkup.com/log/2015/07/31/dealing-with-long-words-in-css/?mc_cid=ce70bb0280&amp;mc_eid=b38f2f4652">Dealing with long words in CSS</a>
+<ul>
+<li>
+Hyphens (hyphens: auto + vendor prefixes)
+<ul>
+<li>supported in every major browser (except Blink)</li>
+<li>language-sensitive --&gt; non english languages are not supported very well</li>
+</ul>
+</li>
+<li>
+Word-break (word-break: break-all or break-word)
+<ul>
+<li>supported in every browser (except Opera)</li>
+</ul>
+</li>
+<li>
+Overflow-wrap (word-wrap: break-word; overflow-wrap: break-word;)
+<ul>
+<li>supported in every browser</li>
+</ul>
+</li>
+<li>
+Ellipsis (text-overflow: ellipsis; white-space: nowrap; overflow: hidden;)
+<ul>
+<li>supported in every major browser</li>
+<li>truncation is not a job for CSS</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://thomasbyttebier.be/blog/less-css-mess">Less CSS mess</a>
+<ul>
+<li>Coding guidelines</li>
+<li><a href="itcss.io">ITCSS</a></li>
+<li>Namespaced CSS</li>
+<li>
+BEM
+<ul>
+<li>.block</li>
+<li>.block__element</li>
+<li>.block--modifier</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://simurai.com/blog/2015/09/09/back-to-the-roots/">Back to the :roots</a>
+<ol>
+<li>For every CSS property that you write, try to move it up the tree as far as possible. In other words: Back to the :root.</li>
+<li>Style certain properties always as a <strong>combo</strong></li>
+<li>Use &quot;dynamic&quot; values, such as <em>currentColor</em> and <em>em</em>s</li>
+<li>Override UA styles to <em>inherit</em> from its parents</li>
+</ol>
+</li>
+<li>
+<a href="https://viget.com/extend/the-font-face-dilemma">The @font-face dilemma</a>
+<ul>
+<li>
+How we got here
+<ul>
+<li>@font-face browser defaults</li>
+</ul>
+</li>
+<li>
+Improving font loading performance
+<ul>
+<li>
+font loaders
+<ul>
+<li>typekit/google web font loader, 11kB minified</li>
+<li>font face observer, 4kB minified</li>
+<li>LocalFont</li>
+</ul>
+</li>
+<li>Embracing FOUT (Flash Of Unstyled Text)</li>
+</ul>
+</li>
+<li>
+Font loading in the future
+<ul>
+<li>Font loading API</li>
+<li>CSS Font rendering Draft</li>
+</ul>
+</li>
+<li>Wrap up</li>
+</ul>
+</li>
+<li>
+<a href="https://medium.com/@Heydon/things-to-avoid-when-writing-css-1a222c43c28f#.2y32thsoz">Things to avoid when writing CSS</a>
+<ul>
+<li>Multiple files (you shouldn't organise CSS by splitting it into separate files any more than you should organise a pane of glass by dropping it on a concrete floor)</li>
+<li>Nesting (with sass) (nesting is not the sass feature you are looking for)</li>
+<li>Pixel units (embrace relativity and reap the rewards)</li>
+<li>Device breakpoints (Apple aren't the only people who make handheld devices with browsers on them. No really.)</li>
+<li>Photography (a picture paints a thousand words. most of those words are just incoherent mumbles and repetitions of the statement &quot;I don't give a shit about your data allowance&quot;. SVG for charts, diagrams and icons; typography and CSS for everything else</li>
+<li>Giving anything a set height ever (nobody fucking cares if those buttons line up exactly or not. Vain, pointless frippery that doesn't make anything any more useful or appealing or your product more successful)</li>
+<li>Calling it &quot;semantic&quot; (there's more to something having meaning than just sticking a label on it. This applies to the web, language systems and culture in general)</li>
+<li>Making it just about the code (We should invest in the maintainability of our code, unless it's not worth maintaining)</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/understanding-and-using-rem-units-in-css/">Understanding and using rem units</a>
+<ul>
+<li>What are rem units?</li>
+<li>rem units vs em units</li>
+<li>font sizing with rem units</li>
+<li>using rems with media query breakpoints</li>
+<li>using rem units for scaling documents</li>
+<li>conclusion</li>
+</ul>
+</li>
+<li>
+<a href="http://www.infoq.com/articles/guide-to-better-css">Stylish and sane: a guide to better CSS</a>
+<ul>
+<li>
+Why is this so hard
+<ul>
+<li>Whoa that's a lot of CSS</li>
+<li>Writing CSS when you shouldn't have to</li>
+<li>No re-use</li>
+<li>Everything is special</li>
+<li>Side effects</li>
+</ul>
+</li>
+<li>
+It doesn't have to be this way
+<ul>
+<li>Treat your CSS like code</li>
+<li>Think about your styles like a consumer</li>
+<li>Component-based styling</li>
+</ul>
+</li>
+<li>Introducig the style guide</li>
+<li>Creating your own style guide</li>
+<li>
+Keeping your CSS DRY
+<ul>
+<li>The first rule of CSS is don't write any CSS</li>
+<li>Style each component once</li>
+<li>Consistent markup (writing more consistent HTML means less CSS)</li>
+<li>Scope specific styles (only applies to that scenario and nowhere else)</li>
+<li>Be critical of every line (the less code you leave behind, the less code there is to confuse you the next time around)</li>
+<li>Talk about keeping things simple</li>
+<li>Mobile first</li>
+</ul>
+</li>
+<li>Less CSS, less hassle</li>
+</ul>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528">Manage large CSS projects with ITCSS</a>
+<ul>
+<li>Introducing ITCSS - Inverted Triangle CSS</li>
+<li>
+Prerequisites
+<ul>
+<li>No ID selectors</li>
+<li>Componentised UI architecture</li>
+<li>Class-based architecture (less markup != clean markup)</li>
+</ul>
+</li>
+<li>
+Key metrics
+<ul>
+<li>Generic to explicit</li>
+<li>Low specificity to high specificity</li>
+<li>Far-reaching to localised</li>
+</ul>
+</li>
+<li>
+Layers
+<ul>
+<li>Settings (global)</li>
+<li>Tools (mixins and functions)</li>
+<li>Generic</li>
+<li>Elements</li>
+<li>Objects</li>
+<li>Components</li>
+<li>Trumps</li>
+</ul>
+</li>
+<li>Partials</li>
+<li>The result</li>
+</ul>
+</li>
+<li>
+<a href="http://philipwalton.com/articles/do-we-actually-need-specificity-in-css/">Do we actually need specificity in CSS</a>
+<ul>
+<li>A little background</li>
+<li>But specificity is good, right?</li>
+<li>What if specificity didn't exist?</li>
+<li>
+Removing specifity from the cascade
+<ul>
+<li>Handling ID specificity</li>
+<li>Handling selectors that may already refer to the root element</li>
+<li>The full rewriting algorithm</li>
+<li>Potential downsides</li>
+</ul>
+</li>
+<li>Final thoughts</li>
+</ul>
+</li>
+<li>
+<a href="https://blog.colepeters.com/building-and-shipping-functional-css/">Building and shipping functional CSS</a>
+<ul>
+<li>
+Atomic? Functional? WTF?
+<ul>
+<li>Performance is critical</li>
+<li>Clarity trumps cleverness</li>
+<li>Classes should be as reusable as possible</li>
+<li>Classes should be composable and free of side-effects</li>
+</ul>
+</li>
+<li>Bringing Functional CSS to TrialReach</li>
+<li>
+The approach
+<ul>
+<li>Settings</li>
+<li>Elements</li>
+<li>Objects</li>
+<li>Components</li>
+<li>Utilities</li>
+<li>Visuals</li>
+</ul>
+</li>
+<li>A few examples in practice</li>
+<li>The outcome</li>
+<li>
+Gripes and gains -- getting comfortable with functional CSS
+<ul>
+<li>Component-driven design vs. component-driven CSS</li>
+<li>Make documentation and code reviews a priority</li>
+<li>Wrap frequently-used markup in partials or custom components</li>
+<li>Repetitions: some are good, others less so</li>
+<li>Functional classes in responsive design</li>
+</ul>
+</li>
+<li>I never promised you a rose-coloured panacea</li>
+</ul>
+</li>
+<li>
+<a href="http://webdesign.tutsplus.com/tutorials/blending-modes-in-css-color-theory-and-practical-application--cms-25201">Blending modes in CSS: Color theory and practical application</a>
+<ul>
+<li>
+The basics of blending
+<ul>
+<li>What does &quot;blending mode&quot; actually mean?</li>
+<li>You do the math</li>
+</ul>
+</li>
+<li>Types of blending modes available in CSS</li>
+<li><a href="http://codepen.io/tutsplus/live/wMvoyj">interactive example</a></li>
+<li>
+Separable blend modes
+<ul>
+<li>Screen (the concept of projecting multiple photo exposures at the same time on one screen</li>
+<li>Darken (selects the darker of the two colors)</li>
+<li>Lighten (selects the lighter of the two colors)</li>
+<li>Color dodge (lightens the background color to reflect the source color)</li>
+<li>Color burn (darkens the background color, increasing the contrast between the source and the background)</li>
+<li>Hard light (applies &quot;multiply&quot; on lighter colors and &quot;screen&quot; on darker colors)</li>
+<li>Overlay (applies &quot;screen&quot; on lighter colors and &quot;multiply&quot; on darker colors)</li>
+<li>Soft light (applies a variant of multiply on dark values and a variant of screen on lighter values)</li>
+<li>Difference (takes the absolute difference value between the two colors)</li>
+<li>Exclusion (same basic effect as the &quot;difference&quot; mode, except that similar colors result in a lower contrast middle value)</li>
+</ul>
+</li>
+<li>
+Non-separable blending modes
+<ul>
+<li>Hue (applies the hue of the source layer to the luminance and saturation of the background color)</li>
+<li>Saturation (applies the saturation of the foreground to the hue and the luminance of the background)</li>
+<li>Color (applies the hue and saturation of the foreground to the luminance of the background)</li>
+<li>Luminosity (applies luminosity of the source layer with the hue and saturation of the background layer)</li>
+</ul>
+</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="http://alistapart.com/article/blending-modes-demystified">Blending modes demystified</a>
+<ul>
+<li>Blending modes explained</li>
+<li>
+Transparency effect with multiply
+<ul>
+<li>x = a * b</li>
+<li>multiplies luminance for each of the RGB channels</li>
+<li>filters out white background of logo on top of other image</li>
+</ul>
+</li>
+<li>
+Dust and scratches with screen
+<ul>
+<li>x = 1 - (1 - a) * (1 - b)</li>
+<li>functional opposite of multiply</li>
+<li>multiplying the inverse of a times the inverse of b and then inverting it once more</li>
+<li>white pixels are completely opaque, black pixels are transparent</li>
+</ul>
+</li>
+<li>
+Colorizing with <em>hue</em> and <em>color</em>
+<ul>
+<li>
+Hue
+<ul>
+<li>takes the hue component of the overlapping layer and applies it to the colors below, leaving saturation and luminostiy unmodified</li>
+</ul>
+</li>
+<li>
+Color
+<ul>
+<li>affects both hue and saturation of the source, ignoring luminosity</li>
+<li>achieve the same effect by reversing order of your layers, blending with <em>luminosity</em></li>
+</ul>
+</li>
+<li>
+Cross-browser blending
+<ul>
+<li>Not just browsers are inconsistent</li>
+<li>People are inconsistent (color blindness)</li>
+<li>Test on real devices (performance issues - scrolling might lag - 60 fps might be affected)</li>
+</ul>
+</li>
+<li>
+Applying blending modes
+<ul>
+<li>Blending background images</li>
+<li>
+Blending HTML elements
+<ul>
+<li><em>mix</em>blend<em>mode</em> blends between stacked HTML elements</li>
+<li>applied to an entire element along with all of its children</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Browser support</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/an-introduction-to-css-supports-rule-feature-queries/">An introduction to CSS's @supports rule (feature queries)</a>
+<ul>
+<li>Detecting browser features with the @supports rule</li>
+<li>Testing for multiple conditions at once</li>
+<li>The operators in action</li>
+<li>JavaScript with CSS Feature queries</li>
+<li>Browser support</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="https://css-tricks.com/a-specificity-battle/">A specificity battle! (and other trickery) - 19 ways to override a background</a>
+<ol>
+<li>starting with <em>div{background:black;}</em></li>
+<li>Step 1: element selector <em>(0,0,0,1)</em></li>
+<li>Step 2: two element selectors <em>(0,0,0,2)</em></li>
+<li>Step 3: three element selectors <em>(0,0,0,3)</em></li>
+<li>Step 4: class selector <em>(0,0,1,0)</em></li>
+<li>Step 5: class + element selector <em>(0,0,1,1)</em></li>
+<li>Step 6: element + class + pseudo-class selector <em>(0,0,2,1)</em></li>
+<li>Step 7: stacked classes <em>(0,0,&infin;,0)</em></li>
+<li>Step 8: id selector <em>(0,1,0,0)</em></li>
+<li>Step 9: id + attribute selector <em>(0,1,1,0)</em></li>
+<li>Step 10: combining many above... <em>(0,1,3,3)</em></li>
+<li>Step 11: inline style <em>(1,0,0,0)</em></li>
+<li>Step 12: !important <em>(kind of like 1,0,0,0 on a per-property basis)</em></li>
+<li>Step 13: !important on inline style <em>(kind of like &infin; on a per property basis)</em></li>
+<li>Step 14: box-shadow trickery <em>(box-shadow paints on top of background)</em></li>
+<li>Step 15: invert filter</li>
+<li>Step 16: pseudo element overlay</li>
+<li>Step 17: !important again</li>
+<li>Step 18: @keyframes trickery <em>(!important isn't animateable, so animation can override it)</em></li>
+<li>Step 19: coloring the content <em>(putting a huge block character over everything flips the color again)</em></li>
+</ol>
+</li>
+<li><a href="https://css-tricks.com/css-specificity-is-base-infinite/">CSS specificity is base infinite</a></li>
+<li>
+<a href="http://ipestov.com/22-essential-css-recipes/">20 essential CSS recipes</a>
+<ol>
+<li>Blend modes</li>
+<li>Gradient borders</li>
+<li>Transition for z-index</li>
+<li>currentColor</li>
+<li>Object fit</li>
+<li>Checkbox and radio buttons styles</li>
+<li>Counters in CSS</li>
+<li>Advanced CSS counters</li>
+<li>
+Menu Icon without Images
+<ol>
+<li>Shadows</li>
+<li>Gradient</li>
+<li>UTF-8</li>
+</ol>
+</li>
+<li>@supports</li>
+<li>visibility: visible</li>
+<li>position:sticky --&gt; <a href="http://caniuse.com/#search=sticky">caniuse</a></li>
+<li>New dimensions</li>
+<li>Text decorations</li>
+<li>Block scroll on touch devices</li>
+<li>Using hardware acceleration</li>
+<li>Unicode classes</li>
+<li>Vertical margins in percents</li>
+<li>Margins in firefox buttons</li>
+<li>Color + border = border-color;</li>
+</ol>
+</li>
+</ul>
+<h2><a name="flexbox"></a>Flexbox</h2>
+<ul>
+<li><a href="http://jonibologna.com/flexbox-cheatsheet/">Flexbox cheatsheet</a></li>
+<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A complete guide to flexbox</a></li>
+<li><a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties">A visual guide to CSS3 flexbox properties</a></li>
+<li>
+<a href="https://www.youtube.com/watch?v=2hak2xElAKI">Ridiculously Easy Layouts with Flexbox</a>
+<ul>
+<li>
+Multi-axis
+<ul>
+<li>main &amp; cross</li>
+<li>start, end and size</li>
+<li>direction depends on flex-direction</li>
+</ul>
+</li>
+<li>
+Benefits	
+<ul>
+<li>W3C standard (almost)</li>
+<li>No more float and clear</li>
+<li>Vertical positioning</li>
+<li>override source order</li>
+<li>equal heights</li>
+<li>perfect fit for RWD</li>
+<li>more semantic (in contrast to e.g. Bootstrap)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://www.planningforaliens.com/blog/2014/03/11/real-world-flexbox/">Flexbox in the real world</a></li>
+<li>
+<a href="https://css-tricks.com/useful-flexbox-technique-alignment-shifting-wrapping/">Useful flexbox technique: Alignment shifting wrapping</a>
+<ul>
+<li>title split into two sections, first portion is left aligned, second is right aligned</li>
+<li>when there isn't room based on screen size or length issues, left-align wrapping is what we want</li>
+<li><a href="http://codepen.io/chriscoyier/pen/doVXLV">Live demo</a></li>
+</ul>
+</li>
+<li>
+<a href="http://chriswrightdesign.com/experiments/flexbox-adventures/">Flexbox adventures</a>
+<ul>
+<li>
+Flexbox basics
+<ul>
+<li>Flex-basis and Flex-grow</li>
+<li>Applying grow</li>
+<li>
+Calculating the space
+<ul>
+<li>available space = (container size - sum of flex-basis of siblings)</li>
+<li>grow unit = (available space / sum grow siblings total)</li>
+<li>flex item size = (flex basis + (grow unit * num))</li>
+</ul>
+</li>
+<li>A rounding bug</li>
+<li>
+Flex shrink
+<ul>
+<li>total items = multiply each basis by its shrink value and add together</li>
+<li>shrink factor / item = divide each item by the total items</li>
+<li>mulptiply shrink factor with negative space (overflow)</li>
+</ul>
+</li>
+<li>Relative distributions (set basis to 0)</li>
+<li>Source ordering</li>
+<li>Reverse it</li>
+<li>
+Vertical center &amp; equal height columns
+<ul>
+<li>Vertical center div</li>
+<li>Equal height columns</li>
+</ul>
+</li>
+<li>Flexbox transitions</li>
+<li>Flexbox feature support</li>
+<li>Enhancing to flexbox</li>
+<li>Wrapping up</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://chriswrightdesign.com/experiments/using-flexbox-today/">Using flexbox today</a>
+<ul>
+<li>
+Road to flexbox
+<ul>
+<li>Making layouts better</li>
+<li>Card layouts</li>
+<li>Split screen layouts</li>
+<li>Pinned layouts</li>
+<li>Newspaper and ad units</li>
+<li>Multi-column layouts</li>
+<li>Dashboards</li>
+<li>Embracing change</li>
+<li>Content is flexible</li>
+<li>We don't always have control</li>
+<li>More design tools</li>
+<li>Bend and break</li>
+</ul>
+</li>
+<li>
+Strategy for Flexbox
+<ul>
+<li>Build the way we always did</li>
+<li>Minimize code</li>
+<li>Make it worthwhile</li>
+<li>Cut the mustard: flex-wrap</li>
+<li>Enhancing with flexbox</li>
+</ul>
+</li>
+<li>
+Troubleshooting Flexbox
+<ul>
+<li>Axis direction (flex direction)</li>
+<li>Flex items horizontal off the page</li>
+<li>
+Inflexible imagery
+<ul>
+<li>Workaround</li>
+</ul>
+</li>
+<li>Understanding space-around and space-between</li>
+<li>How grow and shrink work</li>
+<li>Items become many tiny columns</li>
+<li>IE 10/11 only: wrapping too early, items too big</li>
+<li>IE 10/11 only: the heights are oddly collapsed</li>
+<li>FF: column-reverse and overflow-y</li>
+<li>Internet explorer ignores min-height</li>
+<li>Well documented cross-browser bugs</li>
+<li>Add flexbox to your layouts</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://flexboxfroggy.com/">Flexbox Froggy: A game to understand flexbox</a></li>
+<li><a href="http://www.flexboxdefense.com/">Flexbox Defense</a></li>
+<li>
+<a href="http://www.smashingmagazine.com/2015/11/flexbox-interfaces-tracks-case-study/">Flexbox for interfaces: tracks case study</a>
+<ul>
+<li>Flexy atomic components</li>
+<li>Inline patterns</li>
+<li>Inline form inputs</li>
+<li>Dropdown menu</li>
+<li>Media objects</li>
+<li>Flexy calendar</li>
+<li>Layout</li>
+<li>Sticky footers</li>
+<li>Be careful</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li><a href="http://www.sitepoint.com/watch-the-axis-of-flexbox/">VIDEO: the axis of flexbox</a></li>
+<li>
+<a href="https://css-tricks.com/designing-a-product-page-layout-with-flexbox/">Designing a product page layout with flexbox</a>
+<ul>
+<li>This is based on the &quot;Venture&quot; theme</li>
+<li>The header layout</li>
+<li>The products layout</li>
+<li>Bottom-aligning the product footers</li>
+<li>Responsive flexboxing</li>
+<li>Compatibility</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="https://css-tricks.com/flex-grow-is-weird/">'Flex-grow' is weird. Or is it?</a>
+<ul>
+<li>How flex-grow <em>doesn't</em> work</li>
+<li>
+How flex-grow really works
+<ul>
+<li>First we have to calculate the remaining space</li>
+<li>Next we have to determine how much one-flex-grow is</li>
+<li>The sliced up remaining space gets distributed between all elements</li>
+</ul>
+</li>
+<li>Allright, but why does the first demo work?</li>
+<li>Flex-grow and flex-basis</li>
+<li>Working with the box model</li>
+<li>
+Some useful examples
+<ul>
+<li>No more width: [x]%</li>
+<li>The &quot;Holy Grail&quot; 3 column liquid layout with pixel-widths</li>
+<li>Filling remaining space with any element</li>
+</ul>
+</li>
+<li>Listening to the specs</li>
+</ul>
+</li>
+</ul>
+<h2><a name="grid"></a>Grid</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Felq4z_rdPQ">VIDEO: Start using CSS Grid Layout - Rachel Andrew</a></li>
+<li>
+<a href="http://blogs.igalia.com/mrego/2016/02/01/deep-dive-into-grid-layout-placement/">Deep dive into grid layout placement</a>
+<ul>
+<li>Grid lines (numbered startign at 1)</li>
+<li>Grid placement properties</li>
+<li>Cell spanning</li>
+<li>Negative line numbers</li>
+<li>Named grid lines</li>
+<li>Grid areas</li>
+<li>Grid areas &amp; named grid lines</li>
+<li>Implicit grid</li>
+<li>Implicit grid &amp; named grid lines</li>
+<li>Special cases</li>
+<li>Recap</li>
+<li>Status</li>
+</ul>
+</li>
+<li><a href="http://meyerweb.com/eric/thoughts/2016/01/15/subgrids-considered-essential/">Subgrids considered essential</a></li>
+<li>
+<a href="http://blogs.igalia.com/mrego/2016/02/12/subgrids-thinking-out-loud/">Subgrids thinking out loud</a>
+<ul>
+<li>State of art</li>
+<li>Use cases</li>
+<li>
+Main issues
+<ul>
+<li>Margin, border and padding</li>
+<li>Implicit tracks on the subgrid</li>
+<li>Automatic grid span</li>
+<li>Subgrid only in one axis</li>
+<li>Descendants navigation</li>
+<li>Grid gaps</li>
+<li>Other</li>
+</ul>
+</li>
+<li>Draft proposal</li>
+<li>Wrap-up</li>
+</ul>
+</li>
+</ul>
+<h1><a name="sass"></a>SASS</h1>
+<ul>
+<li>
+<a href="https://www.youtube.com/watch?v=_4WSOy2gBls">Ins and outs of Sass</a>
+<ul>
+<li>
+File organization
+<ul>
+<li>Base (configuration/settings for the project)</li>
+<li>Components (largest directory / aka modules)</li>
+<li>Layout (systems level layouts)</li>
+<li>Patterns (reusable patterns)</li>
+<li>Plugins 3rd party files</li>
+</ul>
+</li>
+<li>_Partials.css (does not create extra HTTP requests)</li>
+<li>
+@mixin (way to share reusable pieces of code)
+<ul>
+<li>does not compile yet</li>
+<li>needs to be included (@include)</li>
+<li>accept arguments ($variable) --&gt; should include default values or all includes should provide the variable</li>
+<li>passing named arguments (useful with more than 1 optional argument)</li>
+<li>order matters for arguments --&gt; required arguments before optional ones</li>
+</ul>
+</li>
+<li>
+%extends
+<ul>
+<li>don't take arguments</li>
+<li>chains selectors instead of duplicating</li>
+</ul>
+</li>
+<li>
+Nesting
+<ul>
+<li>should not go further than 3 to 4 levels</li>
+<li>Ideally used for pseudo-selectors</li>
+</ul>
+</li>
+<li>
+Functions
+<ul>
+<li>@function</li>
+</ul>
+</li>
+<li>Lists and maps</li>
+</ul>
+</li>
+<li>
+<a href="http://www.smashingmagazine.com/2015/05/04/extending-in-sass-without-mess/">Extending in Sass without creating a mess</a>
+<ul>
+<li><strong>the target &quot;simple selector&quot; is identified</strong></li>
+<li>
+<strong>contraints are formed on the target selector using:</strong>
+<ul>
+<li><strong>the selector that's doing the extending</strong></li>
+<li><strong>and the selector that's being extended</strong></li>
+</ul>
+</li>
+<li>Use and extend %placeholder selectors</li>
+<li>extend a selector as few times as possible</li>
+<li>extend traits selectively, and consider mixins for short traits</li>
+<li>use @extend for relationships</li>
+<li>define relationships via placeholders, not classes</li>
+<li>represent one selector per placeholder in relationships</li>
+<li>be wary of descendant and general sibling combinators</li>
+<li>have separate placeholders for modifiers</li>
+<li>use @extend inside similar media queries</li>
+<li>use @extend with :matches() in the future</li>
+</ul>
+</li>
+<li>
+<a href="http://www.smashingmagazine.com/2015/06/17/responsive-typography-with-sass-maps/">Responsive typography with sass maps</a>
+<ul>
+<li>
+font-size switching based on breakpoints
+<ul>
+<li>function to retrieve value from map</li>
+<li>font-sizes map (breakpoint, font-size)</li>
+</ul>
+</li>
+<li>
+font-size switching based on breakpoints continued
+<ul>
+<li>function to retrieve font-size based on breakpoint</li>
+<li>breakpoints map (name, value) + font-sizes map (breakpoint name, font-size)</li>
+</ul>
+</li>
+<li>
+font-size + line-height switching based on breakpoints
+<ul>
+<li>function to retrieve font-size and/or line-height based on breakpoint</li>
+<li>breakpoints map (name, value) + font-sizes map (breakpoint name, list combining font-size with line-height)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://blog.alexdevero.com/sass-optimization-5-tips-for-faster-work/">Sass optimization - 5 tips for faster work</a>
+<ol>
+<li>Sass @import directive</li>
+<li>Use variables</li>
+<li>Use mixins</li>
+<li>Nesting the rational way</li>
+<li>Use Sass color functions</li>
+</ol>
+</li>
+<li>
+<a href="http://www.sitepoint.com/using-sass-error-warn-and-debug-directives/">Using Sass's @error, @warn, and @debug Directives</a>
+<ul>
+<li>Stop Everything - The @error directive</li>
+<li>Don't miss this - The @warn directive</li>
+<li>If you were curious - The @debug directive</li>
+</ul>
+</li>
+<li>
+<a href="http://vanseodesign.com/css/how-to-nest-selectors-and-properties-in-sass/">How to nest selectors and properties in sass</a>
+<ul>
+<li>Nesting selectors</li>
+<li>Referencing parent selectors (&amp;)</li>
+<li>Trailing parent reference</li>
+<li>Nesting properties</li>
+<li>Closing thoughts</li>
+</ul>
+</li>
+<li>
+<a href="http://vanseodesign.com/css/the-pros-and-cons-of-nesting-your-sass-code/">The pros and cons of nesting your sass code</a>
+<ul>
+<li>
+The cons of nested sass
+<ul>
+<li>specificity</li>
+<li>inception-like</li>
+</ul>
+</li>
+<li>
+The pros of nestingM
+<ul>
+<li>more readable code</li>
+<li>more maintainable code</li>
+</ul>
+</li>
+<li>Closing thoughts</li>
+</ul>
+</li>
+<li>
+<a href="http://vanseodesign.com/css/how-to-use-sass-variables/">How to use sass variables</a>
+<ul>
+<li>A simple example using variables</li>
+<li>Allowed characters in variable names</li>
+<li>Variable scope (!global)</li>
+<li>Default values in variables (!default)</li>
+<li>Variable interpolation (#{variable})</li>
+<li>Closing thoughts</li>
+</ul>
+</li>
+<li>
+<a href="http://una.im/classy-css/">Classy CSS: a programmatic approach to sass stylesheets</a>
+<ul>
+<li>Classy CSS, please</li>
+<li>A classy button</li>
+<li>Well, what about mixins?</li>
+<li>In defense of @extend</li>
+<li>Benefits</li>
+</ul>
+</li>
+<li>
+<a href="http://alistapart.com/article/mixing-color-for-the-web-with-sass">Mixing color for the web with Sass</a>
+<ul>
+<li>A hex on hex codes</li>
+<li>Packing up the color picker for Sass</li>
+<li>Proportional palettes with color scaling</li>
+<li>Mastering color with mixing</li>
+<li>Additional considerations for developing your palette</li>
+</ul>
+</li>
+<li>
+<a href="https://css-tricks.com/the-sass-ampersand/">The Sass ampersand</a>
+<ul>
+<li>Basic nesting</li>
+<li>Adding another class</li>
+<li>The &quot;aha&quot; moment!</li>
+<li>Using the &amp; with pseudo classes</li>
+<li>Using the &amp; with &gt;, .+, and ~</li>
+<li>Qualifying based on context</li>
+<li>
+Tweaking the definition of the &amp;
+<ul>
+<li>Wacky but working example #1</li>
+<li>Wacky but working example #2</li>
+</ul>
+</li>
+<li>What the &amp; isn't</li>
+<li>@at-root to the rescue</li>
+<li>Doubling up specificity</li>
+<li>Modifying the ampersand</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="https://www.smashingmagazine.com/2016/01/variables-in-css-architecture/">Variables: The backbone of CSS architecture</a>
+<ul>
+<li>What is the preprocess poster child?</li>
+<li>Why should variables be the core reference for a sass project</li>
+<li>Storing CSS variables</li>
+<li>When should I create a variable</li>
+<li>
+Reduce mixins and extends to the bare essentials
+<ul>
+<li>Write vanilla css when abstraction causes confusion</li>
+<li>Use mixins or extends for well-established conventions</li>
+<li>For global styles, can you swap a mixin with a variable if it doesn't need arguments</li>
+<li>Don't lock yourself in by using mixins for vendor prefixes</li>
+<li>Use local variables only when necessary</li>
+<li>Break your own rules; it's often helpful to have a few handy mixins or placeholders</li>
+</ul>
+</li>
+<li>
+Variables: Pixie-dusting our partials with care
+<ul>
+<li>Think before making a new variable</li>
+<li>Think before reusing a variable; would native CSS values suffice?</li>
+<li>Don't reuse variables inappropriately</li>
+</ul>
+</li>
+<li>
+Variables: Nomenclature
+<ul>
+<li>Most descriptive, but most restricted</li>
+<li>Descriptive, but less restrictive</li>
+<li>Less descriptive, with more weightage</li>
+<li>Less descriptive, but offers some weightage</li>
+</ul>
+</li>
+<li>
+Common variables for a web application
+<ul>
+<li>Variables for dimensions</li>
+<li>Variables for spacing: paddag and margins</li>
+<li>Variables for colors</li>
+<li>Variables for z-index</li>
+<li>Variables for border-radius</li>
+<li>Variables for typography</li>
+<li>Variables for font icons</li>
+<li>Variables for media queries</li>
+<li>Native variables with pure CSS --&gt; <a href="http://caniuse.com/#search=css%20variables">CanIUse</a></li>
+</ul>
+</li>
+<li>Resources</li>
+</ul>
+</li>
+<li>
+<a href="http://vanseodesign.com/css/sass-at-rules-and-directives/">Sass: @-rules and directives</a>
+<ul>
+<li>CSS @-rules</li>
+<li>The @at-root directive</li>
+<li>(without: directive-name) and (with: directive-name)</li>
+<li>The @debug, @warn, and @error directives</li>
+<li>Closing thoughts</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/the-benefits-of-inheritance-via-extend-in-sass/">The benefits of inheritance via @extend in Sass</a>
+<ul>
+<li>What is @extend?</li>
+<li>
+Using @extend
+<ul>
+<li>Duplication</li>
+<li>Moving multiple classes out of HTML</li>
+<li>Extending complex selectors</li>
+</ul>
+</li>
+<li>
+Advantages of @extend
+<ul>
+<li>Cleaner HTML classes</li>
+<li>Reducing duplication of CSS</li>
+<li>Saving time and effort</li>
+</ul>
+</li>
+<li>The dangers of @extend</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="http://vanseodesign.com/css/sass-the-extend-directive/">Sass: the @extend directive</a>
+<ul>
+<li>The @extend directive</li>
+<li>Extending complex selectors</li>
+<li>Multiple @extend directives</li>
+<li>Chaining @extend directives</li>
+<li>Selector sequences</li>
+<li>Merging selector sequences</li>
+<li>Closing thoughts</li>
+</ul>
+</li>
+</ul>
+<h1><a name="responsive_web_design"></a>Responsive Web Design</h1>
+<ul>
+<li><a href="http://viget.com/inspire/responsive-logos-part-1-tips-for-adapting-logos-for-small-screens">Responsive Logos, Part 1</a>: Tips for adapting logos for small screens </li>
+<li><a href="http://viget.com/inspire/responsive-logos-part-2-making-logos-truly-responsive-with-svg">Responsive Logos, Part 2</a>: Making logos truly responsive with inline SVG
+<img src="https://pbs.twimg.com/media/CGewrArXEAALg5N.jpg:large" alt="Responsive Strategy Illustration" /></li>
+<li>
+<a href="http://www.smashingmagazine.com/2015/06/17/responsive-typography-with-sass-maps/">Responsive typography with sass maps</a>
+<ul>
+<li>
+font-size switching based on breakpoints
+<ul>
+<li>function to retrieve value from map</li>
+<li>font-sizes map (breakpoint, font-size)</li>
+</ul>
+</li>
+<li>
+font-size switching based on breakpoints continued
+<ul>
+<li>function to retrieve font-size based on breakpoint</li>
+<li>breakpoints map (name, value) + font-sizes map (breakpoint name, font-size)</li>
+</ul>
+</li>
+<li>
+font-size + line-height switching based on breakpoints
+<ul>
+<li>function to retrieve font-size and/or line-height based on breakpoint</li>
+<li>breakpoints map (name, value) + font-sizes map (breakpoint name, list combining font-size with line-height)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://css-tricks.com/viewport-sized-typography/">Viewport sized typography</a></li>
+<li>
+<a href="http://codepen.io/Tigt/blog/when-responsive-images-get-ugly">When responsive images get ugly</a>
+<ul>
+<li>
+Some ground floor stuff
+<ul>
+<li>Why bother.</li>
+<li>Srcset is preferable</li>
+</ul>
+</li>
+<li>
+Unintuitive behavior &amp; gotchas
+<ul>
+<li>Media conditions, NOT media queries</li>
+<li>
+Troublesome CSS units
+<ul>
+<li>% only works if you know how big an element's parent are otherwise CSS is required to calculate it</li>
+<li>rem and em are resolved based on users default font-size</li>
+</ul>
+</li>
+<li>sizes <em>will</em> affect how your image displays</li>
+</ul>
+</li>
+<li>
+Media-aware images
+<ul>
+<li>Printer-friendly</li>
+<li>E-ink-friendly</li>
+<li>Night mode &amp; bright sunlight</li>
+</ul>
+</li>
+<li>The deepest backwards-compatibility possible</li>
+<li>
+Height <em>and</em> width-constrained <em>srcset</em>
+<ul>
+<li>object-fit:cover</li>
+<li>object-fit:contain</li>
+</ul>
+</li>
+<li>
+Responsive bitmaps inside inline SVG
+<ul>
+<li>Fixing IE</li>
+<li>Building the sizes</li>
+<li>
+Making things worst with not quite-entire-viewport scaling
+<ul>
+<li>The browser viewport</li>
+<li>The <svg> element</li>
+<li>The viewbox</li>
+<li>The image</li>
+<li>Assembling</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>That's all, folks</li>
+</ul>
+</li>
+<li><a href="http://alistapart.com/article/container-queries-once-more-unto-the-breach">Container Queries: once more unto the breach</a>
+Why we should rename element queries into container queries</li>
+<li>
+<a href="http://responsivenews.co.uk/post/123104512468/13-tips-for-making-responsive-web-design">13 tips for making responsive web design multi-lingual</a>
+<ol>
+<li>don't confuse languages, scripts and countries with one another</li>
+<li>make each version easily configurable</li>
+<li>use a templating language to customize HTML for each service</li>
+<li>create translation files for words that will be hard coded into your UI</li>
+<li>ensure your web font is compatible with all the languages you support</li>
+<li>make your layout language neutral</li>
+<li>use sass to create bi-directional layouts</li>
+<li>add additional break points for language specific issues</li>
+<li>make components adaptable for certain language issues</li>
+<li>localize social media buttons</li>
+<li>don't worry too much about iconography</li>
+<li>localize dates</li>
+<li>localizing content for specific services</li>
+</ol>
+</li>
+<li>
+<a href="http://www.creativebloq.com/rwd/pros-guide-responsive-web-design-71515692">A pros guide to responsive web design</a>
+<ul>
+<li>
+Responsive images
+<ul>
+<li>
+Basic
+<ul>
+<li>Think about whether you really need to include an image. Is it core content or decorative. One less image will mean a faster load time</li>
+<li>Optimise the images you do need to include</li>
+<li>Set expire headers for your images on your server or .htaccess file</li>
+<li>PictureFill as a polyfill</li>
+</ul>
+</li>
+<li>
+Advanced
+<ul>
+<li>Lazy load images using jquerys lazy load plugin</li>
+<li>use sizes and picture for feature detection</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Performance</li>
+<li>
+Conditional and lazy loading
+<ul>
+<li>
+Basic
+<ul>
+<li>Enable gzipping for files and set expire headers for all static content</li>
+<li>Use Lazy Load jQuery plugin</li>
+</ul>
+</li>
+<li>
+Advanced
+<ul>
+<li>Set up a CDN</li>
+<li>Enable SPDY for http2-enabled browsers to take advantage of http2 features like parallel http requests</li>
+<li>Ajax Include pattern will load content snippets from data-attributes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Responsive typography
+<ul>
+<li>
+Basic
+<ul>
+<li>Base your font on 100% body</li>
+<li>Work in relative em units</li>
+<li>Set your margins to you line height to maintain vertical rhythm in your design</li>
+</ul>
+</li>
+<li>
+Advanced
+<ul>
+<li>Improve font loading performance with enhance.js or deferred font loading</li>
+<li>Use Sass @includes for semantic headings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Media queries in JavaScript
+<ul>
+<li>Forget about JS for different viewports. Provide content and website functions to users in a way they can access it across all viewports. We should never need JavaScript</li>
+<li>Extend Gustafson's method by using breakup as a predefined list of media queries and automating the creation of the list of font families for getActiveMQ-watcher</li>
+</ul>
+</li>
+<li>Progressive enhancement</li>
+<li>Layout</li>
+</ul>
+</li>
+<li>
+<a href="https://vimeo.com/134952797">VIDEO: Jason Grigsby talking about the &quot;why&quot; of &quot;responsive images</a>
+<ul>
+<li>resolution switching</li>
+<li>art direction</li>
+<li>text on images</li>
+<li>image breakpoints</li>
+<li>memory usage on resizing</li>
+<li>hero images aka a box for marketing</li>
+</ul>
+</li>
+<li>
+<a href="https://jakearchibald.com/2015/anatomy-of-responsive-images/">The anatomy of responsive images</a>
+<ul>
+<li>Fixed size, varying density --&gt; src + srcset with x-descriptor</li>
+<li>Varying size and density --&gt; src + srcset with w-descriptor + sizes</li>
+<li>Varying width, density and art direction --&gt; picture element with nested img element with src + srcset with w-descriptor and sizes</li>
+<li>Varying on type --&gt; type attribute of picture element</li>
+<li>Further reading</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/5-responsive-design-pitfalls-and-how-to-avoid-them/">5 responsive design pitfalls and how to avoid them</a>
+<ol>
+<li>Unexpected font-size changes</li>
+<li>Unwanted form styles</li>
+<li>Emulator errors can mislead</li>
+<li>Smooth animation on desktop could be a rough animation on mobile</li>
+<li>The coordinates of a touch are stored differently than the coordinates of a click</li>
+</ol>
+</li>
+<li>
+<a href="http://www.creativebloq.com/rwd/create-responsive-forms-and-tables-101517303#disqus_thread">Create responsive forms and tables</a>
+<ul>
+<li>
+Tables
+<ul>
+<li>Things that are not tables</li>
+<li>Things that appear to tables</li>
+<li>Things that must be tables</li>
+</ul>
+</li>
+<li>
+Forms
+<ul>
+<li>Layout</li>
+<li>
+Validation
+<ul>
+<li>Inside the input</li>
+<li>Outside the input</li>
+</ul>
+</li>
+<li>Dates</li>
+<li>Selects</li>
+<li>Long selects</li>
+<li>Complex selects</li>
+</ul>
+</li>
+<li>Let's face it, these things are messy</li>
+</ul>
+</li>
+<li>
+<a href="http://thenextweb.com/dd/2015/10/28/9-responsive-design-mistakes-you-dont-want-to-make/">9 responsive design mistakes you don't want to make</a>
+<ol>
+<li>Focusing on devices instead of screens</li>
+<li>Using only device sizes as breakpoints</li>
+<li>Only thinking small</li>
+<li>Hiding content</li>
+<li>Insisting on consistent navigation</li>
+<li>Failing to design for touch</li>
+<li>Linking to non-mobile friendly content</li>
+<li>Ignoring performance</li>
+<li>Forgetting to test your design</li>
+</ol>
+</li>
+<li>
+<a href="http://www.creativebloq.com/rwd/expert-responsive-typography-tips-101517572">9 responsive typography tips from the experts</a>
+<ol>
+<li>Size your body text appropriately</li>
+<li>Consider the reader</li>
+<li>Watch your measure</li>
+<li>Adjust line spacing</li>
+<li>Use visual variation other than size</li>
+<li>Choose fonts wisely</li>
+<li>Use a type test rig</li>
+<li>Set type in context</li>
+<li>Learn from others</li>
+</ol>
+</li>
+<li>
+<a href="https://24ways.org/2015/being-responsive-to-the-small-things/">Being responsive to the small things</a>
+<ul>
+<li>Enter container queries</li>
+<li>Our saviour this christmas: JavaScript</li>
+<li>Christmas is over</li>
+</ul>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/common-mistakes-responsive-mockups-111517922">7 common mistakes made with responsive mockups</a>
+<ol>
+<li>Designing for devices, not screens</li>
+<li>Relying only on device sizes for breakpoints</li>
+<li>Ignoring touch controls</li>
+<li>Linking to content that isn't mobile-friendly</li>
+<li>Poor planning for bigger screens</li>
+<li>Using consistent navigation across screen-sizes</li>
+<li>Hiding content</li>
+</ol>
+</li>
+<li>
+[http://blog.cloudfour.com/responsive-guide-to-type-sizing/](A responsive guide to type sizing)
+<ul>
+<li>Using a modular scale for typographic proportions</li>
+<li>
+Applying your scale from the ground up
+<ul>
+<li>Configuring the variables</li>
+<li>Establishing default sizes</li>
+<li>Expanding your scale when proportional contrast is needed</li>
+<li>Broadening the usage of your scale</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.smashingmagazine.com/2016/01/leaner-responsive-images-client-hints/">Leaner responsive images with client hints</a>
+<ul>
+<li>What are client hints?</li>
+<li>Let the web server know</li>
+<li>Enabling client hints in your HTML</li>
+<li>Our old friend, <em>img</em></li>
+</ul>
+</li>
+</ul>
+<h1><a name="progressive_enhancement"></a>Progressive Enhancement</h1>
+<blockquote>
+<p>Progressive enhancement is more about dealing with technology failing than technology not being supported. - Andy Hume</p>
+</blockquote>
+<ul>
+<li><a href="https://hiddedevries.nl/en/blog/2015-04-03-progressive-enhancement-with-handlers-and-enhancers">Progressive enhancement with handlers and enhancers</a></li>
+<li><a href="http://kryogenix.org/code/browser/everyonehasjs.html">Everyone has JavaScript, right?</a></li>
+<li><a href="https://medium.com/@AaronGustafson/the-true-cost-of-progressive-enhancement-d395b6502979">The true cost of progressive enhancement</a></li>
+<li><a href="https://channel9.msdn.com/Events/WebPlatformSummit/2015/Advancing-JavaScript-without-breaking-the-web">Advancing JavaScript without breaking the web</a></li>
+<li><a href="http://timkadlec.com/2015/06/thriving-in-unpredictability/">Thriving in unpredictability</a></li>
+<li><a href="https://adactio.com/journal/9206">Baseline</a> </li>
+<li><a href="https://vimeo.com/134952424">Video: Jake Archibald talking about performance, service worker and progressive enhancement</a></li>
+<li>
+<a href="https://vimeo.com/134954018">Video: Aaron Gustafsson - Where do we go from here</a>
+<ul>
+<li><a href="http://www.sitepoint.com/responsive-web-design-where-do-we-go-from-here/">transcript</a></li>
+</ul>
+</li>
+<li><a href="https://vimeo.com/137117401">Video: Jeremy Keith - enhance!</a></li>
+<li>
+<a href="http://www.fivesimplesteps.com/products/modern-progressive-enhancement">Video: Jake Archibald - Modern progressive enhancement</a>
+<blockquote>
+<p>Every phase of enhancement needs a real user</p>
+</blockquote>
+<ul>
+<li>loading time is important but time to first byte and time to start render is much more important (perception of speed)</li>
+</ul>
+<blockquote>
+<p>The only time people hate wasting the most is right now.</p>
+</blockquote>
+</li>
+<li><a href="http://aneventapart.com/news/post/the-long-web-by-jeremy-keith-an-event-apart-video">Video: Jeremy Keith - The Long Web</a></li>
+<li>
+<a href="http://alistapart.com/article/understandingprogressiveenhancement">Understanding progressive enhancement</a>
+<ul>
+<li>
+There's a (subtle difference)
+<ul>
+<li>The graceful degradation perspective</li>
+<li>The progressive enhancement perspective</li>
+</ul>
+</li>
+<li>
+So how does it work?
+<ul>
+<li>The peanut</li>
+<li>The chocolate coating</li>
+<li>The hard candy shell</li>
+</ul>
+</li>
+<li>Putting it all together</li>
+</ul>
+</li>
+<li>
+<a href="http://alistapart.com/article/progressiveenhancementwithcss">Progressive enhancement with CSS</a>
+<ul>
+<li>
+Style sheet organization
+<ul>
+<li>Use multiple style sheets</li>
+<li>Working with alternate media types</li>
+</ul>
+</li>
+<li>Now for the $10M question: how do we deal with IE6?</li>
+<li>Other considerations</li>
+<li>Putting it all together</li>
+</ul>
+</li>
+<li>
+<a href="http://alistapart.com/article/interaction-is-an-enhancementl">Interaction is an enhancement</a>
+<ul>
+<li>Get familiar with potential issues so you can avoid them</li>
+<li>Understand your medium</li>
+<li>Why no JavaScript</li>
+</ul>
+</li>
+<li>
+<a href="https://www.smashingmagazine.com/2015/12/reimagining-single-page-applications-progressive-enhancement/">Reimagining Single-Page Applications with progressive enhancement</a>
+<ul>
+<li>Writing views</li>
+<li>Navigation</li>
+<li>One view at a time</li>
+<li>
+The default view
+<ul>
+<li>It's time</li>
+</ul>
+</li>
+<li>The hashchange event</li>
+<li>
+Abstraction
+<ul>
+<li>Notes</li>
+</ul>
+</li>
+<li>
+Completely static views
+<ul>
+<li>Static views with enhanced functionality</li>
+</ul>
+</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="https://addyosmani.com/blog/getting-started-with-progressive-web-apps/">Getting started with progressive web apps</a>
+<ul>
+<li>What is a progressive web app?</li>
+<li>
+Principles
+<ul>
+<li>Web app manifest</li>
+<li>Add to home screen banner</li>
+<li>Service worker for offline caching</li>
+<li>Push notifications for re-engagement</li>
+<li>Layering in advanced features</li>
+<li>Framework-friendly</li>
+</ul>
+</li>
+<li>Architecture</li>
+<li>
+Getting started boilerplates
+<ul>
+<li>Application shell</li>
+<li>Polymer starter kit</li>
+<li>Web starter kit</li>
+</ul>
+</li>
+<li>
+Progressive web apps with and without frameworks
+<ul>
+<li>Vanilla JS</li>
+<li>Polymer</li>
+<li>React</li>
+<li>Virtual-Dom</li>
+<li>Angular.js</li>
+</ul>
+</li>
+<li>Closing notes</li>
+<li>Further reading</li>
+</ul>
+</li>
+<li>
+<a href="https://medium.com/@AaronGustafson/learn-from-the-past-enhance-for-the-future-8ab94d4f7e92#.oszg2hqeq">Learn from the past, enhance for the future</a>
+<ol>
+<li>The headless UI</li>
+<li>
+Interface is conversation
+<ul>
+<li>Write for people</li>
+<li>Avoid technical and legal jargon</li>
+<li>When requesting feedback, make it clear that the user needs to respond</li>
+<li>When asking a user to choose, clearly present the options</li>
+<li>Prompts should be short, while still being clear</li>
+<li>Ask only necessary questions</li>
+<li>Present information in consumable pieces</li>
+</ul>
+</li>
+<li>Future enhancements</li>
+</ol>
+</li>
+<li>
+[https://medium.com/@AaronGustafson/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web-714ef99f4999#.qwt6vec7s](Ramblings on new browser features, interoperability craft and the future of the web)
+<ul>
+<li>New features vs. interoperability</li>
+<li>The web vs native</li>
+<li>Change vs stagnation</li>
+<li>Cutting edge vs craft</li>
+<li>Developer convenience vs user needs</li>
+<li>All is not lost</li>
+</ul>
+</li>
+</ul>
+<h1><a name="accessibility"></a>Accessibility</h1>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=6ic8OO4ORI8">Everyone is different</a></li>
+<li>
+<a href="http://heydonworks.com/practical_aria_examples/">Practical ARIA examples</a>
+<ol>
+<li>Input tooltips without javascript</li>
+<li>Button controlled input with live feedback (e.g. number input)</li>
+<li>Progressive collapsibles (e.g. accordeon pattern)</li>
+<li>Simple ARIA tab interface</li>
+<li>Alert! You're offline</li>
+<li>Warning dialog</li>
+<li>A simple toolbar widget</li>
+<li>Progressive hamburger</li>
+<li>Simple dropdowns</li>
+</ol>
+</li>
+<li>
+<a href="https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b?section=suggested">7 things every designer needs to know about accessibility</a>
+<ol>
+<li>Accessibility is not a barrier to innovation (We don't want to design for our design peers)</li>
+<li>Don't use color as the only visual means of conveying information</li>
+<li>Ensure sufficient contrast between text and its background --&gt; <a href="http://colorsafe.co/">Color safe</a></li>
+<li>Provide visual focus indication for keyboard focus</li>
+<li>
+Be careful with forms
+<ol>
+<li>Forms without borders</li>
+<li>Forms without labels (also: contrast!)</li>
+</ol>
+</li>
+<li>Avoid component identity crises (e.g. autocomplete with edit and delete features)</li>
+<li>Don't make people hover to find things</li>
+</ol>
+</li>
+<li>
+<p><a href="https://dev.opera.com/articles/ux-accessibility-aria-label/">UX accessibility with aria-label</a></p>
+<blockquote>
+<p>Whenever you communicate anything on the web not using text, you're probably doing so inaccessibly</p>
+</blockquote>
+<ul>
+<li>title attribute is urealiable</li>
+<li>alt attribute is only available on certain elements</li>
+<li>aria-label and aria-labelledby override other methods</li>
+</ul>
+</li>
+<li>
+<a href="http://www.smashingmagazine.com/2015/05/06/client-rendered-accessibility/">Notes on client-rendered accessibility</a>
+<ul>
+<li>Semantics</li>
+<li>Interactivity</li>
+<li>Focus Management</li>
+<li>Notifying the user</li>
+</ul>
+</li>
+<li><a href="http://khan.github.io/tota11y/">Visually assess accessibility on your website - Development &amp; testing environment</a></li>
+<li><a href="http://www.vanseodesign.com/web-design/develop-accessible-websites/">What does it mean to develop accessible websites</a></li>
+<li>
+<a href="https://channel9.msdn.com/Events/WebPlatformSummit/2015/Falling-in-love-with-forms">Falling in love with forms</a>
+<ul>
+<li>label &amp; field</li>
+<li>label, field &amp; note --&gt; via <strong>aria-describedby</strong></li>
+<li>placeholders &amp;&amp; HTML5 input types</li>
+<li>
+<strong>datalist with select (and aria-labelledby) as fallback</strong>
+<ul>
+<li>HTML5 available --&gt; datalist only allows &lt;option&gt; as child element</li>
+<li>HTML5 not available --&gt; datalist element is ignored --&gt; select is fallback</li>
+</ul>
+</li>
+<li>grouping in list --&gt; screenreaders</li>
+<li>multiple choice --&gt; fieldset &amp;&amp; legend</li>
+<li>aria-labelledby works as space-separated list</li>
+<li>tap-friendly hit targets by negative margins and positive paddings</li>
+<li>aria-required</li>
+<li>tabindex=&quot;0&quot; (follows natural tabindex order)</li>
+</ul>
+<blockquote>
+<p>Focus on making the form <strong>read</strong> naturally and easily</p>
+</blockquote>
+<ul>
+<li>
+Custom error message via JS
+<ul>
+<li>field.setCustomValidity(&quot;my custom error message&quot;)</li>
+<li>easy-validation.js (jquery plugin) --&gt; polyfill for HTML5 forms &amp; custom validation message</li>
+</ul>
+</li>
+<li>Error summary with links to relevant fields</li>
+<li>
+Provide field-level help
+<ul>
+<li>aria-invalid &amp;&amp; aria-describedby</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="http://www.vanseodesign.com/web-design/wcag-principles-guidelines/">WCAG Principles &amp; Guidelines</a></p>
+<ol>
+<li>
+<p><strong>Principle 1: Perceivable</strong> (Information and user interface components must be presentable to users in ways they can perceive)</p>
+<ul>
+<li>Text alternatives (alt text for images, ...)</li>
+<li>Time-based media (text version of a podcast --&gt; not a transcription --&gt; edited version)</li>
+<li>Adaptable (present equivalent content across devices and conditions)</li>
+<li>Distinguishable (provide enough color contrast + offer controls)</li>
+</ul>
+</li>
+<li>
+<p><strong>Principle 2: Operable</strong> (User interface components and navigation must be operable)</p>
+<ul>
+<li>Keyboard accessible</li>
+<li>Enough time (allow to set time limits for moving information)</li>
+<li>Seizures (avoid potential to induce seizures in some people)</li>
+<li>Navigable (help people find what they want and where they are)</li>
+</ul>
+</li>
+<li>
+<p><strong>Principle 3: Understandable</strong> (Information and the operation of user interface must be understandable)</p>
+<ul>
+<li>Readable (multiple languages and reading level)</li>
+<li>Predictable (navigation label accurately identifying where it leads)</li>
+<li>Input assistance (minimize the potential for errors)</li>
+</ul>
+</li>
+<li>
+<p><strong>Principle 4: Robust</strong> (Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies)</p>
+<ul>
+<li>
+Compatible
+<ul>
+<li>parsing (markup)</li>
+<li>name, role, value (ARIA)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<a href="http://vanseodesign.com/web-design/five-rules-aria-html/">5 rules for using ARIA roles, states, and properties</a>
+<ol>
+<li>If you can use native HTML elements and attributes to communicate the proper semantics and behavior then do so</li>
+<li>Don't change semantics, unless you really have to</li>
+<li>All interactive ARIA controls must be usable with the keyboard.</li>
+<li>Don't use role=&quot;presentation&quot; or aria-hidden=&quot;true&quot; on a visible focusable element</li>
+<li>All interactive elements must have an accessible name</li>
+</ol>
+</li>
+<li>
+<a href="https://vimeo.com/134825451">Video: What is the business case for accessibility</a>
+<blockquote>
+<p>We can reframe accessibility in terms of what we provide, not what other people lack</p>
+</blockquote>
+</li>
+<li>
+<a href="http://alistapart.com/article/reframing-accessibility-for-the-web">Reframing accessibility for the web</a>
+<ul>
+<li>Who are these &quot;people with disabilities&quot; anyway?</li>
+<li>Why do we fixate on justifying the existence of people with disabilities?</li>
+<li>
+Reframing accessibility as a technology challenge
+<ul>
+<li>
+Creating a test matrix for accessibility
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Input_device">list of input devices</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Output_device">list of output devices</a></li>
+</ul>
+</li>
+<li>Checking content against the matrix</li>
+<li>Testing beyond the obvious</li>
+</ul>
+</li>
+<li>People over process, unless process enables people</li>
+</ul>
+</li>
+<li><a href="https://the-pastry-box-project.net/anne-gibson/2014-july-31">An alphabet of accessibility issues</a></li>
+<li><a href="https://vimeo.com/134954018">Video: Aaron Gustafsson - Where do we go from here</a></li>
+<li>
+<a href="http://www.creativebloq.com/web-design/accessibility-beyond-screen-reader-91516540">Accessibility - beyond the screen reader</a>
+<ul>
+<li>Thinking outside the (black) box</li>
+<li>Word wrapping</li>
+<li>Proximity</li>
+<li>Beyond the blind spot</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/avoiding-redundancy-wai-aria-html-pages/">Avoiding redundancy with WAI-ARIA in HTML pages</a>
+<ul>
+<li>ARIA basaics and general perceptions</li>
+<li>Effect of ARIA roles on most elements</li>
+<li>Does HTML4 need ARIA roles</li>
+<li>New features in HTML5</li>
+<li>Redundancy in ARIA</li>
+<li>
+Examples of redundancy
+<ul>
+<li>Default implicit roles to interactive elements</li>
+<li>ARIA role allong with native HTML counterparts</li>
+<li>ARIA added to long implemented structural elements</li>
+<li>
+ARIA with HTML5 structural elements
+<ul>
+<li>Browser support</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Wrapping it up</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/introduction-wai-aria/">An introduction to WAI-ARIA</a>
+<ul>
+<li>
+WAI-WHAT?
+<ul>
+<li>Functionality via roles</li>
+<li>States and properties (aria-controls and aria-labelledby)</li>
+<li>Live regions for dynamic content (aria-live)</li>
+<li>Enhanced keyboard navigation (e.g. tabindex)</li>
+</ul>
+</li>
+<li>ARIA and HTML5</li>
+<li>Can I use ARIA without risk?</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="https://medium.com/@AaronGustafson/labeled-with-love-bda2592250b#.dar3bbzg8">Labeled with love</a>
+<ul>
+<li>Connecting the dots (using the <code>&lt;label&gt;</code> element - with for attribute)</li>
+<li>An alternate approach (using the <code>&lt;input&gt;</code> element - inside a <code>&lt;label&gt;</code> - combined with explicit association via for attribue)</li>
+<li>Added benefit: interactivity</li>
+<li>Placeholders aren't labels</li>
+</ul>
+</li>
+<li>
+<a href="http://www.ebaytechblog.com/2015/11/04/how-our-css-framework-helps-enforce-accessibility/">How our CSS framework helps enforce accessibility</a>
+<ul>
+<li>Semantics</li>
+<li>Swiss cheese</li>
+<li>Enforcing rules</li>
+<li>Implicit roles</li>
+<li>Enforcing states</li>
+<li>ARIA</li>
+<li>Tabs</li>
+<li>Faux tabs</li>
+<li>Real tabs</li>
+<li>Good behavior</li>
+<li>Summary</li>
+</ul>
+</li>
+<li>
+<a href="https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/">The web accessibility basics</a>
+<ul>
+<li>
+Alternative text for images
+<ul>
+<li>All img tags require an alt attribute</li>
+<li>Every alt attribute has to have a value (meaningful text)</li>
+<li>It is called alt attribute but never alt tag</li>
+</ul>
+</li>
+<li>
+Labeling form fields
+<ul>
+<li>Every input element (except for the button ones) require a label element to be present</li>
+<li>The association between such an input and label happens by giving the input a unique ID, given by the id attribute on the input, and the label's for attribute which points to said ID</li>
+<li>Do not, under any circumstances, use the placeholder attribute as the label for an input element</li>
+<li>Give button elements inner text</li>
+<li>A series of radio buttons go inside a fieldset element to group them together</li>
+<li>Fieldset and legend should also be used if grouping togechter different sections of a bigger form for better readability</li>
+<li>Label required fields by providing the HTML5 required attribute on the input as well as stating in the label that a form field is required</li>
+<li>Use appropriate input types for e-mail, URL, phone number etc</li>
+<li>Make sure keyboard visibility is always guaranteed</li>
+</ul>
+</li>
+<li>
+Document structure
+<ul>
+<li>Heading structure</li>
+<li>Landmarks (article, aside, footer, header, nav, main)</li>
+<li>Lists (ul, ol, dl)</li>
+<li>Others (p, blockquote, q, hr)</li>
+<li>
+Tables
+<ul>
+<li>Add a caption element to give the table a proper heading or summary</li>
+<li>Use th elements to denote column and row headings</li>
+<li>Use other structural table elements to further structure your table</li>
+<li>If a table gets too complex or has multiple sections that don't necessarily have to be in one table, split them up into several data tables</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+Some more quickies
+<ul>
+<li>Separation of concepts</li>
+<li>Color contrast</li>
+<li>Keep pinch alive</li>
+</ul>
+</li>
+<li>OK, but what about advanced widgets?</li>
+<li>It is all in the semantics</li>
+<li>In conclusion</li>
+</ul>
+</li>
+<li>
+<a href="https://24ways.org/2015/the-accessibility-mindset/">The accessibility mindset</a>
+<ul>
+<li>
+Beyond the bare minimum
+<ul>
+<li>Button example</li>
+</ul>
+</li>
+<li>More information</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="http://blog.cloudfour.com/seriously-dont-use-icon-fonts/">Seriously, don't use icon fonts</a>
+<ul>
+<li>Screen readers actually read that stuff</li>
+<li>They're a nightmare if you're dyslexic</li>
+<li>They encroach on emoji turf</li>
+<li>They fail poorly and often</li>
+<li>They never looked right</li>
+<li>You're probably doing it wrong</li>
+<li>
+There's already a better way
+<ul>
+<li>SVG's can't be combined into sprites (they can)</li>
+<li>SVGs are larger in file size (not when you optimize, sprite and compress them)</li>
+<li>The icon markup is too verbose by comparison (just barely)</li>
+<li>Browser support for SVG is worse (not anymore)</li>
+<li>The framework we chose already has an icon font</li>
+</ul>
+</li>
+<li>Don't be table guy</li>
+</ul>
+</li>
+<li>
+<a href="http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/">10 reasons we switched from an icon font to svg</a>
+<ol>
+<li>Separation of concerns</li>
+<li>Some devices don't honour the private unicode area</li>
+<li>Black squares and crosses on opera mini</li>
+<li>Chrome support for font-icons has been terrible recently (false positive)</li>
+<li>Crisper icons in Firefox</li>
+<li>You don't always have to use generated content</li>
+<li>Less fiddly to position</li>
+<li>Multi-colour icons</li>
+<li>SVGs allow us to use animation within our icons</li>
+<li>It's always felt like a hack</li>
+<li>
+What about the benefits of font-face?
+<ul>
+<li>Colour variations</li>
+<li>Browser support</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a href="https://www.christianheilmann.com/2015/12/04/a-quick-reminder-on-how-and-why-to-use-labels-in-forms-to-make-them-more-accessible/">A quick reminder on how and why to use labels in forms to make them more accessible</a></li>
+<li>
+<a href="http://www.uxbooth.com/articles/4-ways-to-make-online-content-more-accessible/">4 ways to make online content more accessible</a>
+<ol>
+<li>
+Heading structure
+<ul>
+<li>each page should have one heading level 1 which clearly describes the purpose of the page content.</li>
+<li>content should be organized using additional heading levels</li>
+<li>heading should provide context for the information it precedes</li>
+</ul>
+</li>
+<li>
+Meaningful alt text
+<ul>
+<li>provide a concise description of what is featured in the image and why the image is being used on the page</li>
+<li>images used for decoration should still use the alt attribute (though empty)</li>
+<li>if it's a complex image (e.g. infographics), provide a clear description of the information the image conveys in the written content that precedes or follows the image</li>
+</ul>
+</li>
+<li>
+Properly labeled links
+<ul>
+<li>make sure link text is descriptive</li>
+<li>indicate if the link will take the end user off the site they are currently visiting</li>
+<li>let the user know if the link is a document as opposed to web content</li>
+</ul>
+</li>
+<li>
+Adaptive writing style
+<ul>
+<li>if the nature of the site requires the use of difficult or highly technical words, offer a link or accessible pop-up that provides a definition</li>
+<li>break up lengthy sections into smaller paragraphs or numbered or bulleted lists</li>
+</ul>
+</li>
+<li>Next steps for improving content accessibility</li>
+</ol>
+</li>
+<li>
+<a href="http://www.sitepoint.com/how-to-use-aria-effectively-with-html5/">How to use ARIA effectively with HTML5</a>
+<ul>
+<li>ARIA Roles</li>
+<li>ARIA Attributes</li>
+<li>
+Rules of ARIA
+<ul>
+<li>Use semantic HTML elements where possible</li>
+<li>Your element can only have one rule</li>
+<li>Do not change native semantics</li>
+</ul>
+</li>
+<li>
+How else can you make your markup more accessible
+<ul>
+<li>Use as many semantic elements as possible</li>
+<li><em>alt</em> attribute</li>
+</ul>
+</li>
+<li>An example using semantic HTML and ARIA, taking accessibility into account</li>
+<li>Conclusion</li>
+</ul>
+</li>
+<li>
+<a href="http://bitsofco.de/labelling-form-elements/">Labelling form elements</a>
+<ul>
+<li>The <em>name</em> and <em>id</em> attributes</li>
+<li>The <em>label</em> element with the <em>for</em>attribute</li>
+<li>The <em>label</em> element as a parent</li>
+<li>The <em>fieldset</em> and <em>legend</em> elements for related widgets</li>
+<li>The <em>label</em> attribute for <em>optgroup</em></li>
+<li>The <em>aria-*</em> attributes</li>
+</ul>
+</li>
+</ul>
+<h1><a name="performance"></a>Performance</h1>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=d5_6yHixpsQ">Supercharging page load</a></li>
+<li><a href="http://www.soasta.com/blog/website-monitoring-fast-enough-user-experience/">When it comes to delivering the best possible user experience, how fast is fast enough?</a></li>
+<li>
+<a href="http://www.creativebloq.com/netmag/10-ways-optimise-images-better-performance-71515792">10 ways to optimise images for better performance</a>
+<ol>
+<li>Lossless optimisation with <a href="http://imageoptim.com/">ImageOptim for OS X</a> or <a href="http://nikkhokkho.sourceforge.net/static.php?page=FileOptimizer">FileOptimizer for Windows and Linux</a></li>
+<li>Use correct dimensions</li>
+<li>Save for web</li>
+<li>Audit and remove images</li>
+<li>GIFs and PNGs</li>
+<li>Downsample PNGs with <a href="http://pngmini.com/">ImageAlpha for OS X</a> or <a href="http://nukesaq88.github.io/Pngyu/">PNGyu for windows</a></li>
+<li>
+The right file format
+<ul>
+<li>animation --&gt; lossy GIF</li>
+<li>photograph --&gt; JPEG</li>
+<li>photograph with transparency --&gt; lossy PNG</li>
+<li>otherwise --&gt; 8-bit PNG --&gt; fall back to JPEG if unsatisfied with quality</li>
+</ul>
+</li>
+<li>Cache-Control: no-transform</li>
+<li>CSS and SVG</li>
+<li>Progressive JPEGs</li>
+</ol>
+</li>
+<li>
+<a href="https://fourword.fourkitchens.com/article/fix-scrolling-performance-css-will-change-property">Fix scrolling performance with CSS will-change property</a>
+<ul>
+<li>background-attachment:fixed causes a paint operation on scroll</li>
+<li>put background in different element (pseudo)</li>
+<li>add &quot;will-change:transform;&quot; --&gt; it creates a new paint layer</li>
+</ul>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/http2-future-already-here-71515657">HTTP/2 - The future of the web is already here</a>
+<ul>
+<li>Multiplexing (allowing requests and responses for multiple objects to overlap on the same connection)</li>
+<li>Header compression (helping to solve the stateless nature of HTTP/1 where a browser needs to address support for a given file format or language on every request)</li>
+<li>Dependencies and prioritisation (communicating to the server what objects are dependent on what other objects, and listing the priorities, the server can make certain the critical data is delivered to the browser right away.)</li>
+<li>Server push (addressing round trip latency of an HTTP request and response by sending the browser an object before it is asked for)</li>
+<li>
+And for the everyday user?
+<ul>
+<li>no one will have to change their website or applications to ensure they continue to work properly</li>
+<li>
+if you want to benefit from performance and security features, consider some things
+<ul>
+<li>encryption (applications running over HTTP/2 are likely to experience improvements in performance over secure connections)</li>
+<li>Optimising the TCP layer (applications should be designed with a TCP layer implemented to account for the switch from mulltiple TCP connections to a single long-lived one, especially when adjusting the congestion window in response to packet loss</li>
+<li>undoing HTTP/1.1 best rpactices (domain sharing, image spriting, resource in-lining and concatenation)</li>
+<li>Deciding what and when to push</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://vimeo.com/134952424">Video: Jake Archibald talking about performance, service worker and progressive enhancement</a></li>
+<li>
+<a href="https://css-tricks.com/strategies-for-cache-busting-css/">Strategies for Cache-Busting CSS</a>
+<ul>
+<li>Query strings</li>
+<li>Changing file names</li>
+<li>Basing Cache Busting &quot;Number&quot; on File updated date</li>
+<li>ETags</li>
+<li>
+Framework does it for us
+<ul>
+<li>Rails asset pipeline</li>
+<li>Wordpress</li>
+</ul>
+</li>
+<li>Build tools</li>
+<li>Async CSS</li>
+</ul>
+</li>
+<li>
+<a href="https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/">Eliminating roundtrips with preconnect</a>
+<ul>
+<li>Preconnect for dynamic request URLs</li>
+<li>Initiating preconnect via Link HTTP Header</li>
+<li>Preconnect with JavaScript</li>
+<li>Preconnect often, Preconnect wisely</li>
+</ul>
+</li>
+<li>
+<a href="https://medium.com/swlh/the-illusion-of-time-8f321fa2f191#.c9qb9mrqj">The illusion of time</a>
+<ul>
+<li>Time in the digital age</li>
+<li>Keep users engaged</li>
+<li>Perform actions optimistically</li>
+<li>Create transitional interfaces</li>
+<li>Avoid modal spinners</li>
+<li>
+Communicating longer waits
+<ul>
+<li>Progress bars</li>
+<li>Countdowns/ETA</li>
+</ul>
+</li>
+<li>Load Content Progressively</li>
+<li>Tick. Tock.</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/saving-bandwidth-by-using-images-the-smart-way/">Saving bandwidth by using images the smart way</a>
+<ul>
+<li>
+Choosing the appropriate image format
+<ul>
+<li>GIF</li>
+<li>PNG (PNG8 vs PNG24)</li>
+<li>JPG</li>
+</ul>
+</li>
+<li>Let's compare</li>
+<li>Does 'Save for web' make any <em>real</em> difference?</li>
+<li>Serving resized images</li>
+<li>Avoiding images altogether</li>
+</ul>
+</li>
+<li>
+<a href="http://www.smashingmagazine.com/2015/09/why-performance-matters-the-perception-of-time/">Why performance matters, part 1: The perception of time</a>
+<ul>
+<li>Basic concepts</li>
+<li>Part 1: objective time</li>
+<li>Choosing a performance budget</li>
+<li>The need for performance optimization: the 20% rule</li>
+<li>Neutralization, or chasing the leader</li>
+</ul>
+</li>
+<li>
+<a href="http://www.smashingmagazine.com/2015/11/why-performance-matters-part-2-perception-management/">Why performance matters, part 2: Perception management</a>
+<ul>
+<li>
+Psychological time: perception management
+<ul>
+<li>Preemptive start</li>
+<li>Early completion</li>
+</ul>
+</li>
+<li>Conclusion... for now</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/http2-the-pros-the-cons-and-what-you-need-to-know/">HTTP/2: the pros, the cons, and what you need to know</a>
+<ul>
+<li>How HTTP/1 works</li>
+<li>
+How HTTP/2 will work
+<ul>
+<li>multiplexed streams</li>
+<li>server push</li>
+<li>header compression</li>
+<li>binary instead of textual format</li>
+</ul>
+</li>
+<li>
+What developers will be able to do differently now
+<ul>
+<li>
+Things to be aware of
+<ul>
+<li>most browsers supporting HTTP/2 will require HTTPS encryption</li>
+<li>the web will transition painlessly for the public</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Some controversy</li>
+<li>See the difference</li>
+<li>Bottom line</li>
+</ul>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/make-your-site-load-faster-101517559">9 things you can do today to make your site load faster</a>
+<ol>
+<li>Find the best host possible and consider more power than that</li>
+<li>Crack down on your images and optimize them properly</li>
+<li>Evacuate your themes, plugins and comments</li>
+<li>Go crazy with caching</li>
+<li>Maybe minify your code? Yes!</li>
+<li>Check on the more necessary plugins that slow the site down</li>
+<li>Optimize your database</li>
+<li>Crack a CSS sprite</li>
+<li>Consider lazyloading your images</li>
+</ol>
+</li>
+<li>
+<a href="http://www.creativebloq.com/web-design/6-quick-things-developers-can-do-improve-performance-111517884">6 quick things developers can do to improve performance</a>
+<ol>
+<li>Compress your images and serve them at the correct size</li>
+<li>Minify and compress all your HTML, CSS, and JavaScript</li>
+<li>Limit the use of heavy JavaScript. Render as much as you can on the server and use JavaScript to sprinkle on enhancements</li>
+<li>Optimise for the critical path so that your content appears as quickly as possible</li>
+<li>Start familiarising yourself with HTTP/2 because that changes so many things</li>
+<li>If you're going to use something like Bootstrap, be sure you remove all the unused CSS in a build process. There's a ton of unnecessary bloat.</li>
+</ol>
+</li>
+<li>
+<a href="http://rmurphey.com/blog/2015/11/25/building-for-http2">Building for HTTP/2</a>
+<ul>
+<li>Deploying JavaScript applications (2013)</li>
+<li>Splitting it up</li>
+<li>Versioning</li>
+<li>Push: Because you downloaded scout.js, you might also like...</li>
+<li>The elephants in the room</li>
+<li>For consideration: HTTP/2-friendly deployments with HTTP/1.1 support</li>
+<li>Reality check</li>
+</ul>
+</li>
+<li><a href="http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/">Intrinsic placeholders with the picture element</a></li>
+<li>
+<a href="https://bocoup.com/weblog/smaller-faster-websites">VIDEO: Mat Marquis - Smaller, faster websites</a>
+<ul>
+<li>Images in responsive web design</li>
+<li>Critical CSS</li>
+<li>Web fonts loading</li>
+</ul>
+</li>
+<li><a href="https://vimeo.com/147806338">VIDEO: Maciej Ceglowski - The website obesity crisis</a></li>
+<li>
+<a href="https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-1-67e8f2d4035">Optimising SVGs for web use - part 1</a>
+<ul>
+<li>Raison d'être</li>
+<li>
+The Path
+<ul>
+<li>Use fewer nodes</li>
+<li>Use fewer handles</li>
+<li>Use integers</li>
+<li>Don't use a grid that is any bigger than necessary</li>
+</ul>
+</li>
+<li>
+The result
+<ul>
+<li>Graphics</li>
+<li>Code</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-2-6711cc15df46#.du5kkdo5f">Optimising SVGs for Web Use - part 2</a>
+<ul>
+<li>Step 1 - get/draw an icon</li>
+<li>Step 2 - determine the optimal size for the viewbox</li>
+<li>Step 3 - load the svg into your editor</li>
+<li>Step 4 - reduce the number of nodes + handles</li>
+<li>Step 5 - round to int</li>
+<li>Step 6 - re-add the circle</li>
+<li>Step 7 - cleanup</li>
+<li>The result</li>
+<li>Another example</li>
+<li>PS</li>
+</ul>
+</li>
+<li>
+<a href="https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-2-1-598815d74f9c#.punh4l9f8">Optimising SVGs for web use - part 2 &frac12;</a>
+<ul>
+<li>Get the logo</li>
+<li>Save the svg</li>
+<li>(SVGO)</li>
+<li>We need more</li>
+<li>Circle</li>
+<li>Remove the last node</li>
+<li>Cubic vs quadratic</li>
+<li>Bytes saved</li>
+<li>Mpre</li>
+</ul>
+</li>
+<li>
+<a href="https://jakearchibald.com/2016/link-in-body/">The future of loading in CSS</a>
+<ul>
+<li>The current state of loading CSS</li>
+<li>
+The current state-of-the-art of loading CSS
+<ul>
+<li>It requires a (small) JavaScript library</li>
+<li>You're restricted to two phases of loading</li>
+</ul>
+</li>
+<li>A simpler, better way</li>
+<li>
+Changes to chrome
+<ul>
+<li>Firefixing</li>
+</ul>
+</li>
+<li>See it in action</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=jCKZDTtUA2A&amp;index=5&amp;list=PLNYkxOF6rcICcHeQY02XLvoGL34rZFWZn">Instant loading with Service Workers</a></li>
+<li>
+<a href="https://www.youtube.com/watch?v=r5oT_2ndjms&amp;index=19&amp;list=PLNYkxOF6rcICcHeQY02XLvoGL34rZFWZn">HTTP/2 101</a>
+<ul>
+<li><a href="https://surma.link/things/h2setup/">Setting up HTTP/2</a></li>
+</ul>
+</li>
+</ul>
+<h1><a name="web_components"></a>Web Components</h1>
+<h2><a name="polymer"></a>Polymer</h2>
+<ul>
+<li>
+<a href="https://aerotwist.com/blog/polymer-for-the-performance-obsessed/">Polymer for the performance obsessed</a>
+<ol>
+<li>Inline styles and region your app</li>
+<li>Conditionally (and async) load the polyfill </li>
+<li>Only bundle related elements</li>
+<li>Don't inline polymer into your bundles</li>
+</ol>
+</li>
+</ul>
+<h1><a name="design_testing"></a>Design testing</h1>
+<ul>
+<li>
+<a href="http://www.creativebloq.com/ux/best-user-testing-software-61515337">7 best pieces of user testing software</a>
+<ol>
+<li><a href="http://peek.usertesting.com/">Peek by User testing</a></li>
+<li><a href="http://www.crazyegg.com/">Crazy Egg</a></li>
+<li><a href="http://www.inspectlet.com/">Inspectlet</a></li>
+<li><a href="https://www.optimizely.com/">Optimizely</a></li>
+<li><a href="https://usabilla.com/">Usabilla</a></li>
+<li><a href="http://www.userzoom.co.uk/?langchoice=uk">User Zoom</a></li>
+<li><a href="http://www.userzoom.co.uk/?langchoice=uk">Morae</a></li>
+</ol>
+</li>
+<li>
+<a href="http://www.nngroup.com/articles/talking-to-users/">Talking to users in a usabillity test</a>
+<ul>
+<li>Echo (repeat the last phrase or word the user said, while using a slight interrogatory tone)</li>
+<li>Boomerang (generic nonthreatening question - e.g. what do you think, what would you normally do)</li>
+<li>Columbo (be smart but don't act that way)  
+</li>
+</ul>
+</li>
+<li><a href="http://usabilitygeek.com/how-to-use-the-system-usability-scale-sus-to-evaluate-the-usability-of-your-website/">How to use the System Usability Scale to evaluate the usability of your website</a></li>
+<li>
+<ul>
+<li><a href="http://blog.teamtreehouse.com/ultimate-guide-user-feedback-part-1-user-feedback-matters">Ultimate guide to user feedback part 1: Why user feedback matters</a></li>
+<li>Feedback: the best way to improve a project once you know how to build it</li>
+<li>
+Why get feedback?
+<ul>
+<li>It'll help you regain perspective on your project</li>
+<li>You can't know everything, even when you know more about your project than anyone else</li>
+<li>It helps prevent small problems from growing into big problems</li>
+<li>It helps increase your awareness of possible issues (even if you don't make changes right away)</li>
+<li>You'll learn about problems you had no idea existed</li>
+</ul>
+</li>
+<li>
+But you don't have to get feedback if you don't want to (as long as you know the downsides)
+<ul>
+<li>Your focus is more on learning about <em>how</em> not on <em>what</em> is built</li>
+<li>You're just building for yourself, and just for the fun of it</li>
+<li>The key is to know when you're building for yourself and when you're building for others</li>
+</ul>
+</li>
+<li>When to get feedback</li>
+</ul>
+</li>
+<li>
+<a href="http://blog.teamtreehouse.com/ultimate-guide-user-feedback-part-2-10-ways-get-user-feedback">Ultimate guide to user feedback part 2: 10 ways to get user feedback</a>
+<ol>
+<li>Existing users via email or an in-app option</li>
+<li>Call or talk to your existing users</li>
+<li>Talk to people who you think would use your project</li>
+<li>Talk to users of a similar project as yours (or even a competing project)</li>
+<li>On-page (or in-app) chat</li>
+<li>On-page (or in-app) survey tools</li>
+<li>Talk to people you know</li>
+<li>Show your project to strangers (in-person)</li>
+<li>Use a service or remote tool (like UsersThink)</li>
+<li>Use a mix of the approaches above</li>
+</ol>
+</li>
+<li>
+<a href="https://www.smashingmagazine.com/2015/12/optimizing-your-design-for-rapid-prototype-testing/">Optimize your design for rapid prototype testing</a>
+<ul>
+<li>Design to test specific stimuli, with few variables at a time</li>
+<li>Make copy consistent when it is not being tested</li>
+<li>Don't sweat details that don't matter</li>
+<li>Focus on what you want to learn from users, not stakeholders</li>
+<li>Create a clear path</li>
+<li>Capture user behavior, in addition to feedback</li>
+<li>
+Keep in mind
+<ul>
+<li>Do not prototype the entire product</li>
+<li>Plan for multiple rounds of testing</li>
+<li>Educate your stakeholders</li>
+<li>Define up front what a succesful user experience looks like</li>
+<li>Pay attention to the size of copy</li>
+<li>Learn as much as possible about how the test will be conducted</li>
+<li>Create reusable templates</li>
+<li>Save a set of &quot;unbranded&quot; templates</li>
+<li>Leverage standard user interface elements</li>
+<li>Choose images and content that will not potentially bias the outcome of the test</li>
+<li>Consider recreating the live website in prototype form</li>
+</ul>
+</li>
+<li>Cheat sheet</li>
+<li>Summary</li>
+</ul>
+</li>
+<li>
+<a href="http://www.sitepoint.com/7-new-ways-to-test-your-minimum-viable-product/">7 new ways to test your minimum viable product</a>
+<ol>
+<li>Wizard of Oz</li>
+<li>Fake door</li>
+<li>Audience building</li>
+<li>Micro-surveys</li>
+<li>Competition analysis</li>
+<li>Crowdfunding</li>
+<li>Software tests</li>
+</ol>
+</li>
+</ul>
+<h1><a name="email_design"></a>Email design</h1>
+<ul>
+<li>
+<a href="http://webdesign.tutsplus.com/tutorials/what-you-should-know-about-html-email--webdesign-12908">What you should know about HTML email</a>
+<ul>
+<li>
+Coding HTML Email can be a challenge
+<ul>
+<li>Email standards don't exist</li>
+</ul>
+</li>
+<li>
+How to approach your work
+<ul>
+<li>Work structurally first</li>
+<li>Test often - <a href="http://www.litmus.com">Litmus</a> or <a href="http://www.emailonacid.com">Email on Acid</a></li>
+<li>Validate often</li>
+<li>Sending your email</li>
+<li>Content, Development and SPAM scores</li>
+</ul>
+</li>
+<li>
+Diving into development
+<ul>
+<li>Tools of the trade</li>
+<li>Starting with a good base</li>
+<li>!DOCTYPE	(include content-type + viewport)</li>
+<li>Email is all about nesting tables (rowspan and colspan not supported)</li>
+<li>Paragraphs or cells (inconsistent rendering of semantic tags)</li>
+<li>Inline styles or stylesheets (max 1 class per element, no shorthand properties)</li>
+<li>Image names and SPAM scores</li>
+<li>Image size</li>
+<li>Other gotchas (specify ALL widths, main container in pixels, rest can be done with percentages)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1><a name="web_fonts"></a>Web Fonts</h1>
+<ul>
+<li>
+<a href="http://bramstein.com/writing/web-font-anti-patterns.html">Web Font Anti-Patterns</a>
+<ul>
+<li>
+Overusing web fonts
+<ul>
+<li>Using web fonts for lettering</li>
+</ul>
+</li>
+<li>
+Inlining fonts
+<ul>
+<li>Base64 encoding and decoding</li>
+<li>Font format negotiation</li>
+<li>Caching</li>
+</ul>
+</li>
+<li>Aggressive subsetting</li>
+<li>Using local fonts</li>
+<li>Reimplementing caching</li>
+<li>Not styling fallback fonts</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

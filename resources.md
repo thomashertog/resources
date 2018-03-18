@@ -18,6 +18,7 @@
 5. [SASS](#sass)
 6. [Responsive Web Design](#responsive_web_design)
 7. [Progressive enhancement](#progressive_enhancement)
+	1. [Progressive Web Apps](#pwa)
 8. [Accessibility](#accessibility)
 9. [Performance](#performance)
 10. [Web components](#web_components)
@@ -25,6 +26,7 @@
 11. [Design testing](#design_testing)
 12. [Email design](#email_design)
 13. [Web Fonts](#web_fonts)
+14. [GIT](#git)
 
 
 #<a name="general_design"></a>General design
@@ -213,9 +215,34 @@
 	6. Your forms are out of form
 	7. Sign in? Sign OUT
 	8. Simplify
-	
+* [Don't take that tone with me](http://uxmag.com/articles/dont-take-that-tone-with-me)
+	* Consistency kills
+	* Repeat offenders
+	* Bathwater? Gone. Baby? Still here.
+	* Mood leaders
+	* Marching orders
+* [7 UX tips you might not have considered](https://designshack.net/articles/ux-design/7-ux-tips-you-might-not-have-considered/)
+	1. Focus on the 20 percent
+	2. Think architecturally
+	3. Don't ask for too much
+	4. Delight with micro-interactions
+	5. Make easy enough for a toddler
+	6. Tap or click?
+	7. Think like a user
+* [Less is still more: the importance of the minimalist approach to web design](http://usabilitygeek.com/less-is-more-importance-minimalist-web-design/)
+	* A short history of minimalist design
+	* Minimalist web design
+	* Minimalist components
+		* Use of negative spaces
+		* Contrast
+		* Dramatic typography
+		* Simplicity
+	* Be simple, but clear
+	* Minimalism for a successful user experience
+
 ##<a name="interaction_design"></a>Interaction Design
 
+* [Foundations of Interaction Design](https://medium.com/@cwodtke/foundations-of-interaction-design-2cd31c2c4d8e)
 * [Designing Settings](https://medium.com/@imran_parvez/designing-settings-b2a96878961b?mc_cid=ec02ba64fc&mc_eid=b38f2f4652)
 	> Products should work for the user and not the other way around
 	
@@ -405,6 +432,87 @@
 		* Substituting gestures for buttons
 		* Enabling easy correction of errors at any time
 	* The response and the future
+* [Interface animation. The force of motion](https://medium.com/@tubikstudio/interface-animation-the-force-of-motion-598b84734e69#.6u0tf0nrc)
+	* The essence of animation
+	* Types of interface animation
+	* Animation for microinteraction
+	* Animation showing the process
+	* Clarifying/explanatory animation
+	* Benefits and drawbacks
+		* taking big traffic resource for loading
+		* overloading the screen/page
+		* distraction
+* [Is this the perfect save icon?](https://medium.com/@etchuk/is-this-the-perfect-save-icon-9651129bda85#.ssvdxe4es)
+	* The hunt for the perfect save icon
+	* So how do we fix this?
+	* Dealing with icon evolution
+	* Ok cool, but where's the new damn save icon
+* [Hamburger, hamburger, hamburger](https://adactio.com/journal/10120)
+	* Representation
+	* Usage
+	* Clarity
+	* Results
+* [What's in a name? Anti-patterns to a hard problem](http://www.sitepoint.com/whats-in-a-name-anti-patterns-to-a-hard-problem/)
+	* Underlying types and data structures
+	* Structural
+	* Idea fragment
+	* Implementation fragment
+	* Conclusion
+* [5 registration form usability guidelines](http://usabilitygeek.com/5-registration-form-usability-guidelines/)
+	1. Form size: keep it minimal
+	2. Consider using adaptive placeholders
+	3. Social media: one click registration
+	4. Validate using color theory
+	5. Grant access immediately
+* [How to design a useful wireframe](http://blog.teamtreehouse.com/how-to-design-a-useful-wireframe)
+	* Why are wireframes useful?
+		* Structured design
+		* Creates foundations early on
+		* Design centers on content
+		* More creativity and room for experimentation
+	* Wireframing methods
+		* Paper
+		* Specialized platforms
+		* Presentation software
+		* Image editors
+	* 5-step wireframing process
+		1. content inventory
+		2. visual hierarchy
+		3. content wireframe
+		4. sculpted wireframe
+		5. lo-fi prototype
+	* More best practices
+* [Reducing cognitive overload for a better user experience](https://www.smashingmagazine.com/2016/09/reducing-cognitive-overload-for-a-better-user-experience/)
+	* The scientific roots of cognitive overload
+		* John Sweller and cognitive load theory
+		* Working memory
+		* Applications in design
+	* The most common causes of cognitive overload
+		1. Unnecessary actions
+		2. Overstimulation
+		3. Too many options (Hick's law - decision paralysis)
+		4. Too much content
+		5. Ambiguous interface
+		6. Hard-to-find pages and features
+		7. Internal consistency
+	* Takeaways
+	* Further reading
+* [Hover is dead. Long live hover](https://medium.com/instacart-design/hover-is-dead-long-live-hover-37a89d3795df#.m6a3qwr0d)
+* [The irrational user](https://medium.com/startup-grind/cognitive-bias-ad5f9fe7f59b#.8o9cr0wlj)
+	* Some background on your brain
+	* How cognitive biases arise
+	* Why is this important for people who make software
+	* Common cognitive biases to keep in mind when building products
+		* Anthropomorphism
+		* Negativity bias
+		* Loss aversion
+		* Reciprocity
+		* Peak-end effect
+		* Cognitive dissonance
+		* Goal gradient effect
+		* Social proof
+* [The importance of cognitive bias in experience design](https://uxdesign.cc/the-importance-of-cognitive-bias-in-experience-design-66feeef50c5b)
+* [Designed degradations: UX patterns for hostile environments](https://uxdesign.cc/designed-degradations-ux-patterns-for-hostile-environments-7f308d819e50)
 
 ###<a name="information_architecture"></a>Information architecture
 
@@ -428,7 +536,14 @@
 	* Tools of the trade
 	* Conferences and associations
 	* IA Books
-* 
+* [The three views of (information) architecture](http://www.uxbooth.com/articles/three-views-of-information-architecture/)
+	* Case study: visually explaining an information architecture
+	* Drawing like architects
+		* Plans (in the plan view, the features of the space that change the least are emphasized the most)
+		* Sections (sections are most helpful toward understanding the relationships between levels)
+		* Elevations (an elevation drawing offers a view of the building as seen from one side, and from one fixed perspective)
+	* Pictures help (except when they don't)
+	* Next steps
 
 ##<a name="personas"></a>Personas
 
@@ -506,6 +621,20 @@
 	* Desktop first and max-width
 	* Using max-width against your better judgment
 	* So, what's the best to use?
+* [11 copywriting tips that will improve the user experience of your site](http://usabilitygeek.com/11-copywriting-techniques-improve-user-experience-site/)
+	1. Identify your ideal user
+	2. Know at which stage they are in the process
+	3. Focus on the benefit, not the action
+	4. Use simple and familiar language
+	5. Say only what you need to say
+	6. Pay attention to the flow of information
+	7. Use subheadings for easy scanning
+	8. Focus on informing and persuading your audience
+	9. Use the word "you"
+	10. Write for the user
+	11. Test your copy
+* [The mighty ellipsis](https://medium.com/@jsaito/the-mighty-ellipsis-6c2c00ddc864)
+* [When copy loves itself too much](https://uxdesign.cc/when-copy-loves-itself-too-much-a2b79238312f)
 
 ##<a name="process"></a>Process
 
@@ -531,7 +660,6 @@
 	* Repeat, repeat, repeat
 	* What happens next
 	* Developing components
-	* 
 
 ##<a name="style_guides"></a>Style guides
 
@@ -558,10 +686,32 @@
 		* Presentation
 		* Behaviour
 		* Transcending layers
-	* Visual design language: documenting the missing piece
+	* Visual design language: documenting the missing pie
 	* A visual language in code form
 	* Unlocking possibility
 * [VIDEO: Brad Frost - Style guide best practices](http://bradfrost.com/blog/post/style-guide-best-practices-at-beyond-tellerrand/)
+* [How to be more organized while designing UI](https://medium.com/sketch-app-sources/how-to-be-more-organized-while-designing-ui-90d2d69cfb4f#.z2fbt3qlo)
+	* My intentions are pure
+		* Clear overview of variables
+		* Grouping of styles
+		* Pairings of variables
+		* Changing only one variable
+	* Basic principles
+		* Everything is an object
+		* Properties for everything
+		* Inheritance of properties
+		* Be prepared for everything
+	* How to use this while designing
+	* Examples of use
+		* Fonts
+		* Font sizes and line heights
+		* Colors
+	* Why think like this
+		* Easier to maintain
+		* Better consistency
+		* Easier to understand
+	* Example file (in Sketch)
+* [Cooking with design systems](https://medium.com/@danielmall/cooking-with-design-systems-6bf05799e37a#.ckbfryofn)
 
 ##<a name="visual_design"></a>Visual design
 
@@ -618,6 +768,48 @@
 	* Closure
 	* Continuation
 	* Takeaway
+* [Buttons in design systems](https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.mgerb3f67)
+	1. Set a system's stylistic tone
+	2. Set a verbal tone, too
+	3. Invert buttons when backgrounds get complicated
+	4. Limit one per page, unless repeating a primary action
+	5. Design and build a button's arc of interaction
+	6. Be resilient to mixed elements
+	7. Ensure secondary != disabled
+	8. Beware of ghosts in the machine
+	9. Vary size, both large (or mega/huge/puffy) & small (or micro/tiny)
+	10. Distinguish buttons from links
+	11. Enrich variety with menus & zones
+	12. From toggles to toolbars, make buttons play nice together
+	13. For buttons use `<button>`
+* [Design better data tables](https://medium.com/mission-log/design-better-data-tables-430a30a00d8c)
+	* Know your numerals (oldstyle vs lining - proportional vs tabular)
+	* Alignment matters
+		* Numerical data is right-aligned
+		* Textual data is left-aligned
+		* Headers are aligned with their data
+		* Don't use center alignment
+		* Consistent significant figures = better alignment
+	* Fewer, clearer labels
+		* title
+		* units
+		* headers
+	* As little ink as possible
+		* rules
+		* backgrounds
+	* In conclusion
+* [10 mistakes in icon design](http://turbomilk.com/blog/cookbook/icon_design/10_mistakes_in_icon_design/)
+	1. Insufficient differentiation between icons
+	2. Too many elements in one icon
+	3. Unnecessary elements
+	4. Lack of unity of style within a set of icons
+	5. Unnecessary perspective and shadows in small icons
+	6. Overly original metaphors
+	7. National or social characteristics not being taken into account
+	8. Images of real interface elements in icons
+	9. Text inside icons
+	10. Outside the pixel framework
+* [10 basic principles of visual design](https://blog.prototypr.io/10-basic-principles-of-visual-design-55b86b9f7241)
 
 ###<a name="typography"></a>Typography
 
@@ -643,6 +835,10 @@
 		* vertical margins should be in proportion
 	* Line length (on average 45-75 characters)
 	* Adjusting margins
+
+###<a name="color_theory"></a>Color theory
+
+* [Color in UI Design: a (practical) framework](https://medium.com/@erikdkennedy/color-in-ui-design-a-practical-framework-e18cacd97f9e)
 
 #<a name="research"></a>Research
 
@@ -736,6 +932,8 @@
 	23. Avoid long select boxes
 	24. Scale icons with background-image:cover
 	25. Keep it short and sweet
+* [`<table>` prejudice and HTML xenophobia](https://medium.freecodecamp.org/table-prejudice-and-html-xenophobia-30704984785e)
+* [HTML 5 tag cheat sheet](https://medium.com/level-up-web/html5-tag-cheat-sheet-e230de8d2c2f)
 
 #<a name="css"></a>CSS
 
@@ -875,6 +1073,7 @@
 	* Nesting (with sass) (nesting is not the sass feature you are looking for)
 	* Pixel units (embrace relativity and reap the rewards)
 	* Device breakpoints (Apple aren't the only people who make handheld devices with browsers on them. No really.)
+* [Things to avoid when writing CSS (part 2)](https://medium.com/@Heydon/things-to-avoid-when-writing-css-part-2-7639f0f6880d#.szc7apli5)
 	* Photography (a picture paints a thousand words. most of those words are just incoherent mumbles and repetitions of the statement "I don't give a shit about your data allowance". SVG for charts, diagrams and icons; typography and CSS for everything else
 	* Giving anything a set height ever (nobody fucking cares if those buttons line up exactly or not. Vain, pointless frippery that doesn't make anything any more useful or appealing or your product more successful)
 	* Calling it "semantic" (there's more to something having meaning than just sticking a label on it. This applies to the web, language systems and culture in general)
@@ -1064,6 +1263,100 @@
 	18. Vertical margins in percents
 	19. Margins in firefox buttons
 	20. Color + border = border-color;
+* [Use _rem_ for global sizing; use _em_ for local sizing](https://css-tricks.com/rem-global-em-local/)
+* [Cleaning up a CSS codebase](http://www.sitepoint.com/cleaning-up-a-css-codebase/)
+	* Lint the hell out of it
+	* Fixing linting errors found
+	* Revise the structure
+	* Remove the excess
+	* CSS is clever, you should be too
+	* Get your git good
+	* Wrapping it up
+* [Content and Display patterns with Expressive CSS](http://johnpolacek.com/content-display-patterns/)
+	* Basic Demo
+	* Responsive Demo
+	* Template Demo
+* [Aligning text smartly in CSS](http://nocode.in/aligning-text-smartly-in-css/)
+* [You might not need a CSS framework](https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/)
+	* Technical debt
+		* Unsemantic HTML code
+		* Over-specific CSS selectors
+		* Rules you don't need
+		* Owning your opinions and decisions
+	* Alternatives to frameworks
+		* Write your own HTML and CSS
+		* If you need a grid --> flexbox but in the future--> grid
+		* If you just need a UI widget --> grab that bit
+		* If you need a design --> grab the sass or less sources instead of the generated files
+		* a way to standardise the UI creation --> look for a style guide
+	* In summary
+* [Quick Tip: Using CSS Counters to style incremental elements](http://webdesign.tutsplus.com/tutorials/quick-tip-using-css-counters-to-style-incremental-elements--cms-23497)
+	* The goal: styling an ordered list
+	* CSS Counters
+		* syntax
+		* markup
+	* Limitations
+	* CSS Counters in the wild
+	* Examples of bloated HTML
+	* Conclusion
+* [Meaningful CSS: Style like you mean it](http://alistapart.com/article/meaningful-css-style-like-you-mean-it)
+	* Building better objects
+	* Clearing a few things up
+	* Start semantic
+* [The importance of !important: forcing immutability in CSS](http://csswizardry.com/2016/05/the-importance-of-important/)
+	* Never use !important in anger
+		* Hacking specificity
+	* Forcing immutability with !important
+	* A note on utility classes
+* [DEMO - CSS-only scroll indicator](http://codepen.io/MadeByMike/pen/ZOrEmr?editors=0100#0)
+* [CSS Code Smell Sanitation](https://speakerdeck.com/mobywhale/css-code-smell-sanitation)
+	* CSS Linting 
+		* [csslint on github](https://github.com/CSSLint/csslint)
+		* [scsslint on github](https://github.com/brigade/scss-lint)
+	* Length of your CSS (vertically and horizontally)
+	* Magic numbers (add a comment if you MUST use a magic number)
+	* Fixed height on elements
+	* Position : absolute (right or easy option)
+	* Stress test
+		* font size
+		* different types of content
+		* different devices / screen size
+		* elements added / removed from page
+	* Resetting values
+	* Old browser prefixes
+	* Does it make sense (would you be able to maintain it)
+		* naming
+		* organisation
+		* properties used
+* [Print styles](https://medium.com/@adactio/print-styles-b9a0783cd646#.8b06p6wav)
+* [9 underutilized features in CSS]https://medium.com/@iamjordanlittle/9-underutilized-features-in-css-90ced6ddbfe7#.9ztz1ptrm)
+	1. The CSS calc() function
+	2. The pointer media query
+	3. The currentColor variable
+	4. The :valid, :invalid, and :empty pseudoclasses
+	5. Counters using only CSS
+	6. Predictable tables with fixed layout
+	7. Easy form states using adjacent sibling selectors
+	8. Algebraic nth-child() selection
+	9. Animating elements with animation-fill-mode
+* [Common CSS Mistakes and how to fix them](https://blog.mariano.io/common-css-mistakes-and-how-to-fix-them-8ee0f5e88d64?ref=heydesigner-weekly#.7r5twjgaq)
+	* Using units for setting line heights
+	* Pixel units
+	* Device breakpoints
+	* Avoiding !important
+	* No comments
+	* Overdoing comments
+	* Hard-coded values
+	* Working against the cascade
+	* Using ID's
+	* Abusing extends
+	* Bad selector intent
+	* Generic classnames
+	* Monoliths
+* [Rems and ems, and why you probably don't need them](https://hackernoon.com/rems-and-ems-and-why-you-probably-dont-need-them-664b9ce1e09f)
+* [CSS vs JavaScript: Trust vs Control](https://medium.com/@codepo8/css-vs-javascript-trust-vs-control-5aa33af978a6)
+* [VIDEO: CSS Variables: var(--subtitle) CSSConf.Asia 2016](https://www.youtube.com/watch?v=kZOJCVvyF-4)
+* [Sticky headers](https://medium.com/@adactio/sticky-headers-fe9537519c83)
 
 ##<a name="flexbox"></a>Flexbox
 
@@ -1146,6 +1439,7 @@
 		*  Well documented cross-browser bugs
 		*  Add flexbox to your layouts
 * [Flexbox Froggy: A game to understand flexbox](http://flexboxfroggy.com/)
+* [Flexbox Defense](http://www.flexboxdefense.com/)
 * [Flexbox for interfaces: tracks case study](http://www.smashingmagazine.com/2015/11/flexbox-interfaces-tracks-case-study/)
 	* Flexy atomic components
 	* Inline patterns
@@ -1180,6 +1474,12 @@
 		* The "Holy Grail" 3 column liquid layout with pixel-widths
 		* Filling remaining space with any element
 	* Listening to the specs
+* [Should I use Grid or Flexbox?](https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/)
+	* Major layouts vs UI elements
+	* One dimensional vs two dimensional
+	* Working from the content out vs working from the grid definition in
+* [Flexbox patterns](http://www.flexboxpatterns.com/home)
+* [11 things I learned reading the flexbox spec](https://hackernoon.com/11-things-i-learned-reading-the-flexbox-spec-5f0c799c776b)
 
 ##<a name="grid"></a>Grid
 
@@ -1197,6 +1497,21 @@
 	* Special cases
 	* Recap
 	* Status
+* [Subgrids considered essential](http://meyerweb.com/eric/thoughts/2016/01/15/subgrids-considered-essential/)
+* [Subgrids thinking out loud](http://blogs.igalia.com/mrego/2016/02/12/subgrids-thinking-out-loud/)
+	* State of art
+	* Use cases
+	* Main issues
+		* Margin, border and padding
+		* Implicit tracks on the subgrid
+		* Automatic grid span
+		* Subgrid only in one axis
+		* Descendants navigation
+		* Grid gaps
+		* Other
+	* Draft proposal
+	* Wrap-up
+* [CSS Grid + CSS Multi-Columns = ♥](https://medium.com/@patrickbrosset/css-grid-css-multi-columns-7664f59bb60c)
 
 #<a name="sass"></a>SASS
 
@@ -1344,6 +1659,47 @@
 	* (without: directive-name) and (with: directive-name)
 	* The @debug, @warn, and @error directives
 	* Closing thoughts
+* [The benefits of inheritance via @extend in Sass](http://www.sitepoint.com/the-benefits-of-inheritance-via-extend-in-sass/)
+	* What is @extend?
+	* Using @extend
+		* Duplication
+		* Moving multiple classes out of HTML
+		* Extending complex selectors
+	* Advantages of @extend
+		* Cleaner HTML classes
+		* Reducing duplication of CSS
+		* Saving time and effort
+	* The dangers of @extend
+	* Conclusion
+* [Sass: the @extend directive](http://vanseodesign.com/css/sass-the-extend-directive/)
+	* The @extend directive
+	* Extending complex selectors
+	* Multiple @extend directives
+	* Chaining @extend directives
+	* Selector sequences
+	* Merging selector sequences
+	* Closing thoughts
+* [Sass: Placeholders and @extend-only selectors](http://vanseodesign.com/css/sass-placeholders/)
+	* Placeholders and @extend-only selectors
+	* Silent classes
+	* The !optional flag
+	* Using @extend inside other directives
+	* Closing thoughts
+* [Sass: Directory structures that help you maintain your code](http://vanseodesign.com/css/sass-directory-structures/)
+	* Simple structure
+	* The 7-1 pattern
+	* SMACSS/BEM architecture
+	* Others
+	* Closing thoughts
+* [Data types in Sass](https://www.sitepoint.com/data-types-in-sass/)
+	* Null
+	* Booleans
+	* Number
+	* Strings
+	* Colors
+	* Lists
+	* Maps
+	* Conclusion
 
 #<a name="responsive_web_design"></a>Responsive Web Design
 
@@ -1510,6 +1866,34 @@ Why we should rename element queries into container queries
 		* Establishing default sizes
 		* Expanding your scale when proportional contrast is needed
 		* Broadening the usage of your scale
+* [Leaner responsive images with client hints](https://www.smashingmagazine.com/2016/01/leaner-responsive-images-client-hints/)
+	* What are client hints?
+	* Let the web server know
+	* Enabling client hints in your HTML
+	* Our old friend, _img_
+	* Mind. blown.
+	* The server side of client hints
+	* Non-supporting browsers
+	* (Almost) ready for prime time
+* [Everything I know about Responsive Web Typography](http://zellwk.com/blog/responsive-typography/)
+	* Practice 1: Increase font-size and line-height of your body copy as screen sizes increase
+	* Practice 2: Use a modular scale for your typography
+	* Practice 3: Use relative typography units
+	* Using Typi
+	* Practice 4: Apply vertical rhythms
+	* Em vs Rem
+	* Practice 5: Keep text measures between 45-75 characters
+	* Wrapping up
+* [Converting an existing site or app to a responsive design](http://blog.cloudfour.com/converting-an-existing-site-or-app-to-a-responsive-design/)
+	* Not a full redesign
+	* Not a responsive retrofit
+	* Responsive conversions
+	* The desktop experience will have to change some
+	* Breaking the existing site into smaller patterns
+	* Ordering the patterns into sprints
+	* Responsive design sprints
+	* Rinse and repeat until we're "done"
+	* The process works
 
 #<a name="progressive_enhancement"></a>Progressive Enhancement
 
@@ -1584,6 +1968,110 @@ Why we should rename element queries into container queries
 		* Angular.js
 	* Closing notes
 	* Further reading
+* [Learn from the past, enhance for the future](https://medium.com/@AaronGustafson/learn-from-the-past-enhance-for-the-future-8ab94d4f7e92#.oszg2hqeq)
+	1. The headless UI
+	2. Interface is conversation
+		* Write for people
+		* Avoid technical and legal jargon
+		* When requesting feedback, make it clear that the user needs to respond
+		* When asking a user to choose, clearly present the options
+		* Prompts should be short, while still being clear
+		* Ask only necessary questions
+		* Present information in consumable pieces
+	3. Future enhancements
+* [https://medium.com/@AaronGustafson/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web-714ef99f4999#.qwt6vec7s](Ramblings on new browser features, interoperability craft and the future of the web)
+	* New features vs. interoperability
+	* The web vs native
+	* Change vs stagnation
+	* Cutting edge vs craft
+	* Developer convenience vs user needs
+	* All is not lost
+* [Progressive enhancement and JavaScript failure](http://molily.de/javascript-failure/)
+	* The twitter.com incident
+	* Progressive enhancement and JavaScript web apps
+	* Does progressive enhancement deal with JavaScript failure?
+	* No fallback on JavaScript failure
+	* Updating JavaScript best practices
+	* BEGIN; JAVASCRIPT; ROLLBACK;
+	* A simplistic example (is simplistic)
+	* Graceful degradation: Falling back to the previous enhancement step
+	* Chaining enhancements with promises
+	* Failing fast: making failure visible and tangible
+	* More on JavaScript and progressive enhancement
+* [Examining the benefits of progressive enhancement](https://www.viget.com/articles/progressive-enhancement-benefits)
+	* It enables users who disable JS to access your site
+	* You can test your site for failure by disabling JS
+	* It allows features to "fall back" when they fail
+	* It allows your website to be accessed when JS doesn't parse
+	* It prevents battery drain on mobile devices
+	* It allows your website to be accessed when JS doesn't load
+	* It improves accessibility
+	* It improves SEO
+	* It's as easy as _not_ building progressively enhanced
+	* It serves a usable experience while your users download JS
+	* It's the responsible way to handle the next billion web users worldwide
+	* So what should we do?
+* [Autofill: what web devs should know, but don't](https://medium.com/@grigs/autofill-what-web-devs-should-know-but-dont-d8f32575253c#.4nih1aj34)
+	* How does autofill work?
+		1. Pre-determined autofill fields
+		2. Autofill any field
+		3. Which approach is better
+		4. One behavior to watch for
+	* The standards-based approach to autofill
+		* Shipping and billing
+		* Telephones, email and instant messaging
+		* Broad vrsus narrow autofill field names
+		* Sections
+		* All the tokens
+	* Yay for standards! We're done, right?
+	* Safari's strange behavior
+		* Contact and address fields support autocomplete
+		* Payment fields are completely wonky
+	* Building a cross browser autofill form
+		1. Add autocomplete attributes
+		2. Use common values for input name attributes
+		3. Add name and/or label values that match the list Safari is looking for
+		4. Make autofill part of your test plans
+	* The final form
+	* The future of autofill and forms
+* [Tab panel, the right way](http://cssmojo.com/tab-panel-the-right-way/?mc_cid=29c24aed5b&mc_eid=b38f2f4652)
+	* The big lie
+	* Tab panel and accordion - même combat
+	* Visual clutter started it all
+	* Trying our best
+	* The details
+		1. Start with POSH (Plain Old Semantic HTML), a simple set of heading/div pairs
+		2. Add ARIA and `tabindex` attributes using JavaScript as these would be confusing if there was no behavior attached to the widgets. Use JavaScript to also plug a class on the component according to its type
+		3. Style the widget using the selector inserted by the script
+		4. Use `cursor` to style the tabs because those behave like buttons (`default`), not links (`pointer`)
+		5. In case the componsent is displayed as a tab panel, style it as an accordion before its tabs start wrapping
+		6. Do not mess with the `tab` key, let users tab through the tabs/headers and visible panel(s), all according to source order
+		7. Allow users to switch between tabs/headers using arrow keys. `home`/`end` keys should focus on the first/last tab
+		8. Reveal panels as a user cycles through the tabs
+		9. For users who navigate between the tabs via the `tab` key - reveal the associated panel through click and keypress events (`enter` and `space bar`)
+		10. Move focus onto the relevant panel whenever keyboard users select a tab via the `enter` or `space bar` keys
+		11. Provide a means for keyboard users to **escape** the widget. This way users have the option to leave the component with a specific panel opened or to go back to the first tab if they wish
+	* Improvements
+	* Random thoughts
+		* The irony
+		* The conundrum
+		* There is nothing we can do
+	* Final thoughts
+* [We need JavaScript to fix the web](https://medium.com/@codepo8/we-need-javascript-to-fix-the-web-a01bca57ff97#.a6tuuroxe)
+	* We once fixed the web and paved the way forward
+	* We head a clear goal and enemy - one we lost now
+	* HTML describes a small use case
+	* The upgrade of HTML wasn't as smooth as we make it out to be
+	* The web as a platform isn't fascinating to new developers - it's a given
+	* The market is a rat race
+	* Building wheels from small reusable parts
+	* We're mobile and our best practices aren't
+	* Enter the new, old hero: JavaScript
+	* We need to take on the responsibility of JavaScript
+
+##<a name="pwa"></a>Progressive Web Apps
+
+* [Progressive Web Apps and the Windows Ecosystem](https://blog.vanila.io/progressive-web-apps-and-the-windows-ecosystem-b2b2aa2f1521)
 
 #<a name="accessibility"></a>Accessibility
 
@@ -1779,6 +2267,23 @@ Why we should rename element queries into container queries
 		* Browser support for SVG is worse (not anymore)
 		* The framework we chose already has an icon font
 	* Don't be table guy
+* [Case Study: Our SVG icon process](http://blog.cloudfour.com/our-svg-icon-process/)
+	* What we do
+	* Our requirements
+		* Accessibility
+		* Design
+		* Performance
+		* Workflow
+		* Browsers
+	* Exporting icons
+	* Creating our sprite
+	* Including icons in our markup
+	* Styling icons
+	* Adding DRY variations
+	* Enforcing mandatory colors
+	* Improving accessibility
+	* Supporting more browsers
+	* Putting it all together
 * [10 reasons we switched from an icon font to svg](http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/)
 	1. Separation of concerns
 	2. Some devices don't honour the private unicode area
@@ -1794,6 +2299,97 @@ Why we should rename element queries into container queries
 		* Colour variations
 		* Browser support
 * [A quick reminder on how and why to use labels in forms to make them more accessible](https://www.christianheilmann.com/2015/12/04/a-quick-reminder-on-how-and-why-to-use-labels-in-forms-to-make-them-more-accessible/)
+* [4 ways to make online content more accessible](http://www.uxbooth.com/articles/4-ways-to-make-online-content-more-accessible/)
+	1. Heading structure
+		* each page should have one heading level 1 which clearly describes the purpose of the page content.
+		* content should be organized using additional heading levels
+		* heading should provide context for the information it precedes
+	2. Meaningful alt text
+		* provide a concise description of what is featured in the image and why the image is being used on the page
+		* images used for decoration should still use the alt attribute (though empty)
+		* if it's a complex image (e.g. infographics), provide a clear description of the information the image conveys in the written content that precedes or follows the image
+	3. Properly labeled links
+		* make sure link text is descriptive
+		* indicate if the link will take the end user off the site they are currently visiting
+		* let the user know if the link is a document as opposed to web content
+	4. Adaptive writing style
+		* if the nature of the site requires the use of difficult or highly technical words, offer a link or accessible pop-up that provides a definition
+		* break up lengthy sections into smaller paragraphs or numbered or bulleted lists
+	5. Next steps for improving content accessibility
+* [How to use ARIA effectively with HTML5](http://www.sitepoint.com/how-to-use-aria-effectively-with-html5/)
+	* ARIA Roles
+	* ARIA Attributes
+	* Rules of ARIA
+		* Use semantic HTML elements where possible
+		* Your element can only have one rule
+		* Do not change native semantics
+	* How else can you make your markup more accessible
+		* Use as many semantic elements as possible
+		* _alt_ attribute
+	* An example using semantic HTML and ARIA, taking accessibility into account
+	* Conclusion
+* [Labelling form elements](http://bitsofco.de/labelling-form-elements/)
+	* The _name_ and _id_ attributes
+	* The _label_ element with the _for_attribute
+	* The _label_ element as a parent
+	* The _fieldset_ and _legend_ elements for related widgets
+	* The _label_ attribute for _optgroup_
+	* The _aria-*_ attributes
+* [Accessible progressive disclosure](https://adactio.com/journal/10365)
+* [The inaccessible web - how we got into this mess](https://uxdesign.cc/the-inaccessible-web-how-we-got-into-this-mess-7cd3460b8e32#.yelt1qshq)
+	1. We can (and do) learn to make websites without learning accessibility
+	2. We're not held accountable for inaccessible products
+	3. Assumptions guide us astray
+	4. The legislation doesn't tell us what to do
+	5. New trends push technology into untested territory
+	* How do we fix this mess
+* [simple rules for making my site accessible](http://pt.slideshare.net/HelenaZubkow/10-simple-rules-for-making-my-site-accessible)
+	1. Alts, titles and bare text! Oh my! - provide a textual alternative to non-text content
+	2. Painless page titles - page titles that get to the point (put page title before site title)
+	3. Skip it! - 'get out of jail free' card for keyboard users (skip to content links)
+	4. Hovering around the focus issue - making interactive elements that don't suck
+	5. Put it on my tab - everything clickable should be tab accessible
+	6. You're out of order - using element hierarchies properly
+	7. Are you there, Blog? It's me, Markup. - when to hide, and when to go invisible
+	8. No CAPTCHAs if you can - because not being able to see does not prove that you're not a human
+	9. Keep your focus - focus indicators need to stay on
+* [How the web became unreadable](https://backchannel.com/how-the-web-became-unreadable-a781ddc711b6#.s7ie61kmk)
+* [Building in 10k: Markup for accessibility, clarity and affordance](https://blogs.windows.com/msedgedev/2016/09/02/building-in-10k-markup-for-accessibility-clarity-and-affordance/)
+	* Markup for structure and semantics (choose your HTML elements with purpose)
+	* Labeling elements reduces ambiguity (aria-label can, and should, be your friend)
+	* Don't shy away from id (you don't have to use it in your CSS, id has a bunch of other uses)
+	* Classify similar elements (that's what the class attribute is for, the naming approach is up to you)
+	* Associate form labels with controls
+	* Use the right field type (HTML5 offers a bunch of options, get familiar with them)
+	* Indicate required fields (do it in your content _and_ in your form controls)
+	* Manage autocorrection and capitalization (your virtual keyboard users will thank you)
+	* Suggest possible responses (but keep in mind the _placeholder_ attribute is a suggestion, not a label)
+	* Facilitate auto-completion (again, your users will thank you)
+	* Handle errors well (make it easy for users to find and correct errors)
+* [Building in 10k: CSS Structure and Sandboxing](https://medium.com/web-on-the-edge/building-in-10k-css-structure-and-sandboxing-8144ecb8a15c#.oixomas48)
+	* What's the "no style" experience like?
+		* Consider "no style" and "default style" scenarios
+	* How can I progressively enhance the design using CSS?
+		* Understand how fault tolerance applies to CSS
+		* Provide fallbacks
+		* Take pity on older browsers
+	* How do I organize my styles across so many breakpoints?
+		* Organize yourself
+	* Mobile-first or desktop-first?
+		* Start designing the small screen first
+		* Sandbox rules when necessary
+	* Can I improve the experience for high-contrast experiences?
+		* Enhance the experience wherever possible
+* [108 million web users are color blind. Tips for designing keeping them in mind](https://uxplanet.org/108-million-web-users-are-color-blind-tips-for-designing-keeping-them-in-mind-7be71d0019a9#.z4vnpxk5w)
+	1. Mention colors
+	2. Get the contrasts right
+		* Light and dark contrast
+		* Complementary contrast
+		* Cool and warm color contrasts
+		* Use patterns and textures
+	3. Make it look good in the grayscale
+	4. Avoid the complete no-no color combos
+	5. Text overlaid on background images
 
 #<a name="performance"></a>Performance
 
@@ -1965,6 +2561,82 @@ Why we should rename element queries into container queries
 * [Instant loading with Service Workers](https://www.youtube.com/watch?v=jCKZDTtUA2A&index=5&list=PLNYkxOF6rcICcHeQY02XLvoGL34rZFWZn)
 * [HTTP/2 101](https://www.youtube.com/watch?v=r5oT_2ndjms&index=19&list=PLNYkxOF6rcICcHeQY02XLvoGL34rZFWZn)
 	* [Setting up HTTP/2](https://surma.link/things/h2setup/)
+* [Getting ready for HTTP/2: a guide for web designers and developers](https://www.smashingmagazine.com/2016/02/getting-ready-for-http2/)
+	* A brief history of HTTP
+		* SPDY
+		* HTTP/2
+	* Will we have to change our websites?
+	* What do we need to change to embrace http/2?
+		* Make the move to TLS
+		* Turning multiple image files into sprites
+		* Inline images using data URIs
+		* Concatenating CSS and JavaScript
+		* Splitting resources between hosts: sharding
+	* How to prepare for HTTP/2 now
+		* Create individual assets in addition to sprites and data uris
+		* Organize your assets by website action
+		* Manage domain sharding
+		* More to come
+	* When to switch?
+	* Your HTTP/2 action plan
+		* Launch with a secure connection or make the move to TLS now
+		* Prepare for HTTP/2 in your build process
+		* Check your statistics
+		* Check your hosting
+		* Roll out HTTP/2 optimization
+* [Managing mobile performance optimization](https://www.smashingmagazine.com/2016/03/managing-mobile-performance-optimization/)
+	* Become mobile-minded
+		* Collaborative review
+		* Performance budgets
+	* Optimization techniques
+	* Client-side optimization
+		* Optmize code
+		* Prioritize above the fold
+		* Optimize images
+		* Auto CMS media optimization
+		* Streamline fonts and icons
+		* Loading technologies
+		* Enhance from a core experience
+		* Reduce feature testing
+	* Server-side optimization
+		* Caching, prerendering and static content
+		* Browser caching
+		* Content Delivery Networks (CDNs)
+	* Testing
+		* Test on real devices
+	* Summary
+* [Reducing PNG file size](https://medium.com/@duhroach/reducing-png-file-size-8473480d0476#.3hq9382fp)
+	* You should be using an optimizer tool
+	* Reducing colors
+	* Choose the right pixel format
+	* Indexed images
+	* Optimizing fully transparent pixels
+	* Lossy Pre-process
+	* It's all about collaboration
+* [Caching best practices & max-age gotchas](https://jakearchibald.com/2016/caching-best-practices/)
+	* Pattern 1: immutable content + long max-age
+	* Pattern 2: mutable content, always server-revalidated
+	* Max-age on mutable content is often the wrong choice
+		* a refresh sometimes fixes it
+		* a service worker can extend the life of these bugs
+	* The service worker & the HTTP cache play well together, don't make them fight
+	* Used carefully, max-age & mutable content can be beneficial
+* [Building in 10k: Compilation, optimization, and compression](https://medium.com/web-on-the-edge/building-in-10k-compilation-optimization-and-compression-506ab46f911b#.tc4gzbfsw)
+	* How do you manage compression & minification
+	* How did you optimize the CSS?
+	* Are you taking similar steps with the JavaScript?
+	* What was the optimization workflow for images?
+	* Can you automate these automations?
+	* What's going on behind the scenes?
+	* How do you handle project deployments?
+	* What exactly are "deployment templates"?
+	* What did we learn?
+		* Script repetitive tasks
+		* Double check the output
+		* Optimize and then optimize some more
+		* Serve the smallest files you can
+		* Standardize your deployments
+	* Where to next?
 
 #<a name="web_components"></a>Web Components
 
@@ -2080,3 +2752,7 @@ Why we should rename element queries into container queries
 	* Using local fonts
 	* Reimplementing caching
 	* Not styling fallback fonts
+
+#<a name="git"></a>GIT
+
+* [Reset, checkout and revert](https://dzone.com/articles/reset-checkout-and-revert)
